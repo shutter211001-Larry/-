@@ -47,7 +47,7 @@ description: "資深藝術總監身分"
 
 ### 3.2 實作二：見證奇蹟
 *(預計時間：25 分鐘)*
-*   打開 **【檔案管理 (Explorer)】分頁** ➔ 建立 `.agents/skills/art_director/` 資料夾 ➔ 在裡面新增 `SKILL.md` ➔ 貼上毒舌總監教學範例內容 ➔ 點擊 **【Antigravity Chat】分頁** ➔ 輸入：`「請再次根據 SKILL 設定評價剛剛那張圖」`。
+*   點擊介面最左側的 **【檔案總管 (Explorer)】資料夾圖示** ➔ 在最外層目錄建立 `.agents/skills/art_director/` 資料夾 ➔ 在裡面新增 `SKILL.md` ➔ 貼上毒舌總監教學範例內容 ➔ 點擊 **【Antigravity Chat】分頁** ➔ 輸入：`「請再次根據 SKILL 設定評價剛剛那張圖」`。
 
 > 再次請 Agent 評價剛剛那張草圖。見證語氣與專業度的核爆級改變！
 
