@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "comfyui-prompt-engineer": {
+      "source": "mckruz/comfyui-expert",
+      "sourceType": "github",
+      "skillPath": "skills/comfyui-prompt-engineer/SKILL.md",
+      "computedHash": "d5e4b8fe1e0d416d9d08811df708f4adb3f17522a3465bfc6ea62d7bde3438bb"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "computedHash": "7e3c9cd74e9e2b4828527a857170e86310f2dab5ea8030a9043df2c7e6c88857"
+    }
+  }
+}

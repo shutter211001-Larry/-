@@ -1,0 +1,23 @@
+{
+  "skill_name": "comfyui-doc-scraper",
+  "evals": [
+    {
+      "id": "eval-0",
+      "prompt": "我想要了解一下 ComfyUI 裡面的 ControlNetApplyAdvanced 這個節點要怎麼接？參數是什麼意思？",
+      "expected_output": "Markdown 格式報告，包含名詞解釋、生活化比喻、參數說明（附帶避坑指南）以及官方推薦的接法範例。",
+      "files": []
+    },
+    {
+      "id": "eval-1",
+      "prompt": "請幫我蒐集 ComfyUI 最新關於 KSampler 節點的參數說明，特別是 denoise 和 CFG，請翻譯成美術聽得懂的話。",
+      "expected_output": "Markdown 格式報告，精準解釋 KSampler，並用白話比喻說明 denoise 和 CFG 參數。",
+      "files": []
+    },
+    {
+      "id": "eval-2",
+      "prompt": "如何用 ComfyUI 跑 FLUX 模型？幫我找一下有沒有最新的官方範例或工作流。",
+      "expected_output": "Markdown 格式報告，提供 FLUX 模型的跑法介紹，並附上相關的官方文件或工作流範例連結。",
+      "files": []
+    }
+  ]
+}

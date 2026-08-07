@@ -228,6 +228,48 @@
                 </div>
             </section>
 
+            <!-- Slide 1.6: 觀念 C -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 01 - 觀念三</div>
+                        <h2>skills.sh：AI 助理的 App Store</h2>
+                    </div>
+                    
+                    <div class="glossary-box">
+                        <strong><i class="fa-solid fa-store"></i> 借力使力，不重複造輪子</strong>
+                        <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
+                            <li style="margin-bottom:1rem;"><strong>開源技能庫</strong>：當你需要一個「社群行銷大師」或「ComfyUI 提示詞專家」時，不用從頭自己寫。<code>skills.sh</code> 就像是 Agent 的 App Store，聚集了全世界高手寫好的頂級 SKILL。</li>
+                            <li><strong>一鍵安裝</strong>：透過終端機指令，一鍵就能把大師的靈魂下載到你的專案 <code>.agents/skills/</code> 裡，無縫接軌！</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1.7: 實作 C -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 01 - 實作三</div>
+                        <h2>下載你的第一個大師級 SKILL</h2>
+                    </div>
+                    
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
+                        <div style="background: rgba(168, 85, 247, 0.15); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-bottom: 1rem; color: #e2e8f0; font-size: 1.4rem;">
+                            💡 <strong>新手小提示</strong>：<code>npx</code> 就像是終端機裡的「<strong>快遞安裝精靈</strong>」，不用怕，只要無腦複製貼上這串咒語，它就會幫你把大師請回家。
+                        </div>
+                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開下方的 <strong>【終端機 (Terminal)】</strong> ➔ 輸入：<code>npx skills find comfy</code> 搜尋 ➔ 接著輸入：<code>npx -y skills add mckruz/comfyui-expert@comfyui-prompt-engineer</code> 下載安裝。</li>
+                        </ul>
+                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            檢查左側檔案總管，你會發現 <code>.agents/skills/</code> 內多出了一個 <code>comfyui-prompt-engineer</code> 資料夾。<br>
+                            你已經成功把世界級的提示詞大師聘請到你的專案中了！
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- ============================== Chapter 2 ============================== -->
             <!-- 章節封面 -->
             <section class="slide">
@@ -322,6 +364,15 @@
                 </div>
             </section>
 
+            <!-- 中場休息 -->
+            <section class="slide">
+                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
+                    <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
+                    <p style="font-size: 2.5rem; color: #cbd5e1;">平面化存檔是不是很可怕？先喝口水壓壓驚！</p>
+                </div>
+            </section>
+
             <!-- Slide 2.4: 觀念 B -->
             <section class="slide">
                 <div class="content-area">
@@ -334,6 +385,50 @@
                         <strong><i class="fa-solid fa-terminal"></i> 終端機自動化</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
                             <li><strong>動口不動手</strong>：很多人不學 Git 是因為指令太難記。現在透過 Antigravity，你只要說「幫我備份這個版本的圖」，Agent 會自動幫你敲打終端機指令並上傳。</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="demo-box" style="margin-top:2rem;">
+                        <div class="title">💬 示範情境</div>
+                        > 幫我把剛畫好的圖 commit 存檔，並自動加上 "修改人物臉部光影" 的版本紀錄推送到 GitHub。
+                        <br><br>
+                        <small style="color: #94a3b8;">*(註：Commit 就像是為當前的畫布狀態拍一張「拍立得存檔 (Snapshot)」，並在背面寫下修改備註，未來隨時可以還原。)*</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.5: 實作 B -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 02 - 實作二</div>
+                        <h2>見證一鍵備份與還原</h2>
+                    </div>
+                    
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
+                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity Chat】分頁</strong> ➔ 輸入：<code>「幫我把專案 commit 備份到 GitHub」</code> ➔ (再次製造平面化慘案) ➔ 輸入：<code>「幫我還原到上一個版本」</code>。</li>
+                        </ul>
+                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            打開檔案，見證圖層一鍵復活的時光倒流魔術！
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.6: 觀念 C -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 02 - 觀念三</div>
+                        <h2>專案防護網 (.gitignore)</h2>
+                    </div>
+                    
+                    <div class="glossary-box">
+                        <strong><i class="fa-solid fa-shield-halved"></i> 假裝沒看到的隱形斗篷</strong>
+                        <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
+                            <li><code>.gitignore</code> 是一個純文字檔，裡面寫的任何檔名或路徑，Agent (與 Git) 都會假裝沒看到，絕對不會把它們上傳。這對於保護機密或過濾肥大設計檔非常重要！</li>
                         </ul>
                     </div>
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
@@ -357,31 +452,24 @@
 # 忽略所有 .psd，但「唯獨這張」允許上傳備份！
 !final_logo.psd</code></pre>
                     </div>
-                    
-                    <div class="demo-box" style="margin-top:2rem;">
-                        <div class="title">💬 示範情境</div>
-                        > 幫我把剛畫好的圖 commit 存檔，並自動加上 "修改人物臉部光影" 的版本紀錄推送到 GitHub。
-                        <br><br>
-                        <small style="color: #94a3b8;">*(註：Commit 就像是為當前的畫布狀態拍一張「拍立得存檔 (Snapshot)」，並在背面寫下修改備註，未來隨時可以還原。)*</small>
-                    </div>
                 </div>
             </section>
 
-            <!-- Slide 2.5: 實作 B -->
+            <!-- Slide 2.7: 實作 C -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
-                        <div class="badge badge-accent">💻 Chapter 02 - 實作二</div>
-                        <h2>見證奇蹟：一鍵時光倒流</h2>
+                        <div class="badge badge-accent">💻 Chapter 02 - 實作三</div>
+                        <h2>建立專案防護網</h2>
                     </div>
                     
                     <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：40 分鐘</h3>
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
                                                 <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity Chat】分頁</strong> ➔ 輸入：<code>「幫我把專案 commit 備份到 GitHub」</code> ➔ (再次製造平面化慘案) ➔ 輸入：<code>「幫我還原到上一個版本」</code>。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在專案根目錄建立 <code>.gitignore</code> 檔案 ➔ 練習輸入 <code>*.psd</code> ➔ 再次請 Agent 幫你備份專案。</li>
                         </ul>
                         <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
-                            打開檔案，見證圖層一鍵復活的時光倒流魔術！
+                            你會發現 .psd 檔案被成功忽略，沒有被推送到 GitHub 上。
                         </div>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
@@ -516,6 +604,24 @@
                 </div>
             </section>
 
+            <!-- Slide 3.4.1: 觀念 B+ -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 03 - 觀念擴充</div>
+                        <h2>agents.md：全球標準化的 AI 說明書</h2>
+                    </div>
+                    
+                    <div class="glossary-box" style="background: rgba(16, 185, 129, 0.15); border-color: #10b981;">
+                        <strong style="color: #34d399;"><i class="fa-solid fa-globe"></i> 這是國際開源標準！</strong>
+                        <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
+                            <li style="margin-bottom:1rem;"><strong>不僅僅是我們的家規</strong>：撰寫 <code>AGENTS.md</code> 並非我們自己發明的土砲方法。它其實是由 Agentic AI Foundation 負責維護的國際開源標準 (詳見官方網站 <a href="https://agents.md/" style="color: #60a5fa;" target="_blank">agents.md</a>)。</li>
+                            <li><strong>AI 專屬的 README</strong>：未來的世界裡，每個專業專案都會有自己標準化的 <code>AGENTS.md</code>。就像交接文件一樣，無論你更換哪一牌的 AI 助理，只要有這個檔案，AI 就能瞬間讀懂你的專案規範！</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <!-- Slide 3.5: 實作 B -->
             <section class="slide">
                 <div class="content-area">
@@ -541,6 +647,15 @@
                             <li><strong>容量怪獸：</strong> 寫入 AGENTS.md 的字會吃掉 Agent 的腦容量 (Context Window / 短期記憶)！規則請保持精簡，長篇大論請改放 <code>references/</code> 資料夾。</li>
                         </ul>
                     </div>
+                </div>
+            </section>
+
+            <!-- 中場休息 -->
+            <section class="slide">
+                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
+                    <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
+                    <p style="font-size: 2.5rem; color: #cbd5e1;">看著 AI 自己寫規則是不是很爽？喝口咖啡讓大腦沉澱一下。</p>
                 </div>
             </section>
 
@@ -734,6 +849,15 @@
                 </div>
             </section>
 
+            <!-- 中場休息 -->
+            <section class="slide">
+                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
+                    <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 5 分鐘</h2>
+                    <p style="font-size: 2.5rem; color: #cbd5e1;">看著 Agent 在背景像瘋狗一樣工作，喝口水慶祝提早下班吧！</p>
+                </div>
+            </section>
+
             <!-- Slide 4.4: 觀念 B -->
             <section class="slide">
                 <div class="content-area">
@@ -788,56 +912,6 @@
                 </div>
             </section>
 
-            <!-- ============================== Conclusion ============================== -->
-            <!-- Slide 27: 總結 -->
-            <section class="slide">
-                <div class="content-area title-card">
-                    <h2 class="gradient-text" style="font-size:5rem;">課程總結與發表</h2>
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); width:100%; max-width:800px; margin-top:2rem;">
-                        <h3 style="font-size: 3rem; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 總結時間：15 分鐘</h3>
-                        <p style="font-size: 3rem; line-height: 1.6;">請將下午生成的最終圖片，運用早上學到的 GitHub 協作技巧，請 Antigravity 幫您 push 到遠端倉庫，完成今日的成果發表！</p>
-                    </div>
-                    <h3 style="font-size:3rem; color:#fca5a5; margin-top:1rem;">🎉 恭喜完成一日實戰挑戰！</h3>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- 底部控制列與時間軸 -->
-        <div class="bottom-bar">
-            <div class="controls">
-                <button id="prev-btn" class="nav-btn"><i class="fa-solid fa-chevron-left"></i> 上一頁</button>
-                <span id="slide-counter" class="counter">1 / 27</span>
-                <button id="next-btn" class="nav-btn">下一頁 <i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-            
-            <div class="timeline-container">
-                <!-- 刻度標示 -->
-                <div class="timeline-markers">
-                    <span>開始</span>
-                    <span>Ch 1</span>
-                    <span>Ch 2</span>
-                    <span>Ch 3</span>
-                    <span>Ch 4</span>
-                    <span>Ch 5</span>
-                    <span>Ch 6</span>
-                    <span>Ch 7</span>
-                    <span>Ch 8</span>
-                    <span>結束</span>
-                </div>
-                <!-- 實際進度條 -->
-                <div class="progress-bar-bg">
-                    <div class="progress-bar-fill" id="progress-bar-fill">
-                        <div class="glow-effect"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
 <!-- ============================== Chapter 5 ============================== -->
             <!-- 章節封面 -->
             <section class="slide">
@@ -1012,6 +1086,15 @@
                 </div>
             </section>
 
+            <!-- 中場休息 -->
+            <section class="slide">
+                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
+                    <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
+                    <p style="font-size: 2.5rem; color: #cbd5e1;">看著滿頭帽子的怪物圖，先去喝杯咖啡壓壓驚。</p>
+                </div>
+            </section>
+
             <!-- Slide 6.4: 觀念 B -->
             <section class="slide">
                 <div class="content-area">
@@ -1164,19 +1247,29 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 </div>
             </section>
 
-            <!-- Slide 7.4: 觀念 B -->
+            <!-- Slide 7.4: 中場休息 -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="title-card" style="text-align: center;">
+                        <div style="font-size: 6rem; margin-bottom: 2rem;">☕</div>
+                        <h2 style="font-size: 4rem; font-weight: 800; color: #fcd34d; margin-bottom: 1rem;">中場休息 10 分鐘</h2>
+                        <p class="subtitle" style="font-size: 2rem;">抽盲盒抽到崩潰了嗎？先去喝口水，讓大腦冷卻一下！</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.5: 觀念 B (Seed) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header left">
                         <div class="badge">Chapter 07 - 觀念二</div>
-                        <h2>精準參數控制與工作流</h2>
+                        <h2>鎖定初始基因 (Seed)</h2>
                     </div>
                     
                     <div class="glossary-box">
-                        <strong><i class="fa-solid fa-sliders"></i> Seed 與 ControlNet (控制雙武器)</strong>
+                        <strong><i class="fa-solid fa-dna"></i> Seed (隨機種子碼)</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>Seed (隨機種子碼)</strong>：就像角色的 <strong>DNA 基因碼</strong>，鎖定後能讓「初始氛圍與構圖基底」不再隨機亂跳。</li>
-                            <li><strong>ControlNet (強制的描圖紙)</strong>：就像 <strong>操線木偶骨架</strong>，強迫 AI 必須沿著你規定的邊緣線或骨架上色。完美解決 AI 不聽話亂擺姿勢的痛點！</li>
+                            <li><strong>Seed</strong>：就像角色的 <strong>DNA 基因碼</strong>，鎖定後能讓「初始氛圍與構圖基底」不再隨機亂跳。</li>
                         </ul>
                     </div>
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
@@ -1198,39 +1291,197 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 </div>
             </section>
 
-            <!-- Slide 7.5: 實作 B -->
+            <!-- Slide 7.6: 實作 B (Seed) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
                         <div class="badge badge-accent">💻 Chapter 07 - 實作二</div>
-                        <h2>見證奇蹟：鎖定參數穩定產出</h2>
+                        <h2>見證奇蹟：固定基因碼</h2>
                     </div>
                     
                     <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：40 分鐘</h3>
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
                                                 <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【KSampler】</strong> 節點將 <code>control_after_generate</code> 從 `randomize` 改為 <strong>【fixed (固定)】</strong> ➔ 修改文字 ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【KSampler】</strong> 節點將 <code>control_after_generate</code> 改為 <strong>【fixed (固定)】</strong> ➔ 修改文字 ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
                         </ul>
                         <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             再次微調提示詞，你會發現雖然長相仍會微調，但「整體的構圖基底與光影氛圍」被成功鎖定了，不再像抽盲盒般毫無頭緒！
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.7: 觀念 C (ControlNet) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 07 - 觀念三</div>
+                        <h2>強制操線木偶 (ControlNet)</h2>
+                    </div>
+                    
+                    <div class="glossary-box">
+                        <strong><i class="fa-solid fa-person-rays"></i> ControlNet (控制網)</strong>
+                        <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
+                            <li><strong>強制的描圖紙</strong>：如果說 Seed 是鎖定氛圍，那 ControlNet 就像 <strong>操線木偶骨架</strong>。</li>
+                            <li><strong>解決痛點</strong>：強迫 AI 必須沿著你規定的邊緣線 (Lineart) 或人物骨架 (OpenPose) 上色。完美解決了「AI 不聽話亂擺姿勢」的痛點！</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.8: 實作 C (ControlNet) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 07 - 實作三</div>
+                        <h2>精準描圖控制</h2>
+                    </div>
+                    
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
+                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在畫布空白處右鍵加入 <strong>【ControlNet Apply】</strong> 與 <strong>【Load Image】</strong> 節點。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>上傳有骨架或邊緣線的參考圖，連上 ControlNet ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
+                        </ul>
+                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            體會當你加上「強制描圖紙」後，AI 乖乖按照你要的姿勢繪圖的強大控制力！
                         </div>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
                         <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
                         <ul>
                             <li><strong>迷信高數值：</strong> 無腦拉高 Steps 到 100 不會更好看，只會產生油畫破圖感。</li>
-                            <li><strong>迷信 Seed 鎖定長相：</strong> Seed 只能鎖構圖基底。要達成「同個模特換姿勢」的完美一致，必須掛載進階的 <strong>FaceID</strong> 或 <strong>LoRA</strong> 節點！這也是必學節點工具的原因。</li>
+                            <li><strong>迷信 Seed 鎖定長相：</strong> Seed 只能鎖構圖基底。同個模特換姿勢需要 ControlNet，完美一致則需進階 <strong>FaceID</strong> 或 <strong>LoRA</strong> 節點！</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            
-            <!-- Slide 7.6: 觀念 C -->
+            <!-- Slide 7.8.5: 痛點 (Model Mismatch) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge">Chapter 07 - 痛點場景</div>
+                        <h2>模型匹配地獄</h2>
+                    </div>
+                    
+                    <div style="display: flex; gap: 2rem; align-items: center; margin-top: 2rem;">
+                        <div style="flex: 1; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 16px;">
+                            <p style="font-size: 1.6rem; color: #cbd5e1; margin-bottom: 1rem;">👨 <strong>你</strong>：老闆要「黏土人」風格，我馬上下載 SDXL 黏土人 LoRA 接到目前的 SD1.5 工作流！</p>
+                            <p style="font-size: 1.6rem; color: #cbd5e1;"><em>(接上節點後...)</em></p>
+                        </div>
+                        <div style="flex: 1; background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 2rem; border-radius: 0 16px 16px 0;">
+                            <p style="font-size: 1.6rem; color: #fca5a5; margin-bottom: 1rem;">💻 <strong>ComfyUI</strong>：🚨 `Error: mat1 and mat2 shapes cannot be multiplied...` (滿江紅)</p>
+                            <p style="font-size: 1.6rem; color: #cbd5e1;">👨 <strong>你</strong>：這什麼鬼錯碼？！我只是想加個濾鏡啊！</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.8.6: 觀念 E (Model Mismatch) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header left">
-                        <div class="badge">Chapter 07 - 觀念三 (終極應用)</div>
+                        <div class="badge">Chapter 07 - 觀念四</div>
+                        <h2>模型也有「血型」與「主機平台」</h2>
+                    </div>
+                    
+                    <div class="glossary-box">
+                        <strong><i class="fa-solid fa-puzzle-piece"></i> Model Architecture (模型架構)</strong>
+                        <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
+                            <li><strong>主機平台比喻</strong>：你不能把 <strong>PS5 的光碟 (SDXL LoRA)</strong> 硬塞進 <strong>PS4 的主機 (SD1.5 Checkpoint)</strong>，硬塞只會當機報錯。</li>
+                            <li><strong>輸血理論</strong>：
+                                <ul>
+                                    <li><strong>Checkpoint (主模型)</strong> = 病人 (例如：A型血的 SDXL)</li>
+                                    <li><strong>VAE / LoRA (附屬模型)</strong> = 血袋 (必須也是 A型血的 SDXL 配件)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.8.6.2: 觀念補充 (Precision) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 07 - 觀念補充</div>
+                        <h2>什麼是模型精度 (FP16 / FP8)？</h2>
+                    </div>
+                    
+                    <div style="display: flex; gap: 2rem; margin-top: 1rem;">
+                        <div style="flex: 1; background: rgba(99, 102, 241, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">
+                            <h3 style="color: #a5b4fc; margin-bottom: 1rem; font-size: 1.8rem;"><i class="fa-solid fa-gem"></i> FP16 (豪華原畫質)</h3>
+                            <p style="color: #cbd5e1; font-size: 1.4rem; line-height: 1.6;">就像是相機的 <strong>RAW 檔</strong>。保留了最完美的色彩與光影細節，但檔案超級肥大，會吃掉很多顯卡記憶體。</p>
+                        </div>
+                        <div style="flex: 1; background: rgba(16, 185, 129, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                            <h3 style="color: #34d399; margin-bottom: 1rem; font-size: 1.8rem;"><i class="fa-solid fa-compress"></i> FP8 (輕量壓縮版)</h3>
+                            <p style="color: #cbd5e1; font-size: 1.4rem; line-height: 1.6;">就像是高品質的 <strong>JPG 檔</strong>。檔案大小直接少一半，跑得更快，而且對設計師來說「肉眼幾乎看不出畫質差異」。</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem; background: rgba(245, 158, 11, 0.1); border-left: 4px solid #f59e0b; padding: 1.5rem 2rem; border-radius: 4px;">
+                        <strong style="color: #fbbf24; font-size: 1.6rem;"><i class="fa-solid fa-circle-question"></i> 那精度需要匹配嗎？</strong>
+                        <p style="color: #cbd5e1; font-size: 1.4rem; margin-top: 0.8rem; margin-bottom: 0;"><strong>完全不需要！</strong> 精度只是「血袋的包裝大小」。只要血型 (架構) 正確，ComfyUI 醫院就會自動轉接處理。你可以放心將 <strong>FP8 壓縮版主模型</strong>配上 <strong>FP16 無損版 VAE</strong> 混搭使用！</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.8.6.5: 技巧 (How to match) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 07 - 關鍵技巧</div>
+                        <h2>如何驗血？模型匹配三大招</h2>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+                        <div style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #3b82f6;">
+                            <h3 style="color: #60a5fa; font-size: 2rem; margin-bottom: 1rem;"><i class="fa-solid fa-id-card"></i> 1. 看網站標籤</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">在 Civitai 下載時，務必檢查右側的 <strong>Base Model</strong> 標籤 (例如 <code>SDXL</code> 或 <code>FLUX.1 D</code>)。這是最準確的血型證明。</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #10b981;">
+                            <h3 style="color: #34d399; font-size: 2rem; margin-bottom: 1rem;"><i class="fa-solid fa-file-signature"></i> 2. 看檔名暗示</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">注意檔案名稱後綴。好心的作者通常會標示血型，例如 <code>style_xl.safetensors</code> 或 <code>anime_flux.safetensors</code>。</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #f59e0b;">
+                            <h3 style="color: #fbbf24; font-size: 2rem; margin-bottom: 1rem;"><i class="fa-solid fa-link"></i> 3. 一條龍對齊</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">如果你決定主機是 FLUX，那你的 <strong>VAE、LoRA、ControlNet</strong> 全都必須找 FLUX 版本。一個錯就全盤皆輸！</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.8.7: 實作 E (Model Mismatch) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 07 - 實作四</div>
+                        <h2>修復血型衝突地獄</h2>
+                    </div>
+                    
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>載入刻意設計的「血型衝突」工作流 (FLUX 主模型 + SDXL VAE)。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Queue Prompt】</strong> 觀察紅字錯誤，然後替換成正確的 `ae.safetensors` VAE。</li>
+                        </ul>
+                    </div>
+                    <div class="pitfall-box fragment" style="margin-top:0;">
+                        <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
+                        <ul>
+                            <li><strong>下載前看血型：</strong> Civitai 下載任何模型時，務必確認它標示為 SD1.5, SDXL 或 FLUX。</li>
+                            <li><strong>VAE 也是共犯：</strong> 很多時候 Checkpoint 沒錯，是 VAE 拿錯洗劑。SDXL 必配 SDXL VAE！</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7.9: 觀念 F -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 07 - 觀念五 (終極應用)</div>
                         <h2>站在巨人的肩膀上：範本 (Templates)</h2>
                     </div>
                     
@@ -1244,11 +1495,11 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 </div>
             </section>
 
-            <!-- Slide 7.7: 實作 C -->
+            <!-- Slide 7.10: 實作 F -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
-                        <div class="badge badge-accent">💻 Chapter 07 - 實作三</div>
+                        <div class="badge badge-accent">💻 Chapter 07 - 實作五</div>
                         <h2>一鍵套用專業範本</h2>
                     </div>
                     
@@ -1265,3 +1516,191 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 </div>
             </section>
 
+            <!-- ============================== Chapter 8 ============================== -->
+            <!-- 章節封面 -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="title-card">
+                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 08</div>
+                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">語言與影片模型總覽</h2>
+                        <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">選對武器，事半功倍</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8.1: 痛點場景 -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge">Chapter 08 - 痛點場景</div>
+                        <h2>選錯模型就像請數學教授寫詩</h2>
+                    </div>
+                    
+                    <div class="chat-container">
+                        <div class="chat-row right">
+                            <div class="chat-bubble user">
+                                老闆要我寫一篇「具備電影感」的春季高定服裝文案，我用了 ChatGPT 寫出來的都是「這件衣服真的很棒、很時尚」這種廢話！
+                                <img src="../images/ch8_scene1.png" class="chat-image" alt="被退稿的文案">
+                            </div>
+                            <div class="avatar">👨</div>
+                        </div>
+                        <div class="chat-row right fragment">
+                            <div class="chat-bubble user">
+                                (心想：換個模型試試看...)
+                                <img src="../images/ch8_scene2.png" class="chat-image" alt="嘗試用不同的 AI 模型">
+                            </div>
+                            <div class="avatar">👨</div>
+                        </div>
+                        <div class="chat-row right fragment">
+                            <div class="chat-bubble user">
+                                原來不同的 AI 模型有不同的專長！如果選錯模型，就像請數學教授來寫詩一樣，難怪寫不出好文案！
+                                <img src="../images/ch8_scene3.png" class="chat-image" alt="恍然大悟">
+                            </div>
+                            <div class="avatar">👨</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8.2: 語言模型 -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 08 - 觀念一</div>
+                        <h2>語言模型 (LLM) 爭霸戰</h2>
+                    </div>
+                    
+                    <div class="glossary-box" style="margin-bottom: 1rem;">
+                        <strong><i class="fa-solid fa-comments"></i> 語言模型四大天王</strong>
+                        <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.6;">
+                            <li><strong>🟢 GPT-5.6 Sol</strong>：全能六邊形戰士。數學、邏輯、程式碼樣樣精通，適合複雜邏輯推演。</li>
+                            <li><strong>🟠 Claude Fable 5</strong>：文學大師。文字極度自然無翻譯腔，嚴格遵守 Prompt 規則，行銷人最愛。</li>
+                            <li><strong>🔵 Gemini 3.1</strong>：超大容量與原生多模態怪獸。可讀取超長書籍、整套品牌指南或整部電影。</li>
+                            <li><strong>⚪ Kimi K3</strong>：開源與長文本新星。具備強大的 <strong>公開食譜 (Open-weight，免費拿去改)</strong>，處理超長中文文本 CP 值極高。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8.2.5: 實作一 -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 08 - 實作一</div>
+                        <h2>測試不同模型的文案風格</h2>
+                    </div>
+                    
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
+                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開三個不同的網頁（例如：ChatGPT、Claude、Gemini），或是透過 Antigravity 直接切換底層模型。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>給予三個模型完全一樣的指令：<code>「請用具備電影感的風格，寫一段 50 字的春季高定服裝文案」</code>。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>觀察 GPT、Claude、Gemini 產生的文字在「說話語氣」與「文學感」上的巨大差異。</li>
+                        </ul>
+                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            你會發現，Claude 寫出的文案通常最為優雅、有詩意；而 GPT 則可能帶有強烈的總結感。這就是為什麼行銷人偏愛 Claude！
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 中場休息 -->
+            <section class="slide">
+                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
+                    <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
+                    <p style="font-size: 2.5rem; color: #cbd5e1;">玩過文字模型後，我們等等來點更刺激的動態影像，先喝口水！</p>
+                </div>
+            </section>
+
+            <!-- Slide 8.3: 影片模型 -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 08 - 觀念二</div>
+                        <h2>影片生成模型 (Video AI) 比較</h2>
+                    </div>
+                    
+                    <div class="glossary-box" style="margin-bottom: 1rem;">
+                        <strong><i class="fa-solid fa-video"></i> 影片模型四大天王</strong>
+                        <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.6;">
+                            <li><strong>🎬 Kling O3 (可靈)</strong>：地表最強物理運算。具備強大的 <strong>懂物理法則的真實 3D 空間感 (3D Spatiotemporal)</strong>，動作極度自然。</li>
+                            <li><strong>🚀 Runway Gen-4</strong>：精準「專業運鏡控制」。完美聽從專業指令進行轉場與推進，適合專業廣告前導片。</li>
+                            <li><strong>🌟 SeedDance 2.5</strong>：極致「多模態控制」。同時吃進圖文語音，保持跨鏡頭人物一致性。</li>
+                            <li><strong>🎥 Google Veo 3.1</strong>：原生音效生成與電影語意理解。完美理解電影術語，自帶高還原度的原生音效。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8.4: 終極實作 -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 08 - 終極實作</div>
+                        <h2>為模特兒打造專屬情境短片</h2>
+                    </div>
+                    
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Kling 或 Luma】分頁</strong> ➔ 點擊 <strong>【Image to Video】</strong> ➔ 上傳前一章算出的完美模特兒圖片。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在提示詞輸入：<code>"The model is gracefully interacting with a surreal natural environment, cinematic editorial fashion video..."</code> ➔ 點擊 <strong>【Generate】</strong>。</li>
+                        </ul>
+                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            🎉 <strong>見證最終成果</strong>：你會得到一段完美一致、極度逼真的時尚展演影片！這就是 AI 時代一人團隊的恐怖生產力！
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================== Conclusion ============================== -->
+            <!-- Slide 27: 總結 -->
+            <section class="slide">
+                <div class="content-area title-card">
+                    <h2 class="gradient-text" style="font-size:5rem;">課程總結與發表</h2>
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); width:100%; max-width:800px; margin-top:2rem;">
+                        <h3 style="font-size: 3rem; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 總結時間：15 分鐘</h3>
+                        <p style="font-size: 3rem; line-height: 1.6;">請將下午生成的最終圖片，運用早上學到的 GitHub 協作技巧，請 Antigravity 幫您 push 到遠端倉庫，完成今日的成果發表！</p>
+                    </div>
+                    <h3 style="font-size:3rem; color:#fca5a5; margin-top:1rem;">🎉 恭喜完成一日實戰挑戰！</h3>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- 底部控制列與時間軸 -->
+        <div class="bottom-bar">
+            <div class="controls">
+                <button id="prev-btn" class="nav-btn"><i class="fa-solid fa-chevron-left"></i> 上一頁</button>
+                <span id="slide-counter" class="counter">1 / 27</span>
+                <button id="next-btn" class="nav-btn">下一頁 <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="timeline-container">
+                <!-- 刻度標示 -->
+                <div class="timeline-markers">
+                    <span>開始</span>
+                    <span>Ch 1</span>
+                    <span>Ch 2</span>
+                    <span>Ch 3</span>
+                    <span>Ch 4</span>
+                    <span>Ch 5</span>
+                    <span>Ch 6</span>
+                    <span>Ch 7</span>
+                    <span>Ch 8</span>
+                    <span>結束</span>
+                </div>
+                <!-- 實際進度條 -->
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-bar-fill">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
