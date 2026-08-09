@@ -170,6 +170,7 @@ body {
 /* 標題與排版 */
 h1 { font-size: 4.5rem; margin-bottom: 1.5rem; text-align: center; }
 h2 { font-size: 3rem; margin-bottom: 2rem; color: #fff; }
+h3 { font-size: 2.2rem; margin-bottom: 1rem; color: #f8fafc; }
 .subtitle { font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 3rem; text-align: center;}
 
 .title-card {
