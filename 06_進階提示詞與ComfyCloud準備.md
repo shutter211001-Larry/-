@@ -56,11 +56,11 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark
 
 ### 3.2 實作二：確認成果
 *(預計時間：25 分鐘)*
-*   在 **【CLIP Text Encode (Positive)】** 節點輸入：`「前衛時尚模特兒, 秀場背景」` ➔ 在下方的 **【CLIP Text Encode (Negative)】** 節點輸入：`「帽子」` ➔ 點擊 **【Queue Prompt】按鈕**。
+*   在 **【CLIP Text Encode (Positive)】** 節點輸入：`「前衛春季高定模特兒, 秀場背景」` ➔ 在下方的 **【CLIP Text Encode (Negative)】** 節點輸入：`「帽子」` ➔ 點擊 **【Queue Prompt】按鈕**。
 
-> 再次生成，精準產出毫無帽子的完美場景，見證結構化的控制力！
+> 再次生成，精準產出毫無帽子的完美春季高定模特兒，見證結構化的控制力！
 
 ### ⚠️ 實作避坑 TIP
 *   **提示詞衝突**：同時寫「黑夜」與「陽光普照」會讓模型精神分裂。
 *   **忽略負面提示**：忘記把不要的東西寫進 Negative Prompt，是產出劣質圖 (如變形、六指) 的主因。
-*   **靈感枯竭 (找大師代筆)**：記不起來完整的結構化單字沒關係！還記得我們在第一章安裝的 `comfyui-prompt-engineer` (提示詞大師) 嗎？當你不知道怎麼寫提示詞時，直接叫 Agent 調用他，告訴他「我要前衛時尚秀」，他就會幫你生出完美的 Positive / Negative 結構化發包單！
+*   **靈感枯竭 (找大師代筆)**：記不起來完整的結構化單字沒關係！還記得我們在第一章安裝的 `comfyui-prompt-engineer` (提示詞大師) 嗎？當你不知道怎麼寫提示詞時，直接叫 Agent 調用他，告訴他「我要前衛春季高定服裝」，他就會幫你生出完美的 Positive / Negative 結構化發包單！
