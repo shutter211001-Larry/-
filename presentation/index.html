@@ -112,7 +112,8 @@
                                     <span
                                         style="color: #e2e8f0; font-size: 1.1rem; margin-top: 0.3rem; display: inline-block;">【以處理「一張設計參考圖」為基準值來比較：】</span>
                                     <ul
-                                        style="color: #cbd5e1; font-size: 1.2rem; margin-top: 0.3rem; padding-left: 1.5rem;">
+                                        style="color: #cbd5e1; font-size: 1.5rem;">
+                                        <li><strong>第一關 (審查)</strong>：主動調用 <code>fashion_director</code> (時尚總監) 身分，對草圖的材質與視覺進行嚴格批判。</li>
                                         <li style="margin-bottom: 0.3rem;"><strong>極致的試錯成本：</strong> Gemini Pro 3.1
                                             提供極寬裕的測試額度，處理圖片幾乎 <strong>$0</strong>。相比之下，ClaudeCode 讀取一張圖大約要花
                                             <strong>0.2~0.5 台幣</strong>，且 Codex 有高昂月費。
@@ -272,7 +273,7 @@
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">📄 SKILL.md 撰寫範例 (注意最上方的員工識別證)</div>
                         <pre style="margin:0; color:#e2e8f0;"><code><span style="color: #fcd34d;">---</span>
-<span style="color: #fcd34d;">name: "art_director"</span>
+<span style="color: #fcd34d;">name: "fashion_director"</span>
 <span style="color: #fcd34d;">description: "專門負責審閱構圖與色彩學的美術總監" </span><span style="color: #fca5a5;"># 這是給 AI 看的觸發雷達，非常重要！</span>
 <span style="color: #fcd34d;">---</span>
 <span style="color: #94a3b8;">⬆️ 上面黃色這塊被 --- 包起來的區域，就是傳說中的 YAML Frontmatter (員工識別證)！</span>
@@ -756,7 +757,7 @@
 - **文案語氣**：化身為「帶有溫度的皮膚科醫生」，一律使用繁體中文。
 
 <span style="color: #93c5fd;">## 3. 📋 工作流規範 (Workflow Rules)</span>
-- **發文 SOP**：執行發文時，先調用 art_director 審圖 ➔ 通過後調用 social_marketer 寫文案 ➔ 存入 output 資料夾。
+- **發文 SOP**：執行發文時，先調用 fashion_director 審圖 ➔ 通過後調用 social_marketer 寫文案 ➔ 存入 output 資料夾。
 
 <span style="color: #fca5a5;">## 4. 🚫 避坑與限制清單 (Constraint Rules)</span>
 - **商業禁忌**：文案中絕對不能提到競品公司 (如 L'Oréal)。
@@ -922,7 +923,7 @@
                             Agent 調用多 SKILL 連續技範例</div>
                         <div class="chat-row right">
                             <div class="chat-bubble user" style="max-width: 90%;">
-                                請先用「毒舌藝術總監」的身分評價這張圖，評價完後，把結果交給「IG 行銷專家」幫我生出一篇帶有 Hashtag 的社群貼文。
+                                請先用「時尚總監」的身分評價這張春季高定服裝草圖，評價完後，把結果交給「IG 行銷專家」幫我生出一篇帶有 Hashtag 的社群貼文。
                             </div>
                             <div class="avatar">👨</div>
                         </div>
@@ -957,7 +958,7 @@
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Antigravity
                                     Chat】分頁</strong> ➔ 丟入一張你的設計圖 ➔
-                                輸入：<code>「請先調用毒舌藝術總監幫我嚴格審查這張圖的構圖，然後將審查結果交給行銷大師，幫我寫一篇限時動態文案。」</code></li>
+                                輸入：<code>「請先調用時尚總監幫我嚴格審查這張草圖的材質與色彩，然後將審查結果交給行銷大師，幫我寫一篇限時動態文案。」</code></li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
@@ -996,7 +997,7 @@
 
 ## 🎨 社群發文標準 SOP
 當我要求「跑發文流程」時，請嚴格遵守以下步驟，並調用對應的 SKILL：
-1. **第一關 (審查)**：主動調用 `art_director` (毒舌藝術總監) 身分，對草圖進行嚴格批判。
+                                <li><strong>第一關 (審查)</strong>：主動調用 <code>fashion_director</code> (時尚總監) 身分，對草圖的材質與視覺進行嚴格批判。</li>
 2. **第二關 (文案)**：批判過關後，自動調用 `social_marketer` (IG 行銷小編) 身分，寫出社群貼文。
 3. ⚠️ 嚴格限制：未經第一關審查，絕對不能直接跳到第二關。</code></pre>
                     </div>
@@ -1082,9 +1083,7 @@
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>點擊編輯器右側的 <strong>【Antigravity
                                     Chat】分頁</strong> ➔ 點擊下方的 <strong>【對話輸入框】</strong> ➔
-                                輸入內容：<code>「/goal 請幫我把這 100 張草圖執行批次處理，遇到錯誤自動除錯直到全部完成」</code> ➔ 按下
-                                <strong>【Enter】發送</strong>。
-                            </li>
+                                輸入內容：<code>「/goal 請幫我把這 100 張春季服裝參考草圖執行批次轉檔，遇到錯誤自動除錯直到全部完成」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
@@ -1158,8 +1157,7 @@
                             style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity
-                                    Chat】分頁</strong> ➔ 輸入：<code>「/grill-me 我想設計一套前衛的春夏高定服裝，但我沒想法」</code> ➔ 經歷三輪 AI
-                                的逼問並給予回答 ➔ 獲得完美解答後，輸入：<code>「/learn 記住我今天對於高定服裝設計的偏好」</code>。</li>
+                                    Chat】分頁</strong> ➔ 輸入：<code>「/grill-me 我想為春季高定系列設計一套前衛的服裝，但我沒想法」</code> ➔ 經歷三輪逼問 ➔ 獲得解答後，輸入：<code>「/learn 記住我今天對於春季高定服裝的偏好」</code>。</li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
@@ -1262,7 +1260,7 @@
                         </div>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
-                            🚀 <strong>驚人的結果</strong>：你會看到 Agent 在背景幫你建好 <code>art_director/SKILL.md</code>，並把工作流寫進
+                            🚀 <strong>驚人的結果</strong>：你會看到 Agent 在背景幫你建好 <code>fashion_director/SKILL.md</code>，並把工作流寫進
                             <code>AGENTS.md</code> 中。你連一個資料夾都不用自己建！
                         </div>
                     </div>
@@ -1350,18 +1348,12 @@
                                 class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
                         <ul class="concept-list"
                             style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
-                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Comfy Cloud】分頁</strong> ➔
-                                在 <strong>【CLIP Text Encode (外星語翻譯官)】</strong>
-                                節點輸入流水帳：<code>「畫一個前衛時尚模特兒，不要帽子，背景要有光」</code> ➔ 點擊 <strong>【Queue Prompt】按鈕</strong>。
-                            </li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>找到中央的 <strong>【KSampler】</strong> 節點，將 <code>seed</code> 設為 <code>randomize</code> ➔ 點擊 <strong>【Queue Prompt】</strong> 生成一張滿意的「春季高定模特兒」圖片。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>稍微修改 Prompt 文字 ➔ 再次點擊 <strong>【Queue Prompt】</strong>。</li>
                         </ul>
-                        <div
-                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
-                            結果產出了一張滿頭帽子的崩壞圖，越描越黑。<br>
-                            如果我們只用「一句話」把所有需求塞進去，AI 根本分不清主從輕重，甚至會被「不要飛車」的帽子兩字誤導。這就需要下一個觀念！
-                        </div>
-                    </div>
+                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            發現原本滿意的構圖與春季模特兒長相全部跑掉！體會因為「隨機抽盲盒」導致連人物長相跟背景都全變的無力感。
+                        </div>                 </div>
                 </div>
             </section>
 
@@ -1434,14 +1426,14 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                             style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【CLIP Text Encode (外星語翻譯官)
-                                    (Positive)】</strong> 節點輸入：<code>「前衛時尚模特兒, 秀場背景」</code> ➔ 在下方的
+                                    (Positive)】</strong> 節點輸入：<code>「前衛春季高定模特兒, 秀場背景」</code> ➔ 在下方的
                                 <strong>【(Negative)】</strong> 節點輸入：<code>「帽子」</code> ➔ 點擊 <strong>【Queue
                                     Prompt】按鈕</strong>。
                             </li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
-                            再次生成，精準產出毫無帽子的完美場景，見證結構化的控制力！
+                            精準產出毫無帽子的完美春季高定模特兒，見證結構化提示詞的強大控制力！
                         </div>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
@@ -1714,6 +1706,34 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 </div>
             </section>
 
+            <!-- Slide 7.8.5.5: 觀念 D.5 (名詞解釋) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 07 - 觀念四</div>
+                        <h2>名詞解釋：主模型與附屬擴充包</h2>
+                    </div>
+
+                    <div class="card-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1rem;">
+                        <div class="glass-card" style="padding: 1.5rem;">
+                            <h3 style="color: #60a5fa; font-size: 1.5rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-brain"></i> Checkpoint</h3>
+                            <p style="color: #e2e8f0; font-size: 1.2rem; margin-bottom: 0.5rem;"><strong>主模型 (大腦與身體)</strong></p>
+                            <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.5;">決定基礎的畫風（寫實、二次元）與理解能力。檔案通常非常巨大（好幾 GB）。</p>
+                        </div>
+                        <div class="glass-card" style="padding: 1.5rem;">
+                            <h3 style="color: #34d399; font-size: 1.5rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-camera"></i> VAE</h3>
+                            <p style="color: #e2e8f0; font-size: 1.2rem; margin-bottom: 0.5rem;"><strong>底片沖洗室</strong></p>
+                            <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.5;">Variational Autoencoder。將 AI 畫完的抽象數據，<strong>「沖洗」</strong>成我們肉眼可見的完美圖片。沒接好圖會變灰暗雜訊。</p>
+                        </div>
+                        <div class="glass-card" style="padding: 1.5rem;">
+                            <h3 style="color: #c084fc; font-size: 1.5rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-magic"></i> LoRA</h3>
+                            <p style="color: #e2e8f0; font-size: 1.2rem; margin-bottom: 0.5rem;"><strong>外觀擴充包 (特效濾鏡)</strong></p>
+                            <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.5;">Low-Rank Adaptation。只要掛上一個幾百 MB 的檔案，就像給相機<strong>「裝上特殊濾鏡」</strong>，瞬間讓 AI 學會特定畫風或角色。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Slide 7.8.6: 觀念 E (Model Mismatch) -->
             <section class="slide">
                 <div class="content-area">
@@ -1775,11 +1795,50 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 </div>
             </section>
 
+            <!-- Slide 7.8.6.3: 如何辨識 Checkpoint vs LoRA -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header left">
+                        <div class="badge">Chapter 07 - 關鍵技巧一</div>
+                        <h2>下載時如何一眼辨識它是 Checkpoint 還是 LoRA？</h2>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #ef4444;">
+                            <h3 style="color: #f87171; font-size: 2rem; margin-bottom: 1rem;"><i
+                                    class="fa-solid fa-weight-scale"></i> 1. 看體重 (File Size)</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">
+                                <strong>Checkpoint</strong>: 巨大，通常 <strong>6~12GB</strong>。<br>
+                                <strong>LoRA</strong>: 輕量，通常只有 <strong>幾百 MB</strong>。
+                            </p>
+                        </div>
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #8b5cf6;">
+                            <h3 style="color: #a78bfa; font-size: 2rem; margin-bottom: 1rem;"><i
+                                    class="fa-solid fa-file-code"></i> 2. 看格式與精度</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">
+                                <strong>.safetensors</strong>: 最安全的格式。<br>
+                                <strong>bf16 / fp8</strong>: 模型品質包裝（就像 RAW 或 JPG 檔）。
+                            </p>
+                        </div>
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #eab308;">
+                            <h3 style="color: #facc15; font-size: 2rem; margin-bottom: 1rem;"><i
+                                    class="fa-solid fa-tag"></i> 3. 看標籤 (Type)</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">
+                                Civitai 頁面會明確標示 <strong>Type: Checkpoint</strong> 或 <strong>Type: LoRA</strong>。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Slide 7.8.6.5: 技巧 (How to match) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header left">
-                        <div class="badge">Chapter 07 - 關鍵技巧</div>
+                        <div class="badge">Chapter 07 - 關鍵技巧二</div>
                         <h2>如何驗血？模型匹配三大招</h2>
                     </div>
 
@@ -2026,30 +2085,95 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 </div>
             </section>
 
-            <!-- Slide 8.4: 終極實作 -->
+            <!-- Slide 8.4: Kling 提示詞心法 -->
+            <section class="slide">
+                 <div class="content-area">
+                     <div class="slide-header left">
+                         <div class="badge">Chapter 08 - 觀念三</div>
+                         <h2>Kling 詠唱心法：萬用提示詞公式</h2>
+                     </div>
+                     <div class="glossary-box" style="margin-bottom: 1rem;">
+                         <strong><i class="fa-solid fa-magic"></i> 【主體】 + 【運動】 + 【場景】 + 【鏡頭語言】</strong>
+                         <p style="font-size: 1.4rem; color: #e2e8f0; margin-top: 1rem;">
+                             要駕馭 Kling，不能像跟 ChatGPT 聊天一樣講廢話。就像是寫劇本給演員一樣，你必須把誰、在哪裡、做什麼、攝影機怎麼拍，交代得清清楚楚。
+                         </p>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- Slide 8.5: 實作二 (圖生影) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
                         <div class="badge badge-accent">💻 Chapter 08 - 實作二</div>
-                        <h2>為模特兒打造專屬情境短片</h2>
+                        <h2>為模特兒打造專屬情境短片 (圖生影)</h2>
                     </div>
 
                     <div
                         style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
                         <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
-                                class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                                class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
                         <ul class="concept-list"
                             style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
-                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Kling 或 Luma】分頁</strong>
-                                ➔ 點擊 <strong>【Image to Video】</strong> ➔ 上傳前一章算出的完美模特兒圖片。</li>
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Kling】分頁</strong>
+                                ➔ 點擊 <strong>【Image to Video】</strong> ➔ 上傳完美模特兒圖片。</li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
-                                    style="color: #a855f7; margin-right: 8px;"></i>在提示詞輸入：<code>"The model is gracefully interacting with a surreal natural environment, cinematic editorial fashion video..."</code>
+                                    style="color: #a855f7; margin-right: 8px;"></i>使用提示詞公式：<code>"A female model wearing spring haute couture (主體), turning around gracefully (運動), in a glowing forest (場景), cinematic lighting (鏡頭語言)"</code>
                                 ➔ 點擊 <strong>【Generate】</strong>。</li>
                         </ul>
                         <div
-                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
-                            🎉 <strong>見證最終成果</strong>：你會得到一段完美一致、極度逼真的時尚展演影片！這就是 AI 時代一人團隊的恐怖生產力！
+                            style="background: rgba(220,38,38,0.2); border-left: 4px solid #ef4444; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #fca5a5; font-size: 1.4rem;">
+                            ⚠️ <strong>避坑 TIP (新手大坑)</strong>：千萬不要讓提示詞與原圖片產生嚴重的場景衝突，否則 AI 會為了強行改變背景，導致主角的臉與衣服變形崩壞！
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8.6: 首尾幀觀念 -->
+            <section class="slide">
+                 <div class="content-area">
+                     <div class="slide-header left">
+                         <div class="badge">Chapter 08 - 觀念四</div>
+                         <h2>進階大招：首尾幀 (Start/End Frames) 控制</h2>
+                     </div>
+                     <div class="glossary-box" style="margin-bottom: 1rem;">
+                         <strong><i class="fa-solid fa-film"></i> 指定起迄點：給演員畫好走位圖</strong>
+                         <p style="font-size: 1.4rem; color: #e2e8f0; margin-top: 1rem;">
+                             如果「圖生影」只是給 AI 參考起點，那「首尾幀」就是給 AI <strong>指定起迄點</strong>。你給演員一張「開場」的走位圖（首幀），再給一張「殺青」時的走位圖（尾幀），AI 會自動幫你把中間的動作補齊 (Interpolation)。
+                         </p>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- Slide 8.7: 實作三 (首尾幀換裝) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 08 - 實作三</div>
+                        <h2>用首尾幀製作完美的服裝變化</h2>
+                    </div>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：5 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>開啟 <strong>【Start/End Frames】</strong>。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>首幀上傳「春季高定」，尾幀上傳「秋季大衣」(需確保角度一致)。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>提示詞輸入：<code>"The model is transforming clothes smoothly"</code> ➔ 點擊 <strong>【Generate】</strong>。</li>
+                        </ul>
+                        <div
+                            style="background: rgba(220,38,38,0.2); border-left: 4px solid #ef4444; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #fca5a5; font-size: 1.3rem;">
+                            ⚠️ <strong>避坑 TIP (新手大坑)</strong>：首尾幀的圖片，光影和人物比例絕對不能差太多！否則 AI 會不知道怎麼補中間的空間過渡，導致人物在中途像異形一樣融化變異！
+                        </div>
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.4rem;">
+                            🎉 <strong>見證最終成果</strong>：你會得到一段極度逼真的動態換裝展演！這就是 AI 時代一人團隊的恐怖生產力！
                         </div>
                     </div>
                 </div>
