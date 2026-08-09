@@ -54,7 +54,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark
 > **Positive**: 一位穿著春季洋裝的模特兒
 > **Negative**: 帽子、模糊、多餘的物件
 
-### 3.2 實作二：見證奇蹟
+### 3.2 實作二：確認成果
 *(預計時間：25 分鐘)*
 *   在 **【CLIP Text Encode (Positive)】** 節點輸入：`「前衛時尚模特兒, 秀場背景」` ➔ 在下方的 **【CLIP Text Encode (Negative)】** 節點輸入：`「帽子」` ➔ 點擊 **【Queue Prompt】按鈕**。
 

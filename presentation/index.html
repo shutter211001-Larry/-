@@ -74,7 +74,11 @@
                         <strong><i class="fa-solid fa-toolbox"></i> 準備工具清單</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
                             <li><strong>Google Antigravity IDE</strong>：你的本地 IDE Agent (數位工作室 / 頂級畫室) 數位實習生。 👉 <a href="https://ai.google.dev/" target="_blank" style="color: #60a5fa;">下載連結</a></li>
+                            <li><strong>Node.js</strong>：下載擴充外掛 (SKILL) 的必備引擎。 👉 <a href="https://nodejs.org/" target="_blank" style="color: #60a5fa;">下載連結</a></li>
+                            <li><strong>Adobe Photoshop / Photopea</strong>：開啟 PSD 素材必備。 👉 <a href="https://www.photopea.com/" target="_blank" style="color: #60a5fa;">網頁版連結</a></li>
                             <li><strong>Comfy Cloud 帳號</strong>：像心智圖一樣連連看的雲端生圖平台。 👉 <a href="https://comfy.org/" target="_blank" style="color: #60a5fa;">註冊連結</a></li>
+                            <li><strong>Civitai 帳號</strong>：下載進階 LoRA 模型必備。 👉 <a href="https://civitai.com/" target="_blank" style="color: #60a5fa;">註冊連結</a></li>
+                            <li><strong>Kling / Luma 帳號</strong>：生成最終動態影片必備。 👉 <a href="https://klingai.com/" target="_blank" style="color: #60a5fa;">Kling</a> / <a href="https://lumalabs.ai/dream-machine" target="_blank" style="color: #60a5fa;">Luma</a></li>
                             <li><strong>Git & GitHub Desktop</strong>：體驗無極限的 Ctrl+Z 時空機（也就是專案版控）。 👉 <a href="https://git-scm.com/downloads" target="_blank" style="color: #60a5fa;">Git 下載</a> / <a href="https://desktop.github.com/" target="_blank" style="color: #60a5fa;">Desktop 下載</a><br>
                                 <span style="color: #fca5a5; font-size: 1.2rem;">*(⚠️ 避坑：Git 安裝時會有很多選項，請一路按 Next 保持預設即可！)*</span>
                             </li>
@@ -192,10 +196,13 @@
                         <div class="title">📄 SKILL.md 撰寫範例 (注意最上方的員工識別證)</div>
 <pre style="margin:0; color:#e2e8f0;"><code><span style="color: #fcd34d;">---</span>
 <span style="color: #fcd34d;">name: "art_director"</span>
-<span style="color: #fcd34d;">description: "資深藝術總監身分"</span>
+<span style="color: #fcd34d;">description: "專門負責審閱構圖與色彩學的美術總監" </span><span style="color: #fca5a5;"># 這是給 AI 看的觸發雷達，非常重要！</span>
 <span style="color: #fcd34d;">---</span>
 <span style="color: #94a3b8;">⬆️ 上面黃色這塊被 --- 包起來的區域，就是傳說中的 YAML Frontmatter (員工識別證)！</span>
-<span style="color: #94a3b8;">必須寫在檔案最頂端，Agent 才認得這個職位。下方才是用 Markdown 寫的規則：</span>
+<span style="color: #94a3b8;">其中 description 是 AI 的「觸發雷達」，AI 會掃描這段來決定何時派這位專家出場。</span>
+<span style="color: #fca5a5;">🔴 失敗寫法：description: "昨天寫的測試技能" (AI 看不懂，永遠不會出場)</span>
+<span style="color: #86efac;">🟢 精準觸發：description: "專門審閱構圖與色彩學的美術總監" (AI 秒懂)</span>
+<span style="color: #94a3b8;">必須寫在檔案最頂端。下方則是真正影響說話語氣與行為的 Markdown 規則：</span>
 
 你是擁有 20 年經驗的資深美術總監。
 當我給你草圖時，你必須嚴格針對「色彩學」與「視覺引導」給出三點具體的修改建議。說話風格必須犀利專業。</code></pre>
@@ -260,7 +267,8 @@
                     <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
                         <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
                         <div style="background: rgba(168, 85, 247, 0.15); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-bottom: 1rem; color: #e2e8f0; font-size: 1.4rem;">
-                            💡 <strong>新手小提示</strong>：<code>npx</code> 就像是終端機裡的「<strong>快遞安裝精靈</strong>」，不用怕，只要無腦複製貼上這串咒語，它就會幫你把大師請回家。
+                            💡 <strong>新手小提示</strong>：<code>npx</code> 就像是終端機裡的「<strong>快遞安裝精靈</strong>」，不用怕，只要無腦複製貼上這串咒語，它就會幫你把大師請回家。<br>
+                            <span style="color: #fca5a5;">*(⚠️ 若顯示找不到 npx 指令，請先確認是否已在第 0 章安裝 Node.js！)*</span>
                         </div>
                                                 <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開下方的 <strong>【終端機 (Terminal)】</strong> ➔ 輸入：<code>npx skills find comfy</code> 搜尋 ➔ 接著輸入：<code>npx -y skills add mckruz/comfyui-expert@comfyui-prompt-engineer</code> 下載安裝。</li>
