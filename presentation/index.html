@@ -266,17 +266,20 @@
                     
                     <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
                         <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
-                        <div style="background: rgba(168, 85, 247, 0.15); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-bottom: 1rem; color: #e2e8f0; font-size: 1.4rem;">
-                            💡 <strong>新手小提示</strong>：<code>npx</code> 就像是終端機裡的「<strong>快遞安裝精靈</strong>」，不用怕，只要無腦複製貼上這串咒語，它就會幫你把大師請回家。<br>
-                            <span style="color: #fca5a5;">*(⚠️ 若顯示找不到 npx 指令，請先確認是否已在第 0 章安裝 Node.js！)*</span>
-                        </div>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開下方的 <strong>【終端機 (Terminal)】</strong> ➔ 輸入：<code>npx skills find comfy</code> 搜尋 ➔ 接著輸入：<code>npx -y skills add mckruz/comfyui-expert@comfyui-prompt-engineer</code> 下載安裝。</li>
                         </ul>
                         <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             檢查左側檔案總管，你會發現 <code>.agents/skills/</code> 內多出了一個 <code>comfyui-prompt-engineer</code> 資料夾。<br>
                             你已經成功把世界級的提示詞大師聘請到你的專案中了！
                         </div>
+                    </div>
+                    <div class="pitfall-box fragment" style="margin-top:0;">
+                        <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
+                        <ul>
+                            <li><strong>終端機恐懼症：</strong> <code>npx</code> 就像是終端機裡的「快遞安裝精靈」，無腦複製貼上即可。</li>
+                            <li><strong>指令找不到：</strong> 若顯示找不到 npx，請確認第 0 章已安裝 Node.js！</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -627,7 +630,7 @@
                         <strong style="color: #34d399;"><i class="fa-solid fa-globe"></i> 這是國際開源標準！</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
                             <li style="margin-bottom:1rem;"><strong>不僅僅是我們的家規</strong>：撰寫 <code>AGENTS.md</code> 並非我們自己發明的土砲方法。它其實是由 Agentic AI Foundation 負責維護的國際開源標準 (詳見官方網站 <a href="https://agents.md/" style="color: #60a5fa;" target="_blank">agents.md</a>)。</li>
-                            <li><strong>AI 專屬的 README</strong>：未來的世界裡，每個專業專案都會有自己標準化的 <code>AGENTS.md</code>。就像交接文件一樣，無論你更換哪一牌的 AI 助理，只要有這個檔案，AI 就能瞬間讀懂你的專案規範！</li>
+                            <li><strong>AI 專屬的品牌設計規範</strong>：未來的世界裡，每個專業專案都會有自己標準化的 <code>AGENTS.md</code>。就像交接文件一樣，無論你更換哪一牌的 AI 助理，只要有這個檔案，AI 就能瞬間讀懂你的專案規範！</li>
                         </ul>
                     </div>
                 </div>
@@ -670,7 +673,27 @@
                 </div>
             </section>
 
-            <!-- Slide 3.6: 觀念 C (Agent vs SKILL) -->
+            <!-- Slide 3.6: 痛點場景 (多重專家) -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge">Chapter 03 - 痛點場景</div>
+                        <h2>老闆要我一個人搞定全套設計？</h2>
+                    </div>
+                    
+                    <div class="chat-container">
+                        <div class="chat-row right">
+                            <div class="chat-bubble user">
+                                老闆要我發新品貼文，我需要先請「毒舌總監」檢查構圖，再請「行銷小編」寫文案。難道我要開兩個視窗，自己複製貼上當傳聲筒嗎？快精神分裂了！
+                                <img src="../images/ch3_scene4.png" class="chat-image" alt="多重視窗手忙腳亂">
+                            </div>
+                            <div class="avatar">👨</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.7: 觀念 C (Agent vs SKILL) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header left">
@@ -710,12 +733,12 @@
                 </div>
             </section>
 
-            <!-- Slide 3.7: 實作 C -->
+            <!-- Slide 3.8: 示範 C -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
-                        <div class="badge badge-accent">💻 Chapter 03 - 實作三</div>
-                        <h2>一個 PM 控管多個員工</h2>
+                        <div class="badge">Chapter 03 - 示範</div>
+                        <h2>串聯技：一個 PM 控管多個員工</h2>
                     </div>
                     
                     <div class="chat-container" style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
@@ -740,7 +763,34 @@
                 </div>
             </section>
 
-            <!-- Slide 3.8: 觀念 D (進階) -->
+            <!-- Slide 3.9: 實作 C -->
+            <section class="slide">
+                <div class="content-area">
+                    <div class="slide-header">
+                        <div class="badge badge-accent">💻 Chapter 03 - 實作三</div>
+                        <h2>親自動手串聯員工</h2>
+                    </div>
+                    
+                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
+                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Antigravity Chat】分頁</strong> ➔ 丟入一張你的設計圖 ➔ 輸入：<code>「請先調用毒舌藝術總監幫我嚴格審查這張圖的構圖，然後將審查結果交給行銷大師，幫我寫一篇限時動態文案。」</code></li>
+                        </ul>
+                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            觀察 Agent 如何自動切換身分，依序完成兩項工作。
+                        </div>
+                    </div>
+                    <div class="pitfall-box fragment" style="margin-top:0;">
+                        <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
+                        <ul>
+                            <li><strong>指令不要太貪心：</strong> 一次要求執行 5 個以上的複雜任務 (審圖->修圖->文案->轉語言)，大腦很容易混亂。建議分批交代。</li>
+                            <li><strong>善用技能庫：</strong> 遇到不會寫的提示詞，不要自己硬湊，記得使用 <code>skills.sh</code> 尋找專家 SKILL。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.10: 觀念 D (進階) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header left">
@@ -798,15 +848,8 @@
                         </div>
                         <div class="chat-row right fragment">
                             <div class="chat-bubble user">
-                                (心想：今晚又要睡在公司了... 而且我根本不知道他要的前衛時尚細節是什麼！)
+                                (心想：今晚又要睡在公司了... 而且我根本不知道他要的前衛時尚細節是什麼！難道沒有可以自己想細節、又可以自動處理完的工具嗎？)
                                 <img src="../images/ch4_scene2.png" class="chat-image" alt="設計師崩潰">
-                            </div>
-                            <div class="avatar">👨</div>
-                        </div>
-                        <div class="chat-row right fragment">
-                            <div class="chat-bubble user">
-                                (五分鐘後) 搞定！剩下的交給 Agent 處理，我先下班囉！
-                                <img src="../images/ch4_scene3.png" class="chat-image" alt="AI自動跑爽下班">
                             </div>
                             <div class="avatar">👨</div>
                         </div>
@@ -939,7 +982,7 @@
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
-                        <div class="badge">Chapter 05 - 總結與終極心法</div>
+                        <div class="badge">Chapter 05 - 痛點場景</div>
                         <h2>用魔法打敗魔法</h2>
                     </div>
                     
@@ -954,16 +997,9 @@
                         <div class="chat-row left fragment">
                             <div class="avatar">🤖</div>
                             <div class="chat-bubble ai">
-                                老闆，你是不是忘了我才是工程師？交給我吧！
-                                <img src="../images/ch5_scene2.png" class="chat-image" alt="交給助理代勞">
+                                老闆，你是不是忘了我才是工程師？(邪笑)
+                                <img src="../images/ch5_scene2.png" class="chat-image" alt="Agent 邪笑準備代勞">
                             </div>
-                        </div>
-                        <div class="chat-row right fragment">
-                            <div class="chat-bubble user">
-                                (一鍵完成設定，提早下班)
-                                <img src="../images/ch5_scene3.png" class="chat-image" alt="完美建立架構">
-                            </div>
-                            <div class="avatar">👨</div>
                         </div>
                     </div>
                 </div>
@@ -1167,7 +1203,8 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
                         <ul>
                             <li><strong>提示詞衝突：</strong> 同時寫「黑夜」與「陽光普照」會讓模型精神分裂。</li>
-                            <li><strong>忽略負面提示：</strong> 忘記把不要的東西寫進 Negative Prompt，是產出劣質圖的主因。</li>
+                            <li><strong>忽略負面提示：</strong> 忘記把不要的東西寫進 Negative Prompt，是產出劣質圖 (如變形、六指) 的主因。</li>
+                            <li><strong>靈感枯竭 (找大師代筆)：</strong> 記不起來結構化單字沒關係！直接呼叫我們在第一章安裝的 <code>comfyui-prompt-engineer</code> (提示詞大師) 幫你寫出完美的發包單！</li>
                         </ul>
                     </div>
                 </div>
@@ -1350,9 +1387,8 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                     
                     <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
                         <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在畫布空白處右鍵加入 <strong>【ControlNet Apply】</strong> 與 <strong>【Load Image】</strong> 節點。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>上傳有骨架或邊緣線的參考圖，連上 ControlNet ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在畫布空白處 <strong>點擊兩下左鍵</strong> 開啟搜尋框，加入 <strong>【ControlNet Apply】</strong> 與 <strong>【Load Image】</strong> 節點。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>上傳有骨架或邊緣線的參考圖，用滑鼠左鍵點住黃色小圓點連上 ControlNet ➔ 點擊右上角的 <strong>【Queue Prompt】</strong>。</li>
                         </ul>
                         <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             體會當你加上「強制描圖紙」後，AI 乖乖按照你要的姿勢繪圖的強大控制力！
@@ -1473,9 +1509,8 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                     
                     <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
                         <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
-                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>載入刻意設計的「血型衝突」工作流 (FLUX 主模型 + SDXL VAE)。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Queue Prompt】</strong> 觀察紅字錯誤，然後替換成正確的 `ae.safetensors` VAE。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>載入刻意設計的「血型衝突」工作流 (FLUX 主模型 + SDXL VAE)。點擊 <strong>【Queue Prompt】</strong> 觀察紅字錯誤。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點選爆出紅字的 VAE 節點按 <strong>【Delete】</strong> 刪除，雙擊空白處載入正確的 `ae.safetensors` VAE 並重新連線 ➔ 再次生成。</li>
                         </ul>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
@@ -1648,7 +1683,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
-                        <div class="badge badge-accent">💻 Chapter 08 - 終極實作</div>
+                        <div class="badge badge-accent">💻 Chapter 08 - 實作二</div>
                         <h2>為模特兒打造專屬情境短片</h2>
                     </div>
                     
@@ -1662,6 +1697,15 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                             🎉 <strong>見證最終成果</strong>：你會得到一段完美一致、極度逼真的時尚展演影片！這就是 AI 時代一人團隊的恐怖生產力！
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- 中場休息 -->
+            <section class="slide">
+                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="font-size: 8rem; margin-bottom: 0.5rem;">👏</div>
+                    <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">給自己一個大大的掌聲！</h2>
+                    <p style="font-size: 2.5rem; color: #cbd5e1; max-width: 800px;">你已經完成了這趟 7 小時的密集實戰。從不懂程式碼的設計師，蛻變為能夠建立 SKILL、駕馭 Agent，甚至組裝 ComfyCloud 管線的 AI 指揮官。</p>
                 </div>
             </section>
 

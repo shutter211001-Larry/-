@@ -62,4 +62,5 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark
 
 ### ⚠️ 實作避坑 TIP
 *   **提示詞衝突**：同時寫「黑夜」與「陽光普照」會讓模型精神分裂。
-*   **忽略負面提示**：忘記把不要的東西寫進 Negative Prompt，是產出劣質圖的主因。
+*   **忽略負面提示**：忘記把不要的東西寫進 Negative Prompt，是產出劣質圖 (如變形、六指) 的主因。
+*   **靈感枯竭 (找大師代筆)**：記不起來完整的結構化單字沒關係！還記得我們在第一章安裝的 `comfyui-prompt-engineer` (提示詞大師) 嗎？當你不知道怎麼寫提示詞時，直接叫 Agent 調用他，告訴他「我要前衛時尚秀」，他就會幫你生出完美的 Positive / Negative 結構化發包單！
