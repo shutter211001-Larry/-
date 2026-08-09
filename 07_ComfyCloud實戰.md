@@ -120,7 +120,7 @@
 *(預計時間：15 分鐘)*
 * 在畫布上載入一個刻意設計成「血型衝突」的工作流 (例如 Checkpoint 是 FLUX，但 VAE 卻接了 SDXL 的版本)。
 * 點擊 **【Queue Prompt】** ➔ 觀察 VAE Decode 節點爆出紅字錯誤。
-* 點選爆出紅字錯誤的 VAE 節點，並按下鍵盤的 **【Delete 鍵】** 將其刪除。
+* 點選爆出紅字錯誤的 VAE 節點，並按下鍵盤的 **【Delete 鍵】(Mac 鍵盤請按 Delete 或是 fn+Backspace)** 將其刪除。
 * 接著在空白處 **雙擊左鍵** 開啟搜尋框，載入正確對應 FLUX 血型的 `ae.safetensors` VAE 節點，再用滑鼠將節點上的小黃點重新連線 ➔ 再次點擊 **【Queue Prompt】** 生成。
 
 > 體會從「滿江紅錯誤」到「成功洗出漂亮照片」的成就感！以後看到 tensor size 錯誤，第一反應就是「啊，血型不合啦！」。

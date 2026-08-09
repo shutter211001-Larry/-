@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 協作與生成實戰 - 一日課程簡報 (分離式漸進教學版)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -15,10 +18,19 @@
             border-radius: 0 12px 12px 0;
             margin-bottom: 0.5rem;
         }
-        .glossary-box strong { color: #a5b4fc; font-size: 3rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+
+        .glossary-box strong {
+            color: #a5b4fc;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
         .demo-box {
-            background: rgba(0,0,0,0.3);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 2.5rem;
             border-radius: 12px;
             font-family: monospace;
@@ -27,24 +39,38 @@
             margin-top: 0.5rem;
             line-height: 1.6;
         }
-        .demo-box .title { color: #94a3b8; font-size: 1.2rem; margin-bottom: 0.5rem; font-family: 'Noto Sans TC'; }
-        
-        .slide-header { text-align: center; margin-bottom: 0.5rem; }
-        .slide-header.left { text-align: left; }
+
+        .demo-box .title {
+            color: #94a3b8;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Noto Sans TC';
+        }
+
+        .slide-header {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .slide-header.left {
+            text-align: left;
+        }
     </style>
 </head>
+
 <body>
     <div class="presentation-container">
         <!-- 簡報內容區 -->
         <div class="slides-wrapper" id="slides-wrapper">
-            
+
             <!-- Slide 0: 封面 -->
             <section class="slide active">
                 <div class="content-area title-card">
                     <h1 class="gradient-text">AI 協作與生成實戰</h1>
                     <h2>一日實戰課程 (7 小時)</h2>
                     <p class="subtitle">專為美術設計單位打造，從 Agent 到 Comfy Cloud 雲端生圖</p>
-                    <div style="margin-top:2rem; padding: 1rem 2rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px;">
+                    <div
+                        style="margin-top:2rem; padding: 1rem 2rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px;">
                         <p>按 <strong>空白鍵</strong> 或 <strong>右方向鍵</strong> 開始</p>
                     </div>
                 </div>
@@ -55,8 +81,11 @@
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 00</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">準備工具</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 00</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            準備工具</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">打造您的頂級數位畫室</p>
                     </div>
                 </div>
@@ -67,33 +96,58 @@
                     <div class="slide-header left">
                         <div class="badge">Chapter 00 - 課前準備</div>
                         <h2>上課前請先備齊這些武器</h2>
-                        <p style="font-size: 1.4rem; color: #cbd5e1; margin-top: 0.5rem;">以前上課光安裝軟體就花掉半天？別擔心，這次我們只要準備這幾樣好用的工具。</p>
+                        <p style="font-size: 1.4rem; color: #cbd5e1; margin-top: 0.5rem;">
+                            以前上課光安裝軟體就花掉半天？別擔心，這次我們只要準備這幾樣好用的工具。</p>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-toolbox"></i> 準備工具清單</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>Google Antigravity IDE</strong>：你的本地 IDE Agent (數位工作室 / 頂級畫室) 數位實習生。 👉 <a href="https://ai.google.dev/" target="_blank" style="color: #60a5fa;">下載連結</a><br>
-                                <div style="background: rgba(24cd, 211, 77, 0.1); border-left: 3px solid #fcd34d; padding: 1rem; margin-top: 0.5rem; border-radius: 4px;">
-                                    <span style="color: #fcd34d; font-size: 1.3rem; font-weight: bold;">💡 為什麼核心引擎選用 Gemini Pro 3.1？(最符合經濟成本)</span><br>
-                                    <span style="color: #e2e8f0; font-size: 1.1rem; margin-top: 0.3rem; display: inline-block;">【以處理「一張設計參考圖」為基準值來比較：】</span>
-                                    <ul style="color: #cbd5e1; font-size: 1.2rem; margin-top: 0.3rem; padding-left: 1.5rem;">
-                                        <li style="margin-bottom: 0.3rem;"><strong>極致的試錯成本：</strong> Gemini Pro 3.1 提供極寬裕的測試額度，處理圖片幾乎 <strong>$0</strong>。相比之下，ClaudeCode 讀取一張圖大約要花 <strong>0.2~0.5 台幣</strong>，且 Codex 有高昂月費。</li>
-                                        <li><strong>免除可怕的「過路費」堆疊：</strong> AI 是「每次對話都會重新讀取所有資料」。如果你專案丟了 10 張規範圖並來回修改 20 次，用 Claude 會被收 `10張 × 20次 = 200次` (瞬間燒掉百元台幣)！Gemini 的超大容量讓你能瘋狂試錯而不心痛。</li>
+                            <li><strong>Google Antigravity IDE</strong>：你的本地 IDE Agent (數位工作室 / 頂級畫室) 數位實習生。 👉 <a
+                                    href="https://ai.google.dev/" target="_blank" style="color: #60a5fa;">下載連結</a><br>
+                                <div
+                                    style="background: rgba(24cd, 211, 77, 0.1); border-left: 3px solid #fcd34d; padding: 1rem; margin-top: 0.5rem; border-radius: 4px;">
+                                    <span style="color: #fcd34d; font-size: 1.3rem; font-weight: bold;">💡 為什麼核心引擎選用
+                                        Gemini Pro 3.1？(最符合經濟成本)</span><br>
+                                    <span
+                                        style="color: #e2e8f0; font-size: 1.1rem; margin-top: 0.3rem; display: inline-block;">【以處理「一張設計參考圖」為基準值來比較：】</span>
+                                    <ul
+                                        style="color: #cbd5e1; font-size: 1.2rem; margin-top: 0.3rem; padding-left: 1.5rem;">
+                                        <li style="margin-bottom: 0.3rem;"><strong>極致的試錯成本：</strong> Gemini Pro 3.1
+                                            提供極寬裕的測試額度，處理圖片幾乎 <strong>$0</strong>。相比之下，ClaudeCode 讀取一張圖大約要花
+                                            <strong>0.2~0.5 台幣</strong>，且 Codex 有高昂月費。
+                                        </li>
+                                        <li><strong>免除可怕的「過路費」堆疊：</strong> AI 是「每次對話都會重新讀取所有資料」。如果你專案丟了 10 張規範圖並來回修改 20
+                                            次，用 Claude 會被收 `10張 × 20次 = 200次` (瞬間燒掉百元台幣)！Gemini 的超大容量讓你能瘋狂試錯而不心痛。</li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><strong>Node.js</strong>：下載擴充外掛 (SKILL) 的必備引擎。 👉 <a href="https://nodejs.org/" target="_blank" style="color: #60a5fa;">下載連結</a><br>
-                                <span style="color: #fca5a5; font-size: 1.2rem;">*(⚠️ 避坑：進入官網後請直接下載 Windows Installer (.msi) 版本，<strong>不需要</strong>透過 Docker 安裝！)*</span>
+                            <li><strong>Node.js</strong>：下載擴充外掛 (SKILL) 的必備引擎。 👉 <a href="https://nodejs.org/"
+                                    target="_blank" style="color: #60a5fa;">下載連結</a><br>
+                                <span style="color: #fca5a5; font-size: 1.2rem;">*(⚠️ 避坑：進入官網後，<strong>Windows
+                                        系統</strong>請直接下載 Windows Installer (.msi) 版本，<strong>Mac 系統</strong>請下載 macOS
+                                    Installer (.pkg) 版本，<strong>不需要</strong>透過 Docker 安裝！)*</span>
                             </li>
-                            <li><strong>Adobe Photoshop / Photopea</strong>：開啟 PSD 素材必備。 👉 <a href="https://www.photopea.com/" target="_blank" style="color: #60a5fa;">網頁版連結</a></li>
-                            <li><strong>Comfy Cloud 帳號</strong>：像心智圖一樣連連看的雲端生圖平台。 👉 <a href="https://comfy.org/" target="_blank" style="color: #60a5fa;">註冊連結</a></li>
-                            <li><strong>Civitai 帳號</strong>：下載進階 LoRA 模型必備。 👉 <a href="https://civitai.com/" target="_blank" style="color: #60a5fa;">註冊連結</a></li>
-                            <li><strong>Kling / Luma 帳號</strong>：生成最終動態影片必備。 👉 <a href="https://klingai.com/" target="_blank" style="color: #60a5fa;">Kling</a> / <a href="https://lumalabs.ai/dream-machine" target="_blank" style="color: #60a5fa;">Luma</a></li>
-                            <li><strong>Git & GitHub Desktop</strong>：體驗無極限的 Ctrl+Z 時空機（也就是專案版控）。 👉 <a href="https://git-scm.com/downloads" target="_blank" style="color: #60a5fa;">Git 下載</a> / <a href="https://desktop.github.com/" target="_blank" style="color: #60a5fa;">Desktop 下載</a><br>
-                                <span style="color: #fca5a5; font-size: 1.2rem;">*(⚠️ 避坑：Git 安裝時會有很多選項，請一路按 Next 保持預設即可！)*</span>
+                            <li><strong>Adobe Photoshop / Photopea</strong>：開啟 PSD 素材必備。 👉 <a
+                                    href="https://www.photopea.com/" target="_blank" style="color: #60a5fa;">網頁版連結</a>
                             </li>
-                            <li><strong>課程素材包</strong>：內含測試用 PSD 檔與參考草圖，請解壓縮至桌面。 👉 <a href="#" style="color: #60a5fa;">下載連結</a></li>
+                            <li><strong>Comfy Cloud 帳號</strong>：像心智圖一樣連連看的雲端生圖平台。 👉 <a href="https://comfy.org/"
+                                    target="_blank" style="color: #60a5fa;">註冊連結</a></li>
+                            <li><strong>Civitai 帳號</strong>：下載進階 LoRA 模型必備。 👉 <a href="https://civitai.com/"
+                                    target="_blank" style="color: #60a5fa;">註冊連結</a></li>
+                            <li><strong>Kling / Luma 帳號</strong>：生成最終動態影片必備。 👉 <a href="https://klingai.com/"
+                                    target="_blank" style="color: #60a5fa;">Kling</a> / <a
+                                    href="https://lumalabs.ai/dream-machine" target="_blank"
+                                    style="color: #60a5fa;">Luma</a></li>
+                            <li><strong>Git & GitHub Desktop</strong>：體驗無極限的 <strong>Ctrl+Z (Mac 為 Cmd+Z)</strong>
+                                時空機（也就是專案版控）。 👉 <a href="https://git-scm.com/downloads" target="_blank"
+                                    style="color: #60a5fa;">Git 下載</a> / <a href="https://desktop.github.com/"
+                                    target="_blank" style="color: #60a5fa;">Desktop 下載</a><br>
+                                <span style="color: #fca5a5; font-size: 1.2rem;">*(⚠️ 避坑：Git 安裝時會有很多選項，請一路按 Next
+                                    保持預設即可！)*</span>
+                            </li>
+                            <li><strong>課程素材包</strong>：內含測試用 PSD 檔與參考草圖，請解壓縮至桌面。 👉 <a href="#"
+                                    style="color: #60a5fa;">下載連結</a></li>
                         </ul>
                     </div>
                 </div>
@@ -104,8 +158,11 @@
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 01</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">Agent 與 SKILL 基礎</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 01</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            Agent 與 SKILL 基礎</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">告別盲目摸索，建立專屬 AI 助理</p>
                     </div>
                 </div>
@@ -155,12 +212,13 @@
                         <div class="badge">Chapter 01 - 觀念一</div>
                         <h2>IDE Agent (數位工作室 / 頂級畫室) vs Web GPT</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-book"></i> 網頁 GPT 看不到你的世界</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
                             <li><strong>Web GPT (瞎子摸象)</strong>：在網頁上用的 ChatGPT 看不到你電腦裡的檔案，遇到問題只能手動複製貼上、或手動上傳。</li>
-                            <li><strong>IDE Agent (數位工作室 / 頂級畫室) (長了眼睛跟手)</strong>：像是 Antigravity，它能直接讀取你本地資料夾的 PSD 與草圖，甚至幫你建立檔案、跑腳本。它是活在你電腦裡的「本地實習生」。</li>
+                            <li><strong>IDE Agent (數位工作室 / 頂級畫室) (長了眼睛跟手)</strong>：像是 Antigravity，它能直接讀取你本地資料夾的 PSD
+                                與草圖，甚至幫你建立檔案、跑腳本。它是活在你電腦裡的「本地實習生」。</li>
                         </ul>
                     </div>
                 </div>
@@ -173,13 +231,20 @@
                         <div class="badge badge-accent">💻 Chapter 01 - 實作一</div>
                         <h2>第一次與本地助理接軌</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊編輯器右側的 <strong>【Antigravity Chat】分頁</strong> ➔ 點擊下方的 <strong>【對話輸入框】</strong> ➔ 輸入內容：<code>「請讀取我桌面上的參考圖資料夾並進行分析」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>點擊編輯器右側的 <strong>【Antigravity
+                                    Chat】分頁</strong> ➔ 點擊下方的 <strong>【對話輸入框】</strong> ➔
+                                輸入內容：<code>「請讀取我桌面上的參考圖資料夾並進行分析」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             體驗它不需上傳檔案，就能直接看到本地檔案內容的威力。<br>
                             你會發現，雖然它看得到，但它給出的評價跟「維基百科」一樣官腔且沒有設計深度。這就需要下一個觀念！
                         </div>
@@ -194,18 +259,19 @@
                         <div class="badge">Chapter 01 - 觀念二</div>
                         <h2>SKILL：為助理賦予靈魂與身分</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-user-tie"></i> 賦予身分 (Persona)</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li style="margin-bottom:1rem;"><strong>從維基百科到毒舌總監</strong>：AI 是一塊白紙。賦予身分後，他會主動挑剔你的構圖。這就是身分賦予帶來的行為轉變。</li>
+                            <li style="margin-bottom:1rem;"><strong>從維基百科到毒舌總監</strong>：AI
+                                是一塊白紙。賦予身分後，他會主動挑剔你的構圖。這就是身分賦予帶來的行為轉變。</li>
                             <li><strong>SKILL (設定檔) = 品牌規範</strong>：將專案的「主色調」寫入 SKILL，未來產出永遠不會跑偏。不用每天碎碎念交接。</li>
                         </ul>
                     </div>
-                    
+
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">📄 SKILL.md 撰寫範例 (注意最上方的員工識別證)</div>
-<pre style="margin:0; color:#e2e8f0;"><code><span style="color: #fcd34d;">---</span>
+                        <pre style="margin:0; color:#e2e8f0;"><code><span style="color: #fcd34d;">---</span>
 <span style="color: #fcd34d;">name: "art_director"</span>
 <span style="color: #fcd34d;">description: "專門負責審閱構圖與色彩學的美術總監" </span><span style="color: #fca5a5;"># 這是給 AI 看的觸發雷達，非常重要！</span>
 <span style="color: #fcd34d;">---</span>
@@ -228,20 +294,30 @@
                         <div class="badge badge-accent">💻 Chapter 01 - 實作二</div>
                         <h2>見證奇蹟：SKILL 導入對比</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【檔案管理】分頁</strong> ➔ 點擊 <strong>【新增檔案】圖示</strong> ➔ 命名為 <code>SKILL.md</code> ➔ 貼上剛剛的毒舌總監範例 ➔ 點擊 <strong>【Antigravity Chat】分頁</strong> ➔ 輸入：<code>「請再次根據 SKILL 設定評價剛剛那張圖」</code>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【檔案管理】分頁</strong> ➔ 點擊
+                                <strong>【新增檔案】圖示</strong> ➔ 命名為 <code>SKILL.md</code> ➔ 貼上剛剛的毒舌總監範例 ➔ 點擊
+                                <strong>【Antigravity Chat】分頁</strong> ➔ 輸入：<code>「請再次根據 SKILL 設定評價剛剛那張圖」</code>。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             再次請 Agent 評價剛剛那張草圖。見證語氣與專業度的核爆級改變！
                         </div>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
                         <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
                         <ul>
-                            <li><strong>幽靈員工：</strong> 忘記在 SKILL 檔案最上方寫 <code>YAML Frontmatter (用 --- 包起來的員工識別證)</code>，Agent 就絕對找不到這個職位！</li>
+                            <li><strong>幽靈員工：</strong> 忘記在 SKILL 檔案最上方寫
+                                <code>YAML Frontmatter (用 --- 包起來的員工識別證)</code>，Agent 就絕對找不到這個職位！
+                            </li>
                             <li><strong>迷路：</strong> SKILL 資料夾必須放在 <code>.agents/skills/</code> 路徑下。</li>
                             <li><strong>不給指令：</strong> 以為有 SKILL 就不用寫 Prompt。SKILL 只是背景知識，指令還是要明確。</li>
                         </ul>
@@ -256,12 +332,14 @@
                         <div class="badge">Chapter 01 - 觀念三</div>
                         <h2>skills.sh：AI 助理的 App Store</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-store"></i> 借力使力，不重複造輪子</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li style="margin-bottom:1rem;"><strong>開源技能庫</strong>：當你需要一個「社群行銷大師」或「ComfyUI 提示詞專家」時，不用從頭自己寫。<code>skills.sh</code> 就像是 Agent 的 App Store，聚集了全世界高手寫好的頂級 SKILL。</li>
-                            <li><strong>一鍵安裝</strong>：透過終端機指令，一鍵就能把大師的靈魂下載到你的專案 <code>.agents/skills/</code> 裡，無縫接軌！</li>
+                            <li style="margin-bottom:1rem;"><strong>開源技能庫</strong>：當你需要一個「社群行銷大師」或「ComfyUI
+                                提示詞專家」時，不用從頭自己寫。<code>skills.sh</code> 就像是 Agent 的 App Store，聚集了全世界高手寫好的頂級 SKILL。</li>
+                            <li><strong>一鍵安裝</strong>：透過終端機指令，一鍵就能把大師的靈魂下載到你的專案 <code>.agents/skills/</code> 裡，無縫接軌！
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -274,14 +352,23 @@
                         <div class="badge badge-accent">💻 Chapter 01 - 實作三</div>
                         <h2>下載你的第一個大師級 SKILL</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
-                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開下方的 <strong>【終端機 (Terminal)】</strong> ➔ 輸入：<code>npx skills find comfy</code> 搜尋 ➔ 接著輸入：<code>npx -y skills add mckruz/comfyui-expert@comfyui-prompt-engineer</code> 下載安裝。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開下方的 <strong>【終端機
+                                    (Terminal)】</strong> ➔ 輸入：<code>npx skills find comfy</code> 搜尋 ➔
+                                接著輸入：<code>npx -y skills add mckruz/comfyui-expert@comfyui-prompt-engineer</code> 下載安裝。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
-                            檢查左側檔案總管，你會發現 <code>.agents/skills/</code> 內多出了一個 <code>comfyui-prompt-engineer</code> 資料夾。<br>
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            檢查左側檔案總管，你會發現 <code>.agents/skills/</code> 內多出了一個 <code>comfyui-prompt-engineer</code>
+                            資料夾。<br>
                             你已經成功把世界級的提示詞大師聘請到你的專案中了！
                         </div>
                     </div>
@@ -300,8 +387,11 @@
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 02</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">Antigravity 與 GitHub 協作</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 02</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            Antigravity 與 GitHub 協作</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">掌握時空旅行，從此不再怕改壞圖</p>
                     </div>
                 </div>
@@ -314,7 +404,7 @@
                         <div class="badge">Chapter 02 - 痛點場景</div>
                         <h2>桌面又塞滿最終版了？</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row right">
                             <div class="chat-bubble user">
@@ -332,7 +422,8 @@
                         </div>
                         <div class="chat-row right fragment">
                             <div class="chat-bubble user">
-                                網路上說用 Git 備份，就再也不怕老闆說要改回「第一版」。結果我滿懷希望打開教學，一看到那黑壓壓的「終端機」和滿滿的英文報錯... 救命，我只是做行銷設計的，為什麼要學工程師寫程式啊！
+                                網路上說用 Git 備份，就再也不怕老闆說要改回「第一版」。結果我滿懷希望打開教學，一看到那黑壓壓的「終端機」和滿滿的英文報錯...
+                                救命，我只是做行銷設計的，為什麼要學工程師寫程式啊！
                                 <img src="../images/ch2_scene3.png" class="chat-image" alt="被終端機報錯嚇瘋">
                             </div>
                             <div class="avatar">👨</div>
@@ -348,7 +439,7 @@
                         <div class="badge">Chapter 02 - 觀念一</div>
                         <h2>GitHub：設計專案的時空旅行器</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-book"></i> 這不是工程師的專利</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
@@ -366,13 +457,21 @@
                         <div class="badge badge-accent">💻 Chapter 02 - 實作一</div>
                         <h2>平面化儲存慘案</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 Photoshop 的 <strong>【圖層面板】</strong> ➔ 在根圖層點擊右鍵選擇 <strong>【影像平面化 (Flatten Image)】</strong> ➔ 按下 <strong>【Ctrl + S】</strong> 儲存 ➔ <strong>【關閉檔案】</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開 Photoshop 的
+                                <strong>【圖層面板】</strong> ➔ 在根圖層點擊右鍵選擇 <strong>【影像平面化 (Flatten Image)】</strong> ➔ 按下
+                                <strong>【Ctrl + S】</strong> 儲存 ➔ <strong>【關閉檔案】</strong>。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             重新打開檔案，體會一下無法按下 Ctrl+Z 救回心血的絕望感。<br>
                             雖然知道要用 Git 救命，但打開終端機看到一堆英文指令 (`git commit` 等)，只覺得頭昏眼花根本不想學！這就需要下一個觀念：讓 Agent 代勞！
                         </div>
@@ -382,16 +481,19 @@
 
             <!-- 警告頁面 -->
             <section class="slide">
-                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <div class="content-area"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 0.5rem;">🤡</div>
                     <h2 style="color: #f87171; font-size: 3rem; margin-bottom: 0.5rem;">等等，千萬不要拿真實專案跟著做欸！</h2>
-                    <p style="font-size: 3rem; color: #cbd5e1;">剛剛的實作只是為了讓各位體驗「痛點」。<br>如果在公司專案上真的平面化存檔... 你會需要的是時光機，不是 GitHub。</p>
+                    <p style="font-size: 3rem; color: #cbd5e1;">剛剛的實作只是為了讓各位體驗「痛點」。<br>如果在公司專案上真的平面化存檔... 你會需要的是時光機，不是
+                        GitHub。</p>
                 </div>
             </section>
 
             <!-- 中場休息 -->
             <section class="slide">
-                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <div class="content-area"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
                     <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
                     <p style="font-size: 2.5rem; color: #cbd5e1;">平面化存檔是不是很可怕？先喝口水壓壓驚！</p>
@@ -405,19 +507,21 @@
                         <div class="badge">Chapter 02 - 觀念二</div>
                         <h2>讓 Agent 幫你做版控指令</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-terminal"></i> 終端機自動化</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>動口不動手</strong>：很多人不學 Git 是因為指令太難記。現在透過 Antigravity，你只要說「幫我備份這個版本的圖」，Agent 會自動幫你敲打終端機指令並上傳。</li>
+                            <li><strong>動口不動手</strong>：很多人不學 Git 是因為指令太難記。現在透過 Antigravity，你只要說「幫我備份這個版本的圖」，Agent
+                                會自動幫你敲打終端機指令並上傳。</li>
                         </ul>
                     </div>
-                    
+
                     <div class="demo-box" style="margin-top:2rem;">
                         <div class="title">💬 示範情境</div>
                         > 幫我把剛畫好的圖 commit 存檔，並自動加上 "修改人物臉部光影" 的版本紀錄推送到 GitHub。
                         <br><br>
-                        <small style="color: #94a3b8;">*(註：Commit 就像是為當前的畫布狀態拍一張「拍立得存檔 (Snapshot)」，並在背面寫下修改備註，未來隨時可以還原。)*</small>
+                        <small style="color: #94a3b8;">*(註：Commit 就像是為當前的畫布狀態拍一張「拍立得存檔
+                            (Snapshot)」，並在背面寫下修改備註，未來隨時可以還原。)*</small>
                     </div>
                 </div>
             </section>
@@ -429,13 +533,20 @@
                         <div class="badge badge-accent">💻 Chapter 02 - 實作二</div>
                         <h2>見證一鍵備份與還原</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity Chat】分頁</strong> ➔ 輸入：<code>「幫我把專案 commit 備份到 GitHub」</code> ➔ (再次製造平面化慘案) ➔ 輸入：<code>「幫我還原到上一個版本」</code>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity
+                                    Chat】分頁</strong> ➔ 輸入：<code>「幫我把專案 commit 備份到 GitHub」</code> ➔ (再次製造平面化慘案) ➔
+                                輸入：<code>「幫我還原到上一個版本」</code>。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             打開檔案，見證圖層一鍵復活的時光倒流魔術！
                         </div>
                     </div>
@@ -449,17 +560,19 @@
                         <div class="badge">Chapter 02 - 觀念三</div>
                         <h2>專案防護網 (.gitignore)</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-shield-halved"></i> 假裝沒看到的隱形斗篷</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><code>.gitignore</code> 是一個純文字檔，裡面寫的任何檔名或路徑，Agent (與 Git) 都會假裝沒看到，絕對不會把它們上傳。這對於保護機密或過濾肥大設計檔非常重要！</li>
+                            <li><code>.gitignore</code> 是一個純文字檔，裡面寫的任何檔名或路徑，Agent (與 Git)
+                                都會假裝沒看到，絕對不會把它們上傳。這對於保護機密或過濾肥大設計檔非常重要！</li>
                         </ul>
                     </div>
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">📄 .gitignore 撰寫範例與萬用字元說明</div>
-                        <p style="margin: 0.5rem 0; color: #cbd5e1;"><code>*</code> 代表「任何字元、任意長度」，就像大聲公喊「所有叫 OOO 的通通給我站出來」。</p>
-<pre style="margin:0; color:#e2e8f0;"><code># 1. 利用萬用字元 (*) 忽略特定副檔名
+                        <p style="margin: 0.5rem 0; color: #cbd5e1;"><code>*</code> 代表「任何字元、任意長度」，就像大聲公喊「所有叫 OOO
+                            的通通給我站出來」。</p>
+                        <pre style="margin:0; color:#e2e8f0;"><code># 1. 利用萬用字元 (*) 忽略特定副檔名
 # 只要檔案結尾是 .psd，不管前面叫什麼名字，全部忽略！
 *.psd
 *.psb
@@ -487,13 +600,19 @@
                         <div class="badge badge-accent">💻 Chapter 02 - 實作三</div>
                         <h2>建立專案防護網</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在專案根目錄建立 <code>.gitignore</code> 檔案 ➔ 練習輸入 <code>*.psd</code> ➔ 再次請 Agent 幫你備份專案。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>在專案根目錄建立 <code>.gitignore</code> 檔案 ➔
+                                練習輸入 <code>*.psd</code> ➔ 再次請 Agent 幫你備份專案。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             你會發現 .psd 檔案被成功忽略，沒有被推送到 GitHub 上。
                         </div>
                     </div>
@@ -512,8 +631,11 @@
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 03</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">學習指南與閉環機制</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 03</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            學習指南與閉環機制</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">建立免疫系統，讓 AI 越用越聰明</p>
                     </div>
                 </div>
@@ -526,7 +648,7 @@
                         <div class="badge">Chapter 03 - 痛點場景</div>
                         <h2>AI 又不受控了？</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row right">
                             <div class="chat-bubble user">
@@ -560,12 +682,13 @@
                         <div class="badge">Chapter 03 - 觀念一</div>
                         <h2>四步循環與無限重蹈覆轍</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-arrows-spin"></i> 痛點解析</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
                             <li><strong>AI 記性很差</strong>：AI 犯錯沒關係，但如果你只是罵它「重畫」，它在下一個任務絕對會重犯一樣的錯誤。</li>
-                            <li><strong>四步循環</strong>：Plan (計畫) ➔ Draft (初稿) ➔ Critique (審查) ➔ Correct (修正)。大部分的人都卡在無限的 Draft 與 Critique，卻忘了把經驗 Correct 下來。</li>
+                            <li><strong>四步循環</strong>：Plan (計畫) ➔ Draft (初稿) ➔ Critique (審查) ➔ Correct (修正)。大部分的人都卡在無限的
+                                Draft 與 Critique，卻忘了把經驗 Correct 下來。</li>
                         </ul>
                     </div>
                 </div>
@@ -578,13 +701,20 @@
                         <div class="badge badge-accent">💻 Chapter 03 - 實作一</div>
                         <h2>死性不改的 AI</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity Chat】分頁</strong> ➔ 輸入：<code>「請生一張主角握著咖啡杯的圖」</code> ➔ 罵 AI 畫錯細節 ➔ 點擊 <strong>【New Chat】</strong> 重新開新對話 ➔ 再次輸入相同指令。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity
+                                    Chat】分頁</strong> ➔ 輸入：<code>「請生一張主角握著咖啡杯的圖」</code> ➔ 罵 AI 畫錯細節 ➔ 點擊 <strong>【New
+                                    Chat】</strong> 重新開新對話 ➔ 再次輸入相同指令。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             你會發現，就算你上一張罵了它，開新對話後它依然死性不改，重犯一樣的錯誤。<br>
                             AI 雖然聰明，但沒有「長期記憶」，如果不把教訓固定下來，每次開新專案都要重新罵一次。這就需要下一個觀念！
                         </div>
@@ -599,18 +729,24 @@
                         <div class="badge">Chapter 03 - 觀念二</div>
                         <h2>閉環機制：幫專案打一劑疫苗</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-syringe"></i> AGENTS.md 規則庫</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>免疫系統建立</strong>：只要你進行 Critique 後，將「禁止六指」寫入專案的 <code>AGENTS.md</code>。整個專案就像打了疫苗一樣，永遠對六指免疫。這就是知識沉澱的威力。</li>
-                            <li><strong>存放位置</strong>：專案專屬請放 <code>.agents/</code> ；全域通用請放電腦家目錄 <code>.gemini/config/</code> (Win 系統為 <code>C:\Users\你的名字\.gemini\config\</code>)。</li>
-                            <li><strong>終極奧義 (全自動進化)</strong>：無須手動輸入！當你糾正完 Agent 後，直接輸入 <code>「把教訓寫入 AGENTS.md」</code>，或是打上神級指令 <code>/learn</code>，Agent 就會自己把規則庫更新好！這才是閉環的魔法。</li>
+                            <li><strong>免疫系統建立</strong>：只要你進行 Critique 後，將「禁止六指」寫入專案的
+                                <code>AGENTS.md</code>。整個專案就像打了疫苗一樣，永遠對六指免疫。這就是知識沉澱的威力。
+                            </li>
+                            <li><strong>存放位置</strong>：專案專屬請放 <code>.agents/</code> ；全域通用請放電腦家目錄
+                                <code>.gemini/config/</code> (Win 系統為 <code>C:\Users\你的名字\.gemini\config\</code>)。
+                            </li>
+                            <li><strong>終極奧義 (全自動進化)</strong>：無須手動輸入！當你糾正完 Agent 後，直接輸入
+                                <code>「把教訓寫入 AGENTS.md」</code>，或是打上神級指令 <code>/learn</code>，Agent 就會自己把規則庫更新好！這才是閉環的魔法。
+                            </li>
                         </ul>
                     </div>
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">📄 .agents/AGENTS.md 撰寫範例</div>
-<pre style="margin:0; color:#e2e8f0; font-size: 1.05rem;"><code># 專案家規四大屬性 (AGENTS)
+                        <pre style="margin:0; color:#e2e8f0; font-size: 1.05rem;"><code># 專案家規四大屬性 (AGENTS)
 
 <span style="color: #fcd34d;">## 1. 🔄 自動閉環機制 (Meta-Rule)</span>
 - **絕對遵守**：當解決完問題或被糾正錯誤後，必須「主動」檢討並更新相關 SKILL 或 AGENTS.md，確保不再犯錯。
@@ -636,12 +772,17 @@
                         <div class="badge">Chapter 03 - 觀念擴充</div>
                         <h2>agents.md：全球標準化的 AI 說明書</h2>
                     </div>
-                    
+
                     <div class="glossary-box" style="background: rgba(16, 185, 129, 0.15); border-color: #10b981;">
                         <strong style="color: #34d399;"><i class="fa-solid fa-globe"></i> 這是國際開源標準！</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li style="margin-bottom:1rem;"><strong>不僅僅是我們的家規</strong>：撰寫 <code>AGENTS.md</code> 並非我們自己發明的土砲方法。它其實是由 Agentic AI Foundation 負責維護的國際開源標準 (詳見官方網站 <a href="https://agents.md/" style="color: #60a5fa;" target="_blank">agents.md</a>)。</li>
-                            <li><strong>AI 專屬的品牌設計規範</strong>：未來的世界裡，每個專業專案都會有自己標準化的 <code>AGENTS.md</code>。就像交接文件一樣，無論你更換哪一牌的 AI 助理，只要有這個檔案，AI 就能瞬間讀懂你的專案規範！</li>
+                            <li style="margin-bottom:1rem;"><strong>不僅僅是我們的家規</strong>：撰寫 <code>AGENTS.md</code>
+                                並非我們自己發明的土砲方法。它其實是由 Agentic AI Foundation 負責維護的國際開源標準 (詳見官方網站 <a
+                                    href="https://agents.md/" style="color: #60a5fa;" target="_blank">agents.md</a>)。
+                            </li>
+                            <li><strong>AI 專屬的品牌設計規範</strong>：未來的世界裡，每個專業專案都會有自己標準化的
+                                <code>AGENTS.md</code>。就像交接文件一樣，無論你更換哪一牌的 AI 助理，只要有這個檔案，AI 就能瞬間讀懂你的專案規範！
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -654,13 +795,21 @@
                         <div class="badge badge-accent">💻 Chapter 03 - 實作二</div>
                         <h2>見證奇蹟：專案永久免疫</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>對剛才畫錯圖的 Agent 說：<code>「你畫錯了，我要女生。為了避免你以後再犯，請用 /learn 指令把禁止畫大叔的教訓寫入 AGENTS.md 當中」</code> ➔ 點開 <code>AGENTS.md</code>，你會發現 Agent 已經自己把規則寫進去了！</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>對剛才畫錯圖的 Agent
+                                說：<code>「你畫錯了，我要女生。為了避免你以後再犯，請用 /learn 指令把禁止畫大叔的教訓寫入 AGENTS.md 當中」</code> ➔ 點開
+                                <code>AGENTS.md</code>，你會發現 Agent 已經自己把規則寫進去了！
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             發現它極度小心地避開了大叔與六指問題，而且你連鍵盤都沒敲到幾下，檔案就自己更新了！這就是 AI 的自我學習！
                         </div>
                     </div>
@@ -669,7 +818,8 @@
                         <ul>
                             <li><strong>抽象規則：</strong> 在 AGENTS.md 寫「畫好看一點」是沒用的，規則必須「具體可執行」。</li>
                             <li><strong>盲目信任：</strong> 跳過人類審查 (Critique) 直接用 AI 產出，小心嚴重幻覺。</li>
-                            <li><strong>容量怪獸：</strong> 寫入 AGENTS.md 的字會吃掉 Agent 的腦容量 (Context Window / 短期記憶)！規則請保持精簡，長篇大論請改放 <code>references/</code> 資料夾。</li>
+                            <li><strong>容量怪獸：</strong> 寫入 AGENTS.md 的字會吃掉 Agent 的腦容量 (Context Window /
+                                短期記憶)！規則請保持精簡，長篇大論請改放 <code>references/</code> 資料夾。</li>
                         </ul>
                     </div>
                 </div>
@@ -677,7 +827,8 @@
 
             <!-- 中場休息 -->
             <section class="slide">
-                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <div class="content-area"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
                     <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
                     <p style="font-size: 2.5rem; color: #cbd5e1;">看著 AI 自己寫規則是不是很爽？喝口咖啡讓大腦沉澱一下。</p>
@@ -691,7 +842,7 @@
                         <div class="badge">Chapter 03 - 痛點場景</div>
                         <h2>老闆要我一個人搞定全套設計？</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row right">
                             <div class="chat-bubble user">
@@ -711,35 +862,47 @@
                         <div class="badge">Chapter 03 - 觀念三</div>
                         <h2>公司架構比喻：Agent vs SKILL</h2>
                     </div>
-                    
-                    <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
-                        <div style="flex: 1; background: rgba(99, 102, 241, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">
-                            <h3 style="color: #a5b4fc; margin-bottom: 0.5rem; font-size: 1.8rem;"><i class="fa-solid fa-book-open"></i> AGENTS.md (員工手冊)</h3>
-                            <ul style="color: #e2e8f0; font-size: 1.5rem; line-height: 1.6; padding-left: 1.5rem;">
+
+                    <div class="glossary-box"
+                        style="margin-top: 0.5rem; background: rgba(16, 185, 129, 0.15); border-color: #10b981; text-align: center;">
+                        <strong style="color: #34d399; font-size: 1.6rem;"><i class="fa-solid fa-brain"></i> Agent (專案經理 PM)</strong>
+                        <p style="color: #e2e8f0; font-size: 1.4rem; line-height: 1.6; margin: 0; margin-top: 0.5rem;">
+                            Agent 就是中央大腦。它會自動讀取家規 (AGENTS.md)，並且認識你所有的員工 (SKILL)。
+                        </p>
+                    </div>
+
+                    <div style="text-align: center; color: #94a3b8; font-size: 1.5rem; margin: 0.5rem 0;">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                    <div style="display: flex; gap: 2rem;">
+                        <div
+                            style="flex: 1; background: rgba(99, 102, 241, 0.15); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">
+                            <h3 style="color: #a5b4fc; margin-bottom: 0.5rem; font-size: 1.6rem;"><i
+                                    class="fa-solid fa-book-open"></i> AGENTS.md (員工手冊)</h3>
+                            <ul style="color: #e2e8f0; font-size: 1.3rem; line-height: 1.6; padding-left: 1.5rem;">
                                 <li><strong>作用範圍</strong>：套用到全公司的所有任務。</li>
                                 <li><strong>目的</strong>：定義底線與大方向 (如：禁止六指)。</li>
                             </ul>
                         </div>
-                        <div style="flex: 1; background: rgba(236, 72, 153, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(236, 72, 153, 0.3);">
-                            <h3 style="color: #f472b6; margin-bottom: 0.5rem; font-size: 1.8rem;"><i class="fa-solid fa-user-tie"></i> SKILL (專業職位)</h3>
-                            <ul style="color: #e2e8f0; font-size: 1.5rem; line-height: 1.6; padding-left: 1.5rem;">
+                        <div
+                            style="flex: 1; background: rgba(236, 72, 153, 0.15); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(236, 72, 153, 0.3);">
+                            <h3 style="color: #f472b6; margin-bottom: 0.5rem; font-size: 1.6rem;"><i
+                                    class="fa-solid fa-user-tie"></i> SKILL (專業職位)</h3>
+                            <ul style="color: #e2e8f0; font-size: 1.3rem; line-height: 1.6; padding-left: 1.5rem;">
                                 <li><strong>作用範圍</strong>：針對特定的專業任務。</li>
                                 <li><strong>目的</strong>：賦予特定身分 (如：毒舌總監)。</li>
                             </ul>
                         </div>
-                        <div style="flex: 1; background: rgba(245, 158, 11, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">
-                            <h3 style="color: #fcd34d; margin-bottom: 0.5rem; font-size: 1.8rem;"><i class="fa-solid fa-folder-open"></i> references/ (資料室)</h3>
-                            <ul style="color: #e2e8f0; font-size: 1.5rem; line-height: 1.5; padding-left: 1.5rem;">
+                        <div
+                            style="flex: 1; background: rgba(245, 158, 11, 0.15); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">
+                            <h3 style="color: #fcd34d; margin-bottom: 0.5rem; font-size: 1.6rem;"><i
+                                    class="fa-solid fa-folder-open"></i> references/ (資料室)</h3>
+                            <ul style="color: #e2e8f0; font-size: 1.3rem; line-height: 1.5; padding-left: 1.5rem;">
                                 <li><strong>作用範圍</strong>：存放厚重設計規範。</li>
                                 <li><strong>目的</strong>：釋放記憶空間，需要時翻閱。</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="glossary-box" style="margin-top: 0.5rem; background: rgba(16, 185, 129, 0.15); border-color: #10b981;">
-                        <strong style="color: #34d399;"><i class="fa-solid fa-brain"></i> Agent (專案經理 PM)</strong>
-                        <p style="color: #e2e8f0; font-size: 1.4rem; line-height: 1.6; margin: 0;">
-                            Agent 就是中央大腦。它會自動讀取家規 (AGENTS.md)，並且認識你所有的員工 (SKILL)。
-                        </p>
                     </div>
                 </div>
             </section>
@@ -751,9 +914,12 @@
                         <div class="badge">Chapter 03 - 示範</div>
                         <h2>串聯技：一個 PM 控管多個員工</h2>
                     </div>
-                    
-                    <div class="chat-container" style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
-                        <div class="title" style="color: #94a3b8; font-size: 1.2rem; margin-bottom: 0.5rem; text-align: center;">💬 單一 Agent 調用多 SKILL 連續技範例</div>
+
+                    <div class="chat-container"
+                        style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div class="title"
+                            style="color: #94a3b8; font-size: 1.2rem; margin-bottom: 0.5rem; text-align: center;">💬 單一
+                            Agent 調用多 SKILL 連續技範例</div>
                         <div class="chat-row right">
                             <div class="chat-bubble user" style="max-width: 90%;">
                                 請先用「毒舌藝術總監」的身分評價這張圖，評價完後，把結果交給「IG 行銷專家」幫我生出一篇帶有 Hashtag 的社群貼文。
@@ -781,13 +947,20 @@
                         <div class="badge badge-accent">💻 Chapter 03 - 實作三</div>
                         <h2>親自動手串聯員工</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
-                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Antigravity Chat】分頁</strong> ➔ 丟入一張你的設計圖 ➔ 輸入：<code>「請先調用毒舌藝術總監幫我嚴格審查這張圖的構圖，然後將審查結果交給行銷大師，幫我寫一篇限時動態文案。」</code></li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Antigravity
+                                    Chat】分頁</strong> ➔ 丟入一張你的設計圖 ➔
+                                輸入：<code>「請先調用毒舌藝術總監幫我嚴格審查這張圖的構圖，然後將審查結果交給行銷大師，幫我寫一篇限時動態文案。」</code></li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             觀察 Agent 如何自動切換身分，依序完成兩項工作。
                         </div>
                     </div>
@@ -808,17 +981,18 @@
                         <div class="badge">Chapter 03 - 觀念四 (進階)</div>
                         <h2>讓 PM 記住標準 SOP</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-list-check"></i> 寫入 AGENTS.md 自動調用各 SKILL</strong>
                         <p style="color: #e2e8f0; font-size: 1.4rem; line-height: 1.8; margin-top: 0.5rem;">
-                            你甚至可以把「先找誰、再找誰」的工作流程直接寫進 <code>AGENTS.md</code> 裡，把 Agent 訓練成最懂你公司 SOP 的 PM！未來只要說一句「請跑發文流程」，它就會自動依序調用各個 SKILL。
+                            你甚至可以把「先找誰、再找誰」的工作流程直接寫進 <code>AGENTS.md</code> 裡，把 Agent 訓練成最懂你公司 SOP 的
+                            PM！未來只要說一句「請跑發文流程」，它就會自動依序調用各個 SKILL。
                         </p>
                     </div>
-                    
+
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">📄 在 AGENTS.md 定義工作流 (Workflow) 範例</div>
-<pre style="margin:0; color:#e2e8f0;"><code># 專案工作流 (Workflows)
+                        <pre style="margin:0; color:#e2e8f0;"><code># 專案工作流 (Workflows)
 
 ## 🎨 社群發文標準 SOP
 當我要求「跑發文流程」時，請嚴格遵守以下步驟，並調用對應的 SKILL：
@@ -834,8 +1008,11 @@
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 04</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">高階快捷指令與自動化</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 04</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            高階快捷指令與自動化</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">放開雙手，讓 AI 替你超時加班</p>
                     </div>
                 </div>
@@ -848,7 +1025,7 @@
                         <div class="badge">Chapter 04 - 痛點場景</div>
                         <h2>準備睡公司還是提早下班？</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row left">
                             <div class="avatar">🕴️</div>
@@ -875,12 +1052,14 @@
                         <div class="badge">Chapter 04 - 觀念一</div>
                         <h2>放手讓它做：/goal 與 /schedule</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-bullseye"></i> 長效任務與定時回報</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>/goal (死磕到底)</strong>：加上 `/goal` 等於對 Agent 說「不計代價，把它處理完為止」。它會自動嘗試、除錯，直到目標達成，非常適合下班前放著跑過夜。</li>
-                            <li><strong>/schedule (定時鬧鐘)</strong>：你可以設定定時器，例如「每小時檢查一次輸出結果，若出錯就透過推播通知我」，讓 Agent 在背景默默為你巡邏。</li>
+                            <li><strong>/goal (死磕到底)</strong>：加上 `/goal` 等於對 Agent
+                                說「不計代價，把它處理完為止」。它會自動嘗試、除錯，直到目標達成，非常適合下班前放著跑過夜。</li>
+                            <li><strong>/schedule (定時鬧鐘)</strong>：你可以設定定時器，例如「每小時檢查一次輸出結果，若出錯就透過推播通知我」，讓 Agent
+                                在背景默默為你巡邏。</li>
                         </ul>
                     </div>
                 </div>
@@ -893,13 +1072,22 @@
                         <div class="badge badge-accent">💻 Chapter 04 - 實作一</div>
                         <h2>準時下班的魔法</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊編輯器右側的 <strong>【Antigravity Chat】分頁</strong> ➔ 點擊下方的 <strong>【對話輸入框】</strong> ➔ 輸入內容：<code>「/goal 請幫我把這 100 張草圖執行批次處理，遇到錯誤自動除錯直到全部完成」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>點擊編輯器右側的 <strong>【Antigravity
+                                    Chat】分頁</strong> ➔ 點擊下方的 <strong>【對話輸入框】</strong> ➔
+                                輸入內容：<code>「/goal 請幫我把這 100 張草圖執行批次處理，遇到錯誤自動除錯直到全部完成」</code> ➔ 按下
+                                <strong>【Enter】發送</strong>。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             放開雙手，看著 Agent 在背景像瘋狗一樣自動拆解任務、自動修復報錯，而你可以直接拿起包包下班！<br>
                             雖然 `/goal` 會自動跑 100 張圖，但如果我們一開始連「風格」都講不清楚，跑出來的 100 張全都是垃圾，依然沒救。這就需要下一個觀念！
                         </div>
@@ -916,7 +1104,8 @@
 
             <!-- 中場休息 -->
             <section class="slide">
-                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <div class="content-area"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
                     <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 5 分鐘</h2>
                     <p style="font-size: 2.5rem; color: #cbd5e1;">看著 Agent 在背景像瘋狗一樣工作，喝口水慶祝提早下班吧！</p>
@@ -930,18 +1119,20 @@
                         <div class="badge">Chapter 04 - 觀念二</div>
                         <h2>把 AI 當專家：/grill-me 與 /learn</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-brain"></i> 靈魂拷問與永久記憶</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>/grill-me (反客為主)</strong>：當你靈感枯竭時，用這個指令讓 AI 反過來「面試你」。它會不斷逼問你細節（例如：燈光要多暗？服裝是什麼材質？），直到釐清真正的設計需求。</li>
-                            <li><strong>/learn (永恆印記)</strong>：當你調教出完美的工作流，只要打 `/learn`，Agent 就會自動分析剛才的對話，並把這套經驗寫入大腦 (AGENTS.md 或 Skills 中)，下次直接變成專家。</li>
+                            <li><strong>/grill-me (反客為主)</strong>：當你靈感枯竭時，用這個指令讓 AI
+                                反過來「面試你」。它會不斷逼問你細節（例如：燈光要多暗？服裝是什麼材質？），直到釐清真正的設計需求。</li>
+                            <li><strong>/learn (永恆印記)</strong>：當你調教出完美的工作流，只要打 `/learn`，Agent 就會自動分析剛才的對話，並把這套經驗寫入大腦
+                                (AGENTS.md 或 Skills 中)，下次直接變成專家。</li>
                         </ul>
                     </div>
-                    
+
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">💬 /grill-me 互動對話範例</div>
-<pre style="margin:0; color:#e2e8f0;"><code>👨 你：/grill-me 我想設計一套前衛的春夏高定服裝，但我沒想法。
+                        <pre style="margin:0; color:#e2e8f0;"><code>👨 你：/grill-me 我想設計一套前衛的春夏高定服裝，但我沒想法。
 🤖 Agent：好的！為了幫您產出最精準的設定，請問：
    1. 這個角色的職業是什麼？(駭客/傭兵/還是財閥高層？)
    2. 身上主要的發光體顏色是什麼？(霓虹粉/螢光綠？)
@@ -958,32 +1149,43 @@
                         <div class="badge badge-accent">💻 Chapter 04 - 實作二</div>
                         <h2>靈感壓榨機與傳家寶</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity Chat】分頁</strong> ➔ 輸入：<code>「/grill-me 我想設計一套前衛的春夏高定服裝，但我沒想法」</code> ➔ 經歷三輪 AI 的逼問並給予回答 ➔ 獲得完美解答後，輸入：<code>「/learn 記住我今天對於高定服裝設計的偏好」</code>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity
+                                    Chat】分頁</strong> ➔ 輸入：<code>「/grill-me 我想設計一套前衛的春夏高定服裝，但我沒想法」</code> ➔ 經歷三輪 AI
+                                的逼問並給予回答 ➔ 獲得完美解答後，輸入：<code>「/learn 記住我今天對於高定服裝設計的偏好」</code>。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             體驗從「不知道要什麼」到「被 AI 引導出具體靈感」的過程，並親眼見證它自動把這個過程寫成經驗法則！
                         </div>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
                         <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
                         <ul>
-                            <li><strong>避免亂學：</strong> 不要在充滿錯誤測試的對話紀錄中使用 `/learn`，以免 Agent 記住了一堆無用的垃圾資訊，請在最終完美結果後再呼叫。</li>
+                            <li><strong>避免亂學：</strong> 不要在充滿錯誤測試的對話紀錄中使用 `/learn`，以免 Agent 記住了一堆無用的垃圾資訊，請在最終完美結果後再呼叫。
+                            </li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-<!-- ============================== Chapter 5 ============================== -->
+            <!-- ============================== Chapter 5 ============================== -->
             <!-- 章節封面 -->
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 05</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">終極心法</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 05</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            終極心法</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">用魔法打敗魔法，讓 Agent 幫你設計 Agent</p>
                     </div>
                 </div>
@@ -996,7 +1198,7 @@
                         <div class="badge">Chapter 05 - 痛點場景</div>
                         <h2>用魔法打敗魔法</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row right">
                             <div class="chat-bubble user">
@@ -1023,7 +1225,7 @@
                         <div class="badge">Chapter 05 - 終極心法</div>
                         <h2>讓 Agent 幫你設計 Agent</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-film"></i> 讓工程師做工程師的事</strong>
                         <p style="color: #e2e8f0; font-size: 1.4rem; line-height: 1.8; margin-top: 0.5rem;">
@@ -1042,18 +1244,26 @@
                         <div class="badge badge-accent">💻 Chapter 05 - 終極實作</div>
                         <h2>神級 Workflow 建立指令</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：5 分鐘</h3>
-                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Antigravity Chat】分頁</strong> ➔ 在對話框輸入下方神級 Prompt：</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：5 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Antigravity
+                                    Chat】分頁</strong> ➔ 在對話框輸入下方神級 Prompt：</li>
                         </ul>
                         <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                             <div class="title">💬 示範輸入</div>
-                            <pre style="margin:0; color:#e2e8f0; font-family: 'Inter', sans-serif;">「我要建立一個『春季時尚大秀』專案。請幫我分析我需要哪些 SKILL (例如：服裝設計師、秀場導演)。接著，直接幫我在 `.agents/skills/` 建立對應的 SKILL 檔案，並在 `.agents/AGENTS.md` 中寫下這些職位的工作流 SOP！」</pre>
+                            <pre
+                                style="margin:0; color:#e2e8f0; font-family: 'Inter', sans-serif;">「我要建立一個『春季時尚大秀』專案。請幫我分析我需要哪些 SKILL (例如：服裝設計師、秀場導演)。接著，直接幫我在 `.agents/skills/` 建立對應的 SKILL 檔案，並在 `.agents/AGENTS.md` 中寫下這些職位的工作流 SOP！」</pre>
                         </div>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
-                            🚀 <strong>驚人的結果</strong>：你會看到 Agent 在背景幫你建好 <code>art_director/SKILL.md</code>，並把工作流寫進 <code>AGENTS.md</code> 中。你連一個資料夾都不用自己建！
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                            🚀 <strong>驚人的結果</strong>：你會看到 Agent 在背景幫你建好 <code>art_director/SKILL.md</code>，並把工作流寫進
+                            <code>AGENTS.md</code> 中。你連一個資料夾都不用自己建！
                         </div>
                     </div>
                 </div>
@@ -1064,8 +1274,11 @@
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 06</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">進階提示詞與 Comfy Cloud 準備</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 06</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            進階提示詞與 Comfy Cloud 準備</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">精準發包，擺脫抽盲盒的命運</p>
                     </div>
                 </div>
@@ -1078,7 +1291,7 @@
                         <div class="badge">Chapter 06 - 痛點場景</div>
                         <h2>越描越黑的修圖地獄</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row right">
                             <div class="chat-bubble user">
@@ -1112,7 +1325,7 @@
                         <div class="badge">Chapter 06 - 觀念一</div>
                         <h2>正向與負向提示詞的拉扯</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-book"></i> 控制變因</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
@@ -1130,13 +1343,21 @@
                         <div class="badge badge-accent">💻 Chapter 06 - 實作一</div>
                         <h2>隨興崩壞生成</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Comfy Cloud】分頁</strong> ➔ 在 <strong>【CLIP Text Encode (外星語翻譯官)】</strong> 節點輸入流水帳：<code>「畫一個前衛時尚模特兒，不要帽子，背景要有光」</code> ➔ 點擊 <strong>【Queue Prompt】按鈕</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Comfy Cloud】分頁</strong> ➔
+                                在 <strong>【CLIP Text Encode (外星語翻譯官)】</strong>
+                                節點輸入流水帳：<code>「畫一個前衛時尚模特兒，不要帽子，背景要有光」</code> ➔ 點擊 <strong>【Queue Prompt】按鈕</strong>。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             結果產出了一張滿頭帽子的崩壞圖，越描越黑。<br>
                             如果我們只用「一句話」把所有需求塞進去，AI 根本分不清主從輕重，甚至會被「不要飛車」的帽子兩字誤導。這就需要下一個觀念！
                         </div>
@@ -1146,7 +1367,8 @@
 
             <!-- 中場休息 -->
             <section class="slide">
-                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <div class="content-area"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
                     <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
                     <p style="font-size: 2.5rem; color: #cbd5e1;">看著滿頭帽子的怪物圖，先去喝杯咖啡壓壓驚。</p>
@@ -1160,16 +1382,17 @@
                         <div class="badge">Chapter 06 - 觀念二</div>
                         <h2>CREATE：把提示詞當作外包發包單</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-file-contract"></i> CREATE 結構化框架</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>外包需求單</strong>：如果你只說「畫個城市」，每個外包畫的都不一樣。結構化就是強制定義：【主體：城市】+【環境：下雨】+【光影：霓虹燈】，不給 AI 自由搞砸的空間。</li>
+                            <li><strong>外包需求單</strong>：如果你只說「畫個城市」，每個外包畫的都不一樣。結構化就是強制定義：【主體：城市】+【環境：下雨】+【光影：霓虹燈】，不給 AI
+                                自由搞砸的空間。</li>
                         </ul>
                     </div>
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">📄 CREATE 結構化發包單範例</div>
-<pre style="margin:0; color:#e2e8f0;"><code>[Positive Prompt - 正向提示 (要什麼)]
+                        <pre style="margin:0; color:#e2e8f0;"><code>[Positive Prompt - 正向提示 (要什麼)]
 (主體) a fashion model, avant-garde spring dress
 (環境) runway, background lights
 (光影) cinematic lighting, high contrast
@@ -1178,11 +1401,13 @@
 hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                     </div>
                     <div style="display:flex; gap:2rem; margin-top:2rem;">
-                        <div style="flex:1; background:rgba(0,0,0,0.3); padding:2rem; border-radius:12px; border:1px solid rgba(251, 113, 133, 0.3);">
+                        <div
+                            style="flex:1; background:rgba(0,0,0,0.3); padding:2rem; border-radius:12px; border:1px solid rgba(251, 113, 133, 0.3);">
                             <h4 style="color:#fb7185; margin-bottom:1rem; font-size:1.5rem;">❌ 錯誤示範</h4>
                             <p style="font-size:1.3rem; color:#e2e8f0;">畫一隻狗，不要出現貓。</p>
                         </div>
-                        <div style="flex:1; background:rgba(0,0,0,0.3); padding:2rem; border-radius:12px; border:1px solid rgba(74, 222, 128, 0.3);">
+                        <div
+                            style="flex:1; background:rgba(0,0,0,0.3); padding:2rem; border-radius:12px; border:1px solid rgba(74, 222, 128, 0.3);">
                             <h4 style="color:#4ade80; margin-bottom:1rem; font-size:1.5rem;">✅ 結構化示範</h4>
                             <p style="font-size:1.3rem; line-height:1.6; color:#e2e8f0;">
                                 <strong style="color:#a5b4fc;">Positive</strong>：一位穿著春季洋裝的模特兒<br>
@@ -1200,13 +1425,22 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 06 - 實作二</div>
                         <h2>見證奇蹟：精準掌控變因</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【CLIP Text Encode (外星語翻譯官) (Positive)】</strong> 節點輸入：<code>「前衛時尚模特兒, 秀場背景」</code> ➔ 在下方的 <strong>【(Negative)】</strong> 節點輸入：<code>「帽子」</code> ➔ 點擊 <strong>【Queue Prompt】按鈕</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【CLIP Text Encode (外星語翻譯官)
+                                    (Positive)】</strong> 節點輸入：<code>「前衛時尚模特兒, 秀場背景」</code> ➔ 在下方的
+                                <strong>【(Negative)】</strong> 節點輸入：<code>「帽子」</code> ➔ 點擊 <strong>【Queue
+                                    Prompt】按鈕</strong>。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             再次生成，精準產出毫無帽子的完美場景，見證結構化的控制力！
                         </div>
                     </div>
@@ -1215,7 +1449,9 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <ul>
                             <li><strong>提示詞衝突：</strong> 同時寫「黑夜」與「陽光普照」會讓模型精神分裂。</li>
                             <li><strong>忽略負面提示：</strong> 忘記把不要的東西寫進 Negative Prompt，是產出劣質圖 (如變形、六指) 的主因。</li>
-                            <li><strong>靈感枯竭 (找大師代筆)：</strong> 記不起來結構化單字沒關係！直接呼叫我們在第一章安裝的 <code>comfyui-prompt-engineer</code> (提示詞大師) 幫你寫出完美的發包單！</li>
+                            <li><strong>靈感枯竭 (找大師代筆)：</strong> 記不起來結構化單字沒關係！直接呼叫我們在第一章安裝的
+                                <code>comfyui-prompt-engineer</code> (提示詞大師) 幫你寫出完美的發包單！
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1226,8 +1462,11 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 07</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">Comfy Cloud 實戰</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 07</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            Comfy Cloud 實戰</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">節點式架構，掌握 100% 視覺控制權</p>
                     </div>
                 </div>
@@ -1240,7 +1479,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 痛點場景</div>
                         <h2>抽盲盒的絕望感</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row left">
                             <div class="avatar">🕴️</div>
@@ -1274,12 +1513,16 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 觀念一</div>
                         <h2>疊漢堡 vs 拉水管</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-layer-group"></i> 圖層 vs 節點架構</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li style="margin-bottom:1rem;"><strong>圖層架構 (疊漢堡)</strong>：屬於「結果導向」。<br><span style="color: #fca5a5; font-size: 1.2rem;">🚨 痛點 (淺景深)：若要加淺景深，已平面化就沒救；沒平面化也要複製原圖層來模糊。萬一原圖換了，整個模糊圖層都要重做！</span></li>
-                            <li><strong>節點式 (拉水管)</strong>：屬於極度自由的「過程導向」。<br><span style="color: #6ee7b7; font-size: 1.2rem;">✨ 優勢 (完美套用)：只需從「原圖節點」拉一根水管接上「模糊節點」。未來無論源頭替換成任何圖片，淺景深效果都會完美、自動地套用到新圖上！</span></li>
+                            <li style="margin-bottom:1rem;"><strong>圖層架構 (疊漢堡)</strong>：屬於「結果導向」。<br><span
+                                    style="color: #fca5a5; font-size: 1.2rem;">🚨 痛點
+                                    (淺景深)：若要加淺景深，已平面化就沒救；沒平面化也要複製原圖層來模糊。萬一原圖換了，整個模糊圖層都要重做！</span></li>
+                            <li><strong>節點式 (拉水管)</strong>：屬於極度自由的「過程導向」。<br><span
+                                    style="color: #6ee7b7; font-size: 1.2rem;">✨ 優勢
+                                    (完美套用)：只需從「原圖節點」拉一根水管接上「模糊節點」。未來無論源頭替換成任何圖片，淺景深效果都會完美、自動地套用到新圖上！</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1292,13 +1535,21 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 07 - 實作一</div>
                         <h2>抽盲盒地獄</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：30 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在 Comfy Cloud 的 <strong>【KSampler】</strong> 節點將 `seed` 設為 <code>randomize</code> ➔ 點擊 <strong>【Queue Prompt】</strong> ➔ 獲得滿意圖後稍微修改提示字 ➔ 再次 <strong>【Queue Prompt】</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：30 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>在 Comfy Cloud 的
+                                <strong>【KSampler】</strong> 節點將 `seed` 設為 <code>randomize</code> ➔ 點擊 <strong>【Queue
+                                    Prompt】</strong> ➔ 獲得滿意圖後稍微修改提示字 ➔ 再次 <strong>【Queue Prompt】</strong>。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             發現原本滿意的構圖與人物長相全部跑掉，體會無法掌控模型的無力感。<br>
                             雖然只是想換個姿勢，但因為「隨機抽盲盒」的特性，導致連人物長相跟背景都全變了。我們需要把「底層基因」鎖住，這就需要下一個觀念！
                         </div>
@@ -1311,7 +1562,8 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 <div class="content-area">
                     <div class="title-card" style="text-align: center;">
                         <div style="font-size: 6rem; margin-bottom: 2rem;">☕</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; color: #fcd34d; margin-bottom: 1rem;">中場休息 10 分鐘</h2>
+                        <h2 style="font-size: 4rem; font-weight: 800; color: #fcd34d; margin-bottom: 1rem;">中場休息 10 分鐘
+                        </h2>
                         <p class="subtitle" style="font-size: 2rem;">抽盲盒抽到崩潰了嗎？先去喝口水，讓大腦冷卻一下！</p>
                     </div>
                 </div>
@@ -1324,7 +1576,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 觀念二</div>
                         <h2>鎖定初始基因 (Seed)</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-dna"></i> Seed (隨機種子碼)</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
@@ -1333,17 +1585,19 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                     </div>
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem;">
                         <div class="title">📄 關鍵節點參數設定範例</div>
-<pre style="margin:0; color:#e2e8f0;"><code>【KSampler 運算節點】
+                        <pre style="margin:0; color:#e2e8f0;"><code>【KSampler 運算節點】
 - seed: 15923058 (隨機數字，這就是這張圖的 DNA 基因碼)
 - control_after_generate: fixed (關鍵！將隨機改為「固定」，鎖死基因)
 - steps: 20 (通常 20~30 就夠了，拉太高會產生油畫破圖感)</code></pre>
                     </div>
-                    
-                    <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem; background: rgba(99, 102, 241, 0.1); border-color: #6366f1;">
+
+                    <div class="demo-box"
+                        style="margin-top:1rem; padding: 1.5rem; font-size: 1.2rem; background: rgba(99, 102, 241, 0.1); border-color: #6366f1;">
                         <div class="title" style="color: #a5b4fc;">💬 示範：節點基本串接邏輯</div>
                         <p style="color: #cbd5e1; margin: 0; line-height: 1.6;">
                             <strong>[Prompt 節點]</strong> ➔ <br>
-                            <strong>[KSampler 降噪運算]</strong> (<span style="color: #fcd34d;">靈魂畫師</span>，負責從雜訊中雕刻出影像) ➔ <br>
+                            <strong>[KSampler 降噪運算]</strong> (<span style="color: #fcd34d;">靈魂畫師</span>，負責從雜訊中雕刻出影像) ➔
+                            <br>
                             <strong>[VAE Decode 轉成圖片]</strong> (<span style="color: #6ee7b7;">底片沖洗室</span>，將抽象數據洗成完美像素)
                         </p>
                     </div>
@@ -1357,13 +1611,21 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 07 - 實作二</div>
                         <h2>見證奇蹟：固定基因碼</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
-                                                <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【KSampler】</strong> 節點將 <code>control_after_generate</code> 改為 <strong>【fixed (固定)】</strong> ➔ 修改文字 ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【KSampler】</strong> 節點將
+                                <code>control_after_generate</code> 改為 <strong>【fixed (固定)】</strong> ➔ 修改文字 ➔ 點擊
+                                <strong>【Queue Prompt】</strong>。
+                            </li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             再次微調提示詞，你會發現雖然長相仍會微調，但「整體的構圖基底與光影氛圍」被成功鎖定了，不再像抽盲盒般毫無頭緒！
                         </div>
                     </div>
@@ -1377,12 +1639,13 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 觀念三</div>
                         <h2>強制操線木偶 (ControlNet)</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-person-rays"></i> ControlNet (控制網)</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
                             <li><strong>強制的描圖紙</strong>：如果說 Seed 是鎖定氛圍，那 ControlNet 就像 <strong>操線木偶骨架</strong>。</li>
-                            <li><strong>解決痛點</strong>：強迫 AI 必須沿著你規定的邊緣線 (Lineart) 或人物骨架 (OpenPose) 上色。完美解決了「AI 不聽話亂擺姿勢」的痛點！</li>
+                            <li><strong>解決痛點</strong>：強迫 AI 必須沿著你規定的邊緣線 (Lineart) 或人物骨架 (OpenPose) 上色。完美解決了「AI
+                                不聽話亂擺姿勢」的痛點！</li>
                         </ul>
                     </div>
                 </div>
@@ -1395,13 +1658,21 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 07 - 實作三</div>
                         <h2>精準描圖控制</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在畫布空白處 <strong>點擊兩下左鍵</strong> 開啟搜尋框，加入 <strong>【ControlNet Apply】</strong> 與 <strong>【Load Image】</strong> 節點。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>上傳有骨架或邊緣線的參考圖，用滑鼠左鍵點住黃色小圓點連上 ControlNet ➔ 點擊右上角的 <strong>【Queue Prompt】</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：25 分鐘</h3>
+                        <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                style="color: #a855f7; margin-right: 8px;"></i>在畫布空白處 <strong>點擊兩下左鍵</strong> 開啟搜尋框，加入
+                            <strong>【ControlNet Apply】</strong> 與 <strong>【Load Image】</strong> 節點。
+                        </li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                style="color: #a855f7; margin-right: 8px;"></i>上傳有骨架或邊緣線的參考圖，用滑鼠左鍵點住黃色小圓點連上 ControlNet ➔
+                            點擊右上角的 <strong>【Queue Prompt】</strong>。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             體會當你加上「強制描圖紙」後，AI 乖乖按照你要的姿勢繪圖的強大控制力！
                         </div>
                     </div>
@@ -1409,7 +1680,9 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
                         <ul>
                             <li><strong>迷信高數值：</strong> 無腦拉高 Steps 到 100 不會更好看，只會產生油畫破圖感。</li>
-                            <li><strong>迷信 Seed 鎖定長相：</strong> Seed 只能鎖構圖基底。同個模特換姿勢需要 ControlNet，完美一致則需進階 <strong>FaceID</strong> 或 <strong>LoRA</strong> 節點！</li>
+                            <li><strong>迷信 Seed 鎖定長相：</strong> Seed 只能鎖構圖基底。同個模特換姿勢需要 ControlNet，完美一致則需進階
+                                <strong>FaceID</strong> 或 <strong>LoRA</strong> 節點！
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1422,14 +1695,19 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 痛點場景</div>
                         <h2>模型匹配地獄</h2>
                     </div>
-                    
+
                     <div style="display: flex; gap: 2rem; align-items: center; margin-top: 2rem;">
                         <div style="flex: 1; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 16px;">
-                            <p style="font-size: 1.6rem; color: #cbd5e1; margin-bottom: 1rem;">👨 <strong>你</strong>：老闆要「黏土人」風格，我馬上下載 SDXL 黏土人 LoRA 接到目前的 SD1.5 工作流！</p>
+                            <p style="font-size: 1.6rem; color: #cbd5e1; margin-bottom: 1rem;">👨
+                                <strong>你</strong>：老闆要「黏土人」風格，我馬上下載 SDXL 黏土人 LoRA 接到目前的 SD1.5 工作流！
+                            </p>
                             <p style="font-size: 1.6rem; color: #cbd5e1;"><em>(接上節點後...)</em></p>
                         </div>
-                        <div style="flex: 1; background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 2rem; border-radius: 0 16px 16px 0;">
-                            <p style="font-size: 1.6rem; color: #fca5a5; margin-bottom: 1rem;">💻 <strong>ComfyUI</strong>：🚨 `Error: mat1 and mat2 shapes cannot be multiplied...` (滿江紅)</p>
+                        <div
+                            style="flex: 1; background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 2rem; border-radius: 0 16px 16px 0;">
+                            <p style="font-size: 1.6rem; color: #fca5a5; margin-bottom: 1rem;">💻
+                                <strong>ComfyUI</strong>：🚨 `Error: mat1 and mat2 shapes cannot be multiplied...` (滿江紅)
+                            </p>
                             <p style="font-size: 1.6rem; color: #cbd5e1;">👨 <strong>你</strong>：這什麼鬼錯碼？！我只是想加個濾鏡啊！</p>
                         </div>
                     </div>
@@ -1443,11 +1721,12 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 觀念四</div>
                         <h2>模型也有「血型」與「主機平台」</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-puzzle-piece"></i> Model Architecture (模型架構)</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>主機平台比喻</strong>：你不能把 <strong>PS5 的光碟 (SDXL LoRA)</strong> 硬塞進 <strong>PS4 的主機 (SD1.5 Checkpoint)</strong>，硬塞只會當機報錯。</li>
+                            <li><strong>主機平台比喻</strong>：你不能把 <strong>PS5 的光碟 (SDXL LoRA)</strong> 硬塞進 <strong>PS4 的主機
+                                    (SD1.5 Checkpoint)</strong>，硬塞只會當機報錯。</li>
                             <li><strong>輸血理論</strong>：
                                 <ul>
                                     <li><strong>Checkpoint (主模型)</strong> = 病人 (例如：A型血的 SDXL)</li>
@@ -1466,21 +1745,32 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 觀念補充</div>
                         <h2>什麼是模型精度 (FP16 / FP8)？</h2>
                     </div>
-                    
+
                     <div style="display: flex; gap: 2rem; margin-top: 1rem;">
-                        <div style="flex: 1; background: rgba(99, 102, 241, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">
-                            <h3 style="color: #a5b4fc; margin-bottom: 1rem; font-size: 1.8rem;"><i class="fa-solid fa-gem"></i> FP16 (豪華原畫質)</h3>
-                            <p style="color: #cbd5e1; font-size: 1.4rem; line-height: 1.6;">就像是相機的 <strong>RAW 檔</strong>。保留了最完美的色彩與光影細節，但檔案超級肥大，會吃掉很多顯卡記憶體。</p>
+                        <div
+                            style="flex: 1; background: rgba(99, 102, 241, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">
+                            <h3 style="color: #a5b4fc; margin-bottom: 1rem; font-size: 1.8rem;"><i
+                                    class="fa-solid fa-gem"></i> FP16 (豪華原畫質)</h3>
+                            <p style="color: #cbd5e1; font-size: 1.4rem; line-height: 1.6;">就像是相機的 <strong>RAW
+                                    檔</strong>。保留了最完美的色彩與光影細節，但檔案超級肥大，會吃掉很多顯卡記憶體。</p>
                         </div>
-                        <div style="flex: 1; background: rgba(16, 185, 129, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
-                            <h3 style="color: #34d399; margin-bottom: 1rem; font-size: 1.8rem;"><i class="fa-solid fa-compress"></i> FP8 (輕量壓縮版)</h3>
-                            <p style="color: #cbd5e1; font-size: 1.4rem; line-height: 1.6;">就像是高品質的 <strong>JPG 檔</strong>。檔案大小直接少一半，跑得更快，而且對設計師來說「肉眼幾乎看不出畫質差異」。</p>
+                        <div
+                            style="flex: 1; background: rgba(16, 185, 129, 0.15); padding: 2rem; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                            <h3 style="color: #34d399; margin-bottom: 1rem; font-size: 1.8rem;"><i
+                                    class="fa-solid fa-compress"></i> FP8 (輕量壓縮版)</h3>
+                            <p style="color: #cbd5e1; font-size: 1.4rem; line-height: 1.6;">就像是高品質的 <strong>JPG
+                                    檔</strong>。檔案大小直接少一半，跑得更快，而且對設計師來說「肉眼幾乎看不出畫質差異」。</p>
                         </div>
                     </div>
-                    
-                    <div style="margin-top: 1.5rem; background: rgba(245, 158, 11, 0.1); border-left: 4px solid #f59e0b; padding: 1.5rem 2rem; border-radius: 4px;">
-                        <strong style="color: #fbbf24; font-size: 1.6rem;"><i class="fa-solid fa-circle-question"></i> 那精度需要匹配嗎？</strong>
-                        <p style="color: #cbd5e1; font-size: 1.4rem; margin-top: 0.8rem; margin-bottom: 0;"><strong>完全不需要！</strong> 精度只是「血袋的包裝大小」。只要血型 (架構) 正確，ComfyUI 醫院就會自動轉接處理。你可以放心將 <strong>FP8 壓縮版主模型</strong>配上 <strong>FP16 無損版 VAE</strong> 混搭使用！</p>
+
+                    <div
+                        style="margin-top: 1.5rem; background: rgba(245, 158, 11, 0.1); border-left: 4px solid #f59e0b; padding: 1.5rem 2rem; border-radius: 4px;">
+                        <strong style="color: #fbbf24; font-size: 1.6rem;"><i class="fa-solid fa-circle-question"></i>
+                            那精度需要匹配嗎？</strong>
+                        <p style="color: #cbd5e1; font-size: 1.4rem; margin-top: 0.8rem; margin-bottom: 0;">
+                            <strong>完全不需要！</strong> 精度只是「血袋的包裝大小」。只要血型 (架構) 正確，ComfyUI 醫院就會自動轉接處理。你可以放心將 <strong>FP8
+                                壓縮版主模型</strong>配上 <strong>FP16 無損版 VAE</strong> 混搭使用！
+                        </p>
                     </div>
                 </div>
             </section>
@@ -1492,19 +1782,32 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 關鍵技巧</div>
                         <h2>如何驗血？模型匹配三大招</h2>
                     </div>
-                    
+
                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
-                        <div style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #3b82f6;">
-                            <h3 style="color: #60a5fa; font-size: 2rem; margin-bottom: 1rem;"><i class="fa-solid fa-id-card"></i> 1. 看網站標籤</h3>
-                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">在 Civitai 下載時，務必檢查右側的 <strong>Base Model</strong> 標籤 (例如 <code>SDXL</code> 或 <code>FLUX.1 D</code>)。這是最準確的血型證明。</p>
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #3b82f6;">
+                            <h3 style="color: #60a5fa; font-size: 2rem; margin-bottom: 1rem;"><i
+                                    class="fa-solid fa-id-card"></i> 1. 看網站標籤</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">在 Civitai 下載時，務必檢查右側的
+                                <strong>Base Model</strong> 標籤 (例如 <code>SDXL</code> 或
+                                <code>FLUX.1 D</code>)。這是最準確的血型證明。
+                            </p>
                         </div>
-                        <div style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #10b981;">
-                            <h3 style="color: #34d399; font-size: 2rem; margin-bottom: 1rem;"><i class="fa-solid fa-file-signature"></i> 2. 看檔名暗示</h3>
-                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">注意檔案名稱後綴。好心的作者通常會標示血型，例如 <code>style_xl.safetensors</code> 或 <code>anime_flux.safetensors</code>。</p>
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #10b981;">
+                            <h3 style="color: #34d399; font-size: 2rem; margin-bottom: 1rem;"><i
+                                    class="fa-solid fa-file-signature"></i> 2. 看檔名暗示</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">注意檔案名稱後綴。好心的作者通常會標示血型，例如
+                                <code>style_xl.safetensors</code> 或 <code>anime_flux.safetensors</code>。
+                            </p>
                         </div>
-                        <div style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #f59e0b;">
-                            <h3 style="color: #fbbf24; font-size: 2rem; margin-bottom: 1rem;"><i class="fa-solid fa-link"></i> 3. 一條龍對齊</h3>
-                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">如果你決定主機是 FLUX，那你的 <strong>VAE、LoRA、ControlNet</strong> 全都必須找 FLUX 版本。一個錯就全盤皆輸！</p>
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 16px; border-top: 4px solid #f59e0b;">
+                            <h3 style="color: #fbbf24; font-size: 2rem; margin-bottom: 1rem;"><i
+                                    class="fa-solid fa-link"></i> 3. 一條龍對齊</h3>
+                            <p style="color: #cbd5e1; font-size: 1.5rem; line-height: 1.6;">如果你決定主機是 FLUX，那你的
+                                <strong>VAE、LoRA、ControlNet</strong> 全都必須找 FLUX 版本。一個錯就全盤皆輸！
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1517,11 +1820,18 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 07 - 實作四</div>
                         <h2>修復血型衝突地獄</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>載入刻意設計的「血型衝突」工作流 (FLUX 主模型 + SDXL VAE)。點擊 <strong>【Queue Prompt】</strong> 觀察紅字錯誤。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點選爆出紅字的 VAE 節點按 <strong>【Delete】</strong> 刪除，雙擊空白處載入正確的 `ae.safetensors` VAE 並重新連線 ➔ 再次生成。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                        <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                style="color: #a855f7; margin-right: 8px;"></i>載入刻意設計的「血型衝突」工作流 (FLUX 主模型 + SDXL VAE)。點擊
+                            <strong>【Queue Prompt】</strong> 觀察紅字錯誤。
+                        </li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                style="color: #a855f7; margin-right: 8px;"></i>點選爆出紅字的 VAE 節點按 <strong>【Delete】</strong>
+                            刪除，雙擊空白處載入正確的 `ae.safetensors` VAE 並重新連線 ➔ 再次生成。</li>
                         </ul>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
@@ -1541,12 +1851,14 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 07 - 觀念五 (終極應用)</div>
                         <h2>站在巨人的肩膀上：範本 (Templates)</h2>
                     </div>
-                    
+
                     <div class="glossary-box">
                         <strong><i class="fa-solid fa-copy"></i> 範本的威力</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.8;">
-                            <li><strong>不需從零造輪子</strong>：剛剛提到的 FaceID 或 LoRA，如果自己從零拉節點會像蜘蛛網一樣可怕。ComfyCloud 內建了「<strong>範本 (Templates)</strong>」功能解決這個痛點。</li>
-                            <li><strong>一鍵套用神級工作流</strong>：載入別人寫好的「完美換衣」或「商攝合成」工作流。設計師只需要「<strong>換圖、換詞、按生成</strong>」，不必管背後水管怎麼接！</li>
+                            <li><strong>不需從零造輪子</strong>：剛剛提到的 FaceID 或 LoRA，如果自己從零拉節點會像蜘蛛網一樣可怕。ComfyCloud
+                                內建了「<strong>範本 (Templates)</strong>」功能解決這個痛點。</li>
+                            <li><strong>一鍵套用神級工作流</strong>：載入別人寫好的「完美換衣」或「商攝合成」工作流。設計師只需要「<strong>換圖、換詞、按生成</strong>」，不必管背後水管怎麼接！
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1559,14 +1871,22 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 07 - 實作五</div>
                         <h2>一鍵套用專業範本</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
-                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【Comfy Cloud】</strong> ➔ 點擊上方 <strong>【Templates (範本)】</strong> ➔ 搜尋並載入 <strong>【FaceID 完美換裝】</strong>。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>觀察畫布瞬間載入幾十個節點。在最左側 <strong>【Load Image】</strong> 上傳照片 ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【Comfy Cloud】</strong> ➔
+                                點擊上方 <strong>【Templates (範本)】</strong> ➔ 搜尋並載入 <strong>【FaceID 完美換裝】</strong>。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>觀察畫布瞬間載入幾十個節點。在最左側 <strong>【Load
+                                    Image】</strong> 上傳照片 ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             享受「站在巨人肩膀上」的快感！無腦產出商業級別的完美一致性圖片。
                         </div>
                     </div>
@@ -1578,8 +1898,11 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
             <section class="slide">
                 <div class="content-area">
                     <div class="title-card">
-                        <div class="badge badge-accent" style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 08</div>
-                        <h2 style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">語言與影片模型總覽</h2>
+                        <div class="badge badge-accent"
+                            style="font-size: 1.5rem; padding: 0.8rem 2.5rem; margin-bottom: 2rem;">Chapter 08</div>
+                        <h2
+                            style="font-size: 4rem; font-weight: 800; text-shadow: 0 0 20px rgba(99,102,241,0.3); text-align: center;">
+                            語言與影片模型總覽</h2>
                         <p class="subtitle" style="font-size: 1.8rem; margin-top: 1rem;">選對武器，事半功倍</p>
                     </div>
                 </div>
@@ -1592,7 +1915,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 08 - 痛點場景</div>
                         <h2>選錯模型就像請數學教授寫詩</h2>
                     </div>
-                    
+
                     <div class="chat-container">
                         <div class="chat-row right">
                             <div class="chat-bubble user">
@@ -1626,14 +1949,15 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 08 - 觀念一</div>
                         <h2>語言模型 (LLM) 爭霸戰</h2>
                     </div>
-                    
+
                     <div class="glossary-box" style="margin-bottom: 1rem;">
                         <strong><i class="fa-solid fa-comments"></i> 語言模型四大天王</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.6;">
                             <li><strong>🟢 GPT-5.6 Sol</strong>：全能六邊形戰士。數學、邏輯、程式碼樣樣精通，適合複雜邏輯推演。</li>
                             <li><strong>🟠 Claude Fable 5</strong>：文學大師。文字極度自然無翻譯腔，嚴格遵守 Prompt 規則，行銷人最愛。</li>
                             <li><strong>🔵 Gemini Pro 3.1</strong>：超大容量與原生多模態怪獸。可讀取超長書籍、整套品牌指南或整部電影。</li>
-                            <li><strong>⚪ Kimi K3</strong>：開源與長文本新星。具備強大的 <strong>公開食譜 (Open-weight，免費拿去改)</strong>，處理超長中文文本 CP 值極高。</li>
+                            <li><strong>⚪ Kimi K3</strong>：開源與長文本新星。具備強大的 <strong>公開食譜
+                                    (Open-weight，免費拿去改)</strong>，處理超長中文文本 CP 值極高。</li>
                         </ul>
                     </div>
                 </div>
@@ -1646,15 +1970,25 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 08 - 實作一</div>
                         <h2>測試不同模型的文案風格</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
-                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開三個不同的網頁（例如：ChatGPT、Claude、Gemini），或是透過 Antigravity 直接切換底層模型。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>給予三個模型完全一樣的指令：<code>「請用具備電影感的風格，寫一段 50 字的春季高定服裝文案」</code>。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>觀察 GPT、Claude、Gemini 產生的文字在「說話語氣」與「文學感」上的巨大差異。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開三個不同的網頁（例如：ChatGPT、Claude、Gemini），或是透過
+                                Antigravity 直接切換底層模型。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>給予三個模型完全一樣的指令：<code>「請用具備電影感的風格，寫一段 50 字的春季高定服裝文案」</code>。
+                            </li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>觀察 GPT、Claude、Gemini
+                                產生的文字在「說話語氣」與「文學感」上的巨大差異。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             你會發現，Claude 寫出的文案通常最為優雅、有詩意；而 GPT 則可能帶有強烈的總結感。這就是為什麼行銷人偏愛 Claude！
                         </div>
                     </div>
@@ -1663,7 +1997,8 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
 
             <!-- 中場休息 -->
             <section class="slide">
-                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <div class="content-area"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 0.5rem;">☕</div>
                     <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">中場休息 10 分鐘</h2>
                     <p style="font-size: 2.5rem; color: #cbd5e1;">玩過文字模型後，我們等等來點更刺激的動態影像，先喝口水！</p>
@@ -1677,11 +2012,12 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge">Chapter 08 - 觀念二</div>
                         <h2>影片生成模型 (Video AI) 比較</h2>
                     </div>
-                    
+
                     <div class="glossary-box" style="margin-bottom: 1rem;">
                         <strong><i class="fa-solid fa-video"></i> 影片模型四大天王</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; font-size: 1.4rem; line-height: 1.6;">
-                            <li><strong>🎬 Kling O3 (可靈)</strong>：地表最強物理運算。具備強大的 <strong>懂物理法則的真實 3D 空間感 (3D Spatiotemporal)</strong>，動作極度自然。</li>
+                            <li><strong>🎬 Kling O3 (可靈)</strong>：地表最強物理運算。具備強大的 <strong>懂物理法則的真實 3D 空間感 (3D
+                                    Spatiotemporal)</strong>，動作極度自然。</li>
                             <li><strong>🚀 Runway Gen-4</strong>：精準「專業運鏡控制」。完美聽從專業指令進行轉場與推進，適合專業廣告前導片。</li>
                             <li><strong>🌟 SeedDance 2.5</strong>：極致「多模態控制」。同時吃進圖文語音，保持跨鏡頭人物一致性。</li>
                             <li><strong>🎥 Google Veo 3.1</strong>：原生音效生成與電影語意理解。完美理解電影術語，自帶高還原度的原生音效。</li>
@@ -1697,14 +2033,22 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <div class="badge badge-accent">💻 Chapter 08 - 實作二</div>
                         <h2>為模特兒打造專屬情境短片</h2>
                     </div>
-                    
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
-                        <ul class="concept-list" style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Kling 或 Luma】分頁</strong> ➔ 點擊 <strong>【Image to Video】</strong> ➔ 上傳前一章算出的完美模特兒圖片。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>在提示詞輸入：<code>"The model is gracefully interacting with a surreal natural environment, cinematic editorial fashion video..."</code> ➔ 點擊 <strong>【Generate】</strong>。</li>
+
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; color: #a855f7; margin-bottom: 0.5rem;"><i
+                                class="fa-regular fa-clock"></i> 實作時間：15 分鐘</h3>
+                        <ul class="concept-list"
+                            style="margin-bottom:0; font-size:1.4rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Kling 或 Luma】分頁</strong>
+                                ➔ 點擊 <strong>【Image to Video】</strong> ➔ 上傳前一章算出的完美模特兒圖片。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
+                                    style="color: #a855f7; margin-right: 8px;"></i>在提示詞輸入：<code>"The model is gracefully interacting with a surreal natural environment, cinematic editorial fashion video..."</code>
+                                ➔ 點擊 <strong>【Generate】</strong>。</li>
                         </ul>
-                        <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
+                        <div
+                            style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; font-size: 1.8rem;">
                             🎉 <strong>見證最終成果</strong>：你會得到一段完美一致、極度逼真的時尚展演影片！這就是 AI 時代一人團隊的恐怖生產力！
                         </div>
                     </div>
@@ -1713,10 +2057,12 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
 
             <!-- 中場休息 -->
             <section class="slide">
-                <div class="content-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <div class="content-area"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 0.5rem;">👏</div>
                     <h2 style="color: #fcd34d; font-size: 4rem; margin-bottom: 0.5rem;">給自己一個大大的掌聲！</h2>
-                    <p style="font-size: 2.5rem; color: #cbd5e1; max-width: 800px;">你已經完成了這趟 7 小時的密集實戰。從不懂程式碼的設計師，蛻變為能夠建立 SKILL、駕馭 Agent，甚至組裝 ComfyCloud 管線的 AI 指揮官。</p>
+                    <p style="font-size: 2.5rem; color: #cbd5e1; max-width: 800px;">你已經完成了這趟 7
+                        小時的密集實戰。從不懂程式碼的設計師，蛻變為能夠建立 SKILL、駕馭 Agent，甚至組裝 ComfyCloud 管線的 AI 指揮官。</p>
                 </div>
             </section>
 
@@ -1725,9 +2071,12 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
             <section class="slide">
                 <div class="content-area title-card">
                     <h2 class="gradient-text" style="font-size:5rem;">課程總結與發表</h2>
-                    <div style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); width:100%; max-width:800px; margin-top:2rem;">
-                        <h3 style="font-size: 3rem; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 總結時間：15 分鐘</h3>
-                        <p style="font-size: 3rem; line-height: 1.6;">請將下午生成的最終圖片，運用早上學到的 GitHub 協作技巧，請 Antigravity 幫您 push 到遠端倉庫，完成今日的成果發表！</p>
+                    <div
+                        style="background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:24px; border:1px solid rgba(255,255,255,0.1); width:100%; max-width:800px; margin-top:2rem;">
+                        <h3 style="font-size: 3rem; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 總結時間：15
+                            分鐘</h3>
+                        <p style="font-size: 3rem; line-height: 1.6;">請將下午生成的最終圖片，運用早上學到的 GitHub 協作技巧，請 Antigravity 幫您
+                            push 到遠端倉庫，完成今日的成果發表！</p>
                     </div>
                     <h3 style="font-size:3rem; color:#fca5a5; margin-top:1rem;">🎉 恭喜完成一日實戰挑戰！</h3>
                 </div>
@@ -1742,7 +2091,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                 <span id="slide-counter" class="counter">1 / 27</span>
                 <button id="next-btn" class="nav-btn">下一頁 <i class="fa-solid fa-chevron-right"></i></button>
             </div>
-            
+
             <div class="timeline-container">
                 <!-- 刻度標示 -->
                 <div class="timeline-markers">
@@ -1766,7 +2115,8 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
             </div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
