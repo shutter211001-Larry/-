@@ -69,15 +69,15 @@
                                     style="background: rgba(252, 211, 77, 0.1); border-left: 3px solid #fcd34d; padding: 1rem; margin-top: 0.5rem; border-radius: 4px;">
                                     <span style="color: #fcd34d; font-weight: bold;">💡 為什麼核心引擎選用
                                         Gemini Pro 3.1？(最符合經濟成本)</span><br>
-                                    <span
-                                        style="color: #e2e8f0; margin-top: 0.3rem; display: inline-block;">【以處理「一張設計參考圖」為基準值來比較：】</span>
                                     <ul style="color: #cbd5e1; padding-left: 1.5rem; margin-top: 0.5rem; line-height: 1.6;">
-                                        <li style="margin-bottom: 0.3rem;"><strong>極致的試錯成本：</strong> Gemini Pro 3.1
-                                            提供極寬裕的測試額度，處理圖片幾乎 <strong>$0</strong>。相比之下，ClaudeCode 讀取一張圖大約要花
-                                            <strong>0.2~0.5 台幣</strong>，且 Codex 有高昂月費。
-                                        </li>
-                                        <li><strong>免除可怕的「過路費」堆疊：</strong> AI 是「每次對話都會重新讀取所有資料」。如果你專案丟了 10 張規範圖並來回修改 20
-                                            次，用 Claude 會被收 `10張 × 20次 = 200次` (瞬間燒掉百元台幣)！Gemini 的超大容量讓你能瘋狂試錯而不心痛。</li>
+                                        <li style="margin-bottom: 0.3rem;"><strong>1. 月費與基本容量比較：</strong><br>
+                                        <strong>Gemini Pro 3.1</strong> 提供極寬裕免費額度，且容量高達 <strong>200 萬 Token</strong> (約 2000 張圖)；<strong>Codex(Copilot) 訂閱制</strong> 雖免 Token 計費，但記憶力被限制在 <strong>8K~128K</strong> (約 1~2 張圖)，無法做專案風格統整；<strong>Claude 等 API</strong> 則無免費額度。</li>
+                                        <li style="margin-bottom: 0.3rem;"><strong>2. 單次處理費用 (以 API 消耗 Token 計算)：</strong><br>
+                                        AI 會「每次重新讀取所有背景資料」。處理一張圖約消耗數千 Token。<br>
+                                        <strong>Gemini Pro 3.1</strong> 在免費額度內等於 <strong>$0</strong>；而 <strong>Claude 等 API</strong> 讀取一張圖約 <strong>0.2 ~ 0.5 台幣</strong>，且隨對話變長，過路費會像滾雪球增加。</li>
+                                        <li><strong>3. 「3000 台幣預算」的單月處理極限對比：</strong><br>
+                                        若專案有 10 張圖來回修改 20 次，會產生 <code>10 × 20 = 200次</code> 疊加讀取。<br>
+                                        <strong>Codex 訂閱制</strong> 會直接爆掉容量上限 (超出 128K) 強制失憶；<strong>Claude 等 API</strong> (3000預算) 只能承受不到 <strong>10,000 次</strong> 讀取，極易燒光；<strong>Gemini Pro 3.1</strong> 則可帶來<strong>數百萬次</strong>的超大處理容量。</li>
                                     </ul>
                                 </div>
                             </li>
@@ -244,7 +244,7 @@
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>點擊編輯器右側的 <strong>【Antigravity
                                     Chat】分頁</strong> ➔ 點擊下方的 <strong>【對話輸入框】</strong> ➔
-                                輸入內容：<code>「請讀取素材包裡的『春季高定服裝』參考草圖並進行分析」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
+                                輸入內容：<code>「請讀取素材包裡的『銀河系挑染造型』參考草圖並進行分析」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
@@ -288,7 +288,7 @@
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; ">
                         <div class="title">📄 SKILL.md 撰寫範例 (注意最上方的員工識別證)</div>
                         <pre style="margin:0; color:#e2e8f0;"><code><span style="color: #fcd34d;">---</span>
-<span style="color: #fcd34d;">name: "fashion_director"</span>
+<span style="color: #fcd34d;">name: "hair_makeup_director"</span>
 <span style="color: #fcd34d;">description: "專門負責審閱構圖與色彩學的美術總監" </span><span style="color: #fca5a5;"># 這是給 AI 看的觸發雷達，非常重要！</span>
 <span style="color: #fcd34d;">---</span>
 <span style="color: #94a3b8;">⬆️ 上面黃色這塊被 --- 包起來的區域，就是傳說中的 YAML Frontmatter (員工識別證)！</span>
@@ -840,7 +840,7 @@
 - **文案語氣**：化身為「帶有溫度的皮膚科醫生」，一律使用繁體中文。
 
 <span style="color: #93c5fd;">## 3. 📋 工作流程 (Workflow Rules)</span>
-- **發文 SOP**：執行發文時，先調用 fashion_director 審圖 ➔ 通過後調用 social_marketer 寫文案 ➔ 存入 output 資料夾。
+- **發文 SOP**：執行發文時，先調用 hair_makeup_director 審圖 ➔ 通過後調用 social_marketer 寫文案 ➔ 存入 output 資料夾。
 
 <span style="color: #fca5a5;">## 4. 🚫 避坑清單 (Constraint Rules)</span>
 - **商業禁忌**：文案中絕對不能提到競品公司 (如 L'Oréal)。
@@ -996,7 +996,7 @@
                             Agent 調用多 SKILL 連續技範例</div>
                         <div class="chat-row right">
                             <div class="chat-bubble user" style="max-width: 90%;">
-                                請先用「時尚總監」的身分評價這張春季高定服裝草圖，評價完後，把結果交給「IG 行銷專家」幫我生出一篇帶有 Hashtag 的社群貼文。
+                                請先用「妝髮總監」的身分評價這張銀河系挑染造型草圖，評價完後，把結果交給「IG 行銷專家」幫我生出一篇帶有 Hashtag 的社群貼文。
                             </div>
                             <div class="avatar">👨</div>
                         </div>
@@ -1007,7 +1007,7 @@
                                 <em>(切換為藝術總監審查...)</em><br>
                                 這張圖光影太差，沒有重點。<br><br>
                                 <em>(切換為行銷專家寫文案...)</em><br>
-                                🚀 完美突破！今天的春季高定設計雖然面臨光影挑戰... #設計日常 #FashionShow
+                                🚀 完美突破！今天的銀河系挑染設計雖然面臨光影挑戰... #設計日常 #FashionShow
                             </div>
                         </div>
                     </div>
@@ -1031,7 +1031,7 @@
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【Antigravity
                                     Chat】分頁</strong> ➔ 丟入一張你的設計圖 ➔
-                                輸入：<code>「請先調用時尚總監幫我嚴格審查這張草圖的材質與色彩，然後將審查結果交給行銷大師，幫我寫一篇限時動態文案。」</code></li>
+                                輸入：<code>「請先調用妝髮總監幫我嚴格審查這張草圖的材質與色彩，然後將審查結果交給行銷大師，幫我寫一篇限時動態文案。」</code></li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
@@ -1070,7 +1070,7 @@
 
 ## 🎨 社群發文標準 SOP
 當我要求「跑發文流程」時，請嚴格遵守以下步驟，並調用對應的 SKILL：
-1. **第一關 (審查)**：主動調用 `fashion_director` (時尚總監) 身分，對草圖的材質與視覺進行嚴格批判。
+1. **第一關 (審查)**：主動調用 `hair_makeup_director` (妝髮總監) 身分，對草圖的材質與視覺進行嚴格批判。
 2. **第二關 (文案)**：批判過關後，自動調用 `social_marketer` (IG 行銷小編) 身分，寫出社群貼文。
 3. ⚠️ 嚴格限制：未經第一關審查，絕對不能直接跳到第二關。</code></pre>
                     </div>
@@ -1156,7 +1156,7 @@
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>點擊編輯器右側的 <strong>【Antigravity
                                     Chat】分頁</strong> ➔ 點擊下方的 <strong>【對話輸入框】</strong> ➔
-                                輸入內容：<code>「/goal 請幫我把這 100 張春季服裝參考草圖執行批次轉檔，遇到錯誤自動除錯直到全部完成」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
+                                輸入內容：<code>「/goal 請幫我把這 100 張銀河系挑染參考草圖執行批次轉檔，遇到錯誤自動除錯直到全部完成」</code> ➔ 按下 <strong>【Enter】發送</strong>。</li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
@@ -1200,7 +1200,7 @@
                         <strong><i class="fa-solid fa-brain"></i> 把 AI 當專家</strong>
                         <ul style="padding-left: 2rem; color: #e2e8f0; line-height: 1.8;">
                             <li><strong>靈感拷問面試官 (/grill-me)</strong>：/grill-me 指令，當你靈感枯竭時，用這個指令讓 AI
-                                反過來「面試你」。它會不斷逼問你細節（例如：燈光要多暗？服裝是什麼材質？），直到釐清真正的設計需求。</li>
+                                反過來「面試你」。它會不斷逼問你細節（例如：燈光要多暗？髮型是什麼材質？），直到釐清真正的設計需求。</li>
                             <li><strong>記憶吐司印記 (/learn)</strong>：/learn 指令，當你調教出完美的工作流，只要打 `/learn`，Agent 就會自動分析剛才的對話，並把這套經驗寫入大腦
                                 (AGENTS.md 或 Skills 中)，下次直接變成專家。</li>
                         </ul>
@@ -1208,7 +1208,7 @@
 
                     <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; ">
                         <div class="title">💬 /grill-me 互動對話範例</div>
-                        <pre style="margin:0; color:#e2e8f0;"><code>👨 你：/grill-me 我想設計一套前衛的春夏高定服裝，但我沒想法。
+                        <pre style="margin:0; color:#e2e8f0;"><code>👨 你：/grill-me 我想設計一套前衛的銀河系挑染造型，但我沒想法。
 🤖 Agent：好的！為了幫您產出最精準的設定，請問：
    1. 這個角色的職業是什麼？(駭客/傭兵/還是財閥高層？)
    2. 身上主要的發光體顏色是什麼？(霓虹粉/螢光綠？)
@@ -1234,7 +1234,7 @@
                             style="margin-bottom:0; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>點擊 <strong>【Antigravity
-                                    Chat】分頁</strong> ➔ 輸入：<code>「/grill-me 我想為春季高定系列設計一套前衛的服裝，但我沒想法」</code> ➔ 經歷三輪逼問 ➔ 獲得解答後，輸入：<code>「/learn 記住我今天對於春季高定服裝的偏好」</code>。</li>
+                                    Chat】分頁</strong> ➔ 輸入：<code>「/grill-me 我想為銀河系挑染系列設計一套前衛的髮型，但我沒想法」</code> ➔ 經歷三輪逼問 ➔ 獲得解答後，輸入：<code>「/learn 記住我今天對於銀河系挑染造型的偏好」</code>。</li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
@@ -1333,11 +1333,11 @@
                         <div class="demo-box" style="margin-top:1rem; padding: 1.5rem; ">
                             <div class="title">💬 示範輸入</div>
                             <pre
-                                style="margin:0; color:#e2e8f0; font-family: 'Inter', sans-serif;">「我要建立一個『春季時尚大秀』專案。請幫我分析我需要哪些 SKILL (例如：服裝設計師、秀場導演)。接著，直接幫我在 `.agents/skills/` 建立對應的 SKILL 檔案，並在 `.agents/AGENTS.md` 中寫下這些職位的工作流 SOP！」</pre>
+                                style="margin:0; color:#e2e8f0; font-family: 'Inter', sans-serif;">「我要建立一個『年度髮妝大賞』專案。請幫我分析我需要哪些 SKILL (例如：妝髮總監、秀場導演)。接著，直接幫我在 `.agents/skills/` 建立對應的 SKILL 檔案，並在 `.agents/AGENTS.md` 中寫下這些職位的工作流 SOP！」</pre>
                         </div>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
-                            🚀 <strong>驚人的結果</strong>：你會看到 Agent 在背景幫你建好 <code>fashion_director/SKILL.md</code>，並把工作流寫進
+                            🚀 <strong>驚人的結果</strong>：你會看到 Agent 在背景幫你建好 <code>hair_makeup_director/SKILL.md</code>，並把工作流寫進
                             <code>AGENTS.md</code> 中。你連一個資料夾都不用自己建！
                         </div>
                     </div>
@@ -1425,11 +1425,11 @@
                                 class="fa-regular fa-clock"></i> 實作時間：20 分鐘</h3>
                         <ul class="concept-list"
                             style="margin-bottom:0; list-style: none; padding-left: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>找到中央的 <strong>【KSampler】</strong> 節點，將 <code>seed</code> 設為 <code>randomize</code> ➔ 點擊 <strong>【Queue Prompt】</strong> 生成一張滿意的「春季高定模特兒」圖片。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>找到中央的 <strong>【KSampler】</strong> 節點，將 <code>seed</code> 設為 <code>randomize</code> ➔ 點擊 <strong>【Queue Prompt】</strong> 生成一張滿意的「銀河系挑染模特兒」圖片。</li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>稍微修改 Prompt 文字 ➔ 再次點擊 <strong>【Queue Prompt】</strong>。</li>
                         </ul>
                         <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
-                            發現原本滿意的構圖與春季模特兒長相全部跑掉！體會因為「隨機抽盲盒」導致連人物長相跟背景都全變的無力感。
+                            發現原本滿意的構圖與銀河系挑染模特兒長相全部跑掉！體會因為「隨機抽盲盒」導致連人物長相跟背景都全變的無力感。
                         </div>                 </div>
                 </div>
             </section>
@@ -1482,7 +1482,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                             style="flex:1; background:rgba(0,0,0,0.3); padding:2rem; border-radius:12px; border:1px solid rgba(74, 222, 128, 0.3);">
                             <h4 style="color:#4ade80; margin-bottom:1rem; ">✅ 結構化示範</h4>
                             <p style="line-height:1.6; color:#e2e8f0;">
-                                <strong style="color:#a5b4fc;">Positive</strong>：一位穿著春季洋裝的模特兒<br>
+                                <strong style="color:#a5b4fc;">Positive</strong>：一位穿著銀河系挑染的模特兒<br>
                                 <strong style="color:#fca5a5;">Negative</strong>：貓、多餘的物件
                             </p>
                         </div>
@@ -1506,14 +1506,14 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                             style="margin-bottom:0; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【CLIP Text Encode (外星語翻譯官)
-                                    (Positive)】</strong> 節點輸入：<code>「前衛春季高定模特兒, 秀場背景」</code> ➔ 在下方的
+                                    (Positive)】</strong> 節點輸入：<code>「前衛銀河系挑染模特兒, 秀場背景」</code> ➔ 在下方的
                                 <strong>【(Negative)】</strong> 節點輸入：<code>「帽子」</code> ➔ 點擊 <strong>【Queue
                                     Prompt】按鈕</strong>。
                             </li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
-                            精準產出毫無帽子的完美春季高定模特兒，見證結構化提示詞的強大控制力！
+                            精準產出毫無帽子的完美銀河系挑染模特兒，見證結構化提示詞的強大控制力！
                         </div>
                     </div>
                     <div class="pitfall-box fragment" style="margin-top:0;">
@@ -1993,7 +1993,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         <ul style="padding-left: 2rem; color: #e2e8f0; line-height: 1.8;">
                             <li><strong>不需從零造輪子</strong>：剛剛提到的 FaceID 或 LoRA，如果自己從零拉節點會像蜘蛛網一樣可怕。ComfyCloud
                                 內建了「<strong>範本 (Templates)</strong>」功能解決這個痛點。</li>
-                            <li><strong>一鍵套用神級工作流</strong>：載入別人寫好的「完美換衣」或「商攝合成」工作流。設計師只需要「<strong>換圖、換詞、按生成</strong>」，不必管背後水管怎麼接！
+                            <li><strong>一鍵套用神級工作流</strong>：載入別人寫好的「完美換髮」或「商攝合成」工作流。設計師只需要「<strong>換圖、換詞、按生成</strong>」，不必管背後水管怎麼接！
                             </li>
                         </ul>
                     </div>
@@ -2016,7 +2016,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                             style="margin-bottom:0; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>在 <strong>【Comfy Cloud】</strong> ➔
-                                點擊上方 <strong>【Templates (範本)】</strong> ➔ 搜尋並載入 <strong>【FaceID 完美換裝】</strong>。</li>
+                                點擊上方 <strong>【Templates (範本)】</strong> ➔ 搜尋並載入 <strong>【FaceID 完美換髮色】</strong>。</li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>觀察畫布瞬間載入幾十個節點。在最左側 <strong>【Load
                                     Image】</strong> 上傳照片 ➔ 點擊 <strong>【Queue Prompt】</strong>。</li>
@@ -2055,7 +2055,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                     <div class="chat-container">
                         <div class="chat-row right">
                             <div class="chat-bubble user">
-                                老闆要我寫一篇「具備電影感」的春季高定服裝文案，我用了 ChatGPT 寫出來的都是「這件衣服真的很棒、很時尚」這種廢話！
+                                老闆要我寫一篇「具備電影感」的銀河系挑染造型文案，我用了 ChatGPT 寫出來的都是「這個髮色真的很棒、很時尚」這種廢話！
                                 <img src="../images/ch8_scene1.png" class="chat-image" alt="被退稿的文案">
                             </div>
                             <div class="avatar">👨</div>
@@ -2117,7 +2117,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                                     style="color: #a855f7; margin-right: 8px;"></i>打開三個不同的網頁（例如：ChatGPT、Claude、Gemini），或是透過
                                 Antigravity 直接切換底層模型。</li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
-                                    style="color: #a855f7; margin-right: 8px;"></i>給予三個模型完全一樣的指令：<code>「請用具備電影感的風格，寫一段 50 字的春季高定服裝文案」</code>。
+                                    style="color: #a855f7; margin-right: 8px;"></i>給予三個模型完全一樣的指令：<code>「請用具備電影感的風格，寫一段 50 字的銀河系挑染造型文案」</code>。
                             </li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>觀察 GPT、Claude、Gemini
@@ -2204,7 +2204,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         </ul>
                         <div
                             style="background: rgba(220,38,38,0.2); border-left: 4px solid #ef4444; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #fca5a5; ">
-                            ⚠️ <strong>避坑 TIP (新手大坑)</strong>：千萬不要讓提示詞與原圖片產生嚴重的場景衝突，否則 AI 會為了強行改變背景，導致主角的臉與衣服變形崩壞！
+                            ⚠️ <strong>避坑 TIP (新手大坑)</strong>：千萬不要讓提示詞與原圖片產生嚴重的場景衝突，否則 AI 會為了強行改變背景，導致主角的臉與髮型變形崩壞！
                         </div>
                     </div>
                 </div>
@@ -2226,12 +2226,12 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                  </div>
             </section>
 
-            <!-- Slide 8.7: 實作三 (首尾幀換裝) -->
+            <!-- Slide 8.7: 實作三 (首尾幀換髮色) -->
             <section class="slide">
                 <div class="content-area">
                     <div class="slide-header">
                         <div class="badge badge-accent">💻 Chapter 08 - 實作三</div>
-                        <h2>用首尾幀製作完美的服裝變化</h2>
+                        <h2>用首尾幀製作完美的髮色變化</h2>
                     </div>
 
                     <div
@@ -2243,7 +2243,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>開啟 <strong>【Start/End Frames】</strong>。</li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
-                                    style="color: #a855f7; margin-right: 8px;"></i>首幀上傳「春季高定」，尾幀上傳「秋季大衣」(需確保角度一致)。</li>
+                                    style="color: #a855f7; margin-right: 8px;"></i>首幀上傳「銀河系挑染」，尾幀上傳「龐克粉紅短髮」(需確保角度一致)。</li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>提示詞輸入：<code>"The model is transforming clothes smoothly"</code> ➔ 點擊 <strong>【Generate】</strong>。
                                 <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
@@ -2260,7 +2260,7 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         </div>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
-                            🎉 <strong>見證最終成果</strong>：你會得到一段極度逼真的動態換裝展演！這就是 AI 時代一人團隊的恐怖生產力！
+                            🎉 <strong>見證最終成果</strong>：你會得到一段極度逼真的動態換髮色展演！這就是 AI 時代一人團隊的恐怖生產力！
                         </div>
                     </div>
                 </div>
