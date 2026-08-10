@@ -106,4 +106,9 @@
 *   打開電腦上的 **【GitHub Desktop】** 程式 ➔ 點擊左上角的 **【File (檔案)】** 選單 ➔ 選擇 **【Add Local Repository... (加入本機時光機基地)】** ➔ 選擇你現在的專案資料夾。
 *   點擊左上角的 **【History (歷史紀錄)】** 標籤。
 
+> 📸 **【截圖佔位】請在此處插入截圖**
+> 說明：請截取 GitHub Desktop 左下角的「Commit」區塊，以及上方的「Push origin」按鈕
+> 圖檔請放置於：`../images/ch2_github_desktop.png`
+![安裝說明圖](../images/ch2_github_desktop.png)
+
 > 🚀 **確認成果**：你會看到畫面上清楚列出剛剛 Agent 幫你自動存檔的「修改人物臉部光影」等紀錄！未來如果你想手動回到某個版本，只要對著那條紀錄按右鍵選擇「**Revert (倒帶)**」就可以了，完全不用打任何一行程式碼！

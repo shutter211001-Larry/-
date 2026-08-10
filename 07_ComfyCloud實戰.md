@@ -74,6 +74,11 @@
 *   在畫布空白處 **點擊兩下左鍵**，畫面會跳出一個搜尋框 ➔ 輸入並加入 **【ControlNet Apply】** 與 **【Load Image】** 節點。
 *   在上方的 **【Load Image】** 節點上傳一張有明確骨架或邊緣線的模特兒參考圖 ➔ 用滑鼠左鍵點住原圖的黃色小圓點，拖曳連線到 ControlNet 的輸入端 ➔ 再次點擊右上角的 **【Queue Prompt】**。
 
+> 📸 **【截圖佔位】請在此處插入截圖**
+> 說明：請截取 ComfyCloud 工作流中「上傳圖片 (Load Image)」節點與「執行 (Queue Prompt)」按鈕位置
+> 圖檔請放置於：`../images/ch7_comfycloud_ui.png`
+![安裝說明圖](../images/ch7_comfycloud_ui.png)
+
 > 體會當你加上「強制描圖紙」後，AI 乖乖讓春季高定模特兒擺出你要的姿勢的強大控制力！
 
 ### ⚠️ 實作避坑 TIP

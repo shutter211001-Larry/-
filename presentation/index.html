@@ -6,53 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 協作與生成實戰 - 一日課程簡報 (分離式漸進教學版)</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .glossary-box {
-            background: rgba(99, 102, 241, 0.15);
-            border-left: 5px solid var(--primary-color);
-            padding: 2rem;
-            border-radius: 0 12px 12px 0;
-            margin-bottom: 0.5rem;
-        }
-
-        .glossary-box strong {
-            color: #a5b4fc;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .demo-box {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 2.5rem;
-            border-radius: 12px;
-            font-family: monospace;
-            color: #4ade80;
-            margin-top: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .demo-box .title {
-            color: #94a3b8;
-            margin-bottom: 0.5rem;
-            font-family: 'Noto Sans TC';
-        }
-
-        .slide-header {
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .slide-header.left {
-            text-align: left;
-        }
-    </style>
 </head>
 
 <body>
@@ -102,15 +59,19 @@
                         <ul style="padding-left: 2rem; color: #e2e8f0; line-height: 1.8;">
                             <li><strong>本地神級助理</strong>：Google Antigravity IDE 是你的本地 IDE Agent (數位工作室 / 頂級畫室) 數位實習生。 👉 <a
                                     href="https://ai.google.dev/" target="_blank" style="color: #60a5fa;">下載連結</a><br>
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Antigravity IDE 官方下載首頁與按鈕<br>
+                                    圖檔命名：<code>ch0_antigravity_ide.png</code>
+                                </div>
+                                <img src="../images/ch0_antigravity_ide.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Antigravity IDE">
                                 <div
-                                    style="background: rgba(24cd, 211, 77, 0.1); border-left: 3px solid #fcd34d; padding: 1rem; margin-top: 0.5rem; border-radius: 4px;">
+                                    style="background: rgba(252, 211, 77, 0.1); border-left: 3px solid #fcd34d; padding: 1rem; margin-top: 0.5rem; border-radius: 4px;">
                                     <span style="color: #fcd34d; font-weight: bold;">💡 為什麼核心引擎選用
                                         Gemini Pro 3.1？(最符合經濟成本)</span><br>
                                     <span
                                         style="color: #e2e8f0; margin-top: 0.3rem; display: inline-block;">【以處理「一張設計參考圖」為基準值來比較：】</span>
-                                    <ul
-                                        style="color: #cbd5e1; ">
-                                        <li><strong>第一關 (審查)</strong>：主動調用 <code>fashion_director</code> (時尚總監) 身分，對草圖的材質與視覺進行嚴格批判。</li>
+                                    <ul style="color: #cbd5e1; padding-left: 1.5rem; margin-top: 0.5rem; line-height: 1.6;">
                                         <li style="margin-bottom: 0.3rem;"><strong>極致的試錯成本：</strong> Gemini Pro 3.1
                                             提供極寬裕的測試額度，處理圖片幾乎 <strong>$0</strong>。相比之下，ClaudeCode 讀取一張圖大約要花
                                             <strong>0.2~0.5 台幣</strong>，且 Codex 有高昂月費。
@@ -122,25 +83,70 @@
                             </li>
                             <li><strong>外掛底層引擎</strong>：Node.js (快遞引擎) 是下載擴充外掛 (SKILL) 的必備引擎。 👉 <a href="https://nodejs.org/"
                                     target="_blank" style="color: #60a5fa;">下載連結</a><br>
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Node.js 官網的 LTS 下載按鈕位置<br>
+                                    圖檔命名：<code>ch0_nodejs_install.png</code>
+                                </div>
+                                <img src="../images/ch0_nodejs_install.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Node.js 安裝">
                                 <span style="color: #fca5a5; ">*(⚠️ 避坑：進入官網後，<strong>Windows
                                         系統</strong>請直接下載 Windows Installer (.msi) 版本，<strong>Mac 系統</strong>請下載 macOS
                                     Installer (.pkg) 版本，<strong>不需要</strong>透過 Docker 安裝！)*</span>
                             </li>
                             <li><strong>素材檢視工具</strong>：Adobe Photoshop (或 Photopea) 是開啟 PSD 素材必備軟體。 👉 <a
                                     href="https://www.photopea.com/" target="_blank" style="color: #60a5fa;">網頁版連結</a>
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Photopea 網頁首頁或 Photoshop 開啟畫面<br>
+                                    圖檔命名：<code>ch0_photopea.png</code>
+                                </div>
+                                <img src="../images/ch0_photopea.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Photopea">
                             </li>
                             <li><strong>雲端生圖平台</strong>：Comfy Cloud 帳號是像心智圖一樣連連看的雲端生圖平台。 👉 <a href="https://comfy.org/"
-                                    target="_blank" style="color: #60a5fa;">註冊連結</a></li>
+                                    target="_blank" style="color: #60a5fa;">註冊連結</a>
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Comfy Cloud 註冊/登入畫面<br>
+                                    圖檔命名：<code>ch0_comfycloud.png</code>
+                                </div>
+                                <img src="../images/ch0_comfycloud.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Comfy Cloud">
+                            </li>
                             <li><strong>模型擴充圖庫</strong>：Civitai 帳號是下載進階 LoRA 模型必備。 👉 <a href="https://civitai.com/"
-                                    target="_blank" style="color: #60a5fa;">註冊連結</a></li>
+                                    target="_blank" style="color: #60a5fa;">註冊連結</a>
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Civitai 註冊/登入畫面<br>
+                                    圖檔命名：<code>ch0_civitai.png</code>
+                                </div>
+                                <img src="../images/ch0_civitai.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Civitai">
+                            </li>
                             <li><strong>動態影片生成</strong>：Kling AI / Luma 帳號是生成最終動態影片必備。 👉 <a href="https://klingai.com/"
                                     target="_blank" style="color: #60a5fa;">Kling</a> / <a
                                     href="https://lumalabs.ai/dream-machine" target="_blank"
-                                    style="color: #60a5fa;">Luma</a></li>
+                                    style="color: #60a5fa;">Luma</a>
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Kling AI 註冊/登入畫面<br>
+                                    圖檔命名：<code>ch0_kling_luma.png</code>
+                                </div>
+                                <img src="../images/ch0_kling_luma.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Kling AI">
+                            </li>
                             <li><strong>專案時空機</strong>：Git & GitHub Desktop 讓你體驗無極限的 <strong>Ctrl+Z (Mac 為 Cmd+Z)</strong>
                                 時空機（也就是專案版控）。 👉 <a href="https://git-scm.com/downloads" target="_blank"
                                     style="color: #60a5fa;">Git 下載</a> / <a href="https://desktop.github.com/"
                                     target="_blank" style="color: #60a5fa;">Desktop 下載</a><br>
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Git 下載頁面的 Windows/Mac 下載按鈕<br>
+                                    圖檔命名：<code>ch0_git_install.png</code>
+                                </div>
+                                <img src="../images/ch0_git_install.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Git">
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 GitHub Desktop 官網下載按鈕<br>
+                                    圖檔命名：<code>ch0_github_desktop.png</code>
+                                </div>
+                                <img src="../images/ch0_github_desktop.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="GitHub Desktop">
                                 <span style="color: #fca5a5; ">*(⚠️ 避坑：Git 安裝時會有很多選項，請一路按 Next
                                     保持預設即可！)*</span>
                             </li>
@@ -348,7 +354,7 @@
                         <ul style="padding-left: 2rem; color: #e2e8f0; line-height: 1.8;">
                             <li style="margin-bottom:1rem;"><strong>開源技能庫 (skills.sh)</strong>：當你需要一個「社群行銷大師」或「ComfyUI
                                 提示詞專家」時，不用從頭自己寫。<code>skills.sh</code> 就像是 Agent 的 App Store，聚集了全世界高手寫好的頂級 SKILL。</li>
-                            <li><strong>一鍵無縫安裝 (npx 安裝指令)</strong>：透過終端機指令，一鍵就能把大師的靈魂下載到你的專案 <code>.agents/skills/</code> 裡，無縫接軌套用！
+                            <li><strong>一鍵無縫安裝 (npx 安裝指令)</strong>：利用 Node.js 內建的 npx 指令，一鍵就能把大師的靈魂從 skills.sh 下載到你的專案 <code>.agents/skills/</code> 裡，無縫接軌套用！
                             </li>
                         </ul>
                     </div>
@@ -373,6 +379,12 @@
                                     style="color: #a855f7; margin-right: 8px;"></i>打開下方的 <strong>【終端機
                                     (Terminal)】</strong> ➔ 輸入：<code>npx skills find comfy</code> 搜尋 ➔
                                 接著輸入：<code>npx -y skills add mckruz/comfyui-expert@comfyui-prompt-engineer</code> 下載安裝。
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取編輯器底部的「終端機 (Terminal)」位置，以及輸入 npx skills... 後的畫面<br>
+                                    圖檔命名：<code>ch1_npx_install.png</code>
+                                </div>
+                                <img src="../images/ch1_npx_install.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="npx skills add">
                             </li>
                         </ul>
                         <div
@@ -385,8 +397,8 @@
                     <div class="pitfall-box fragment" style="margin-top:0;">
                         <strong><i class="fa-solid fa-triangle-exclamation"></i> 避坑 TIP：</strong>
                         <ul>
-                            <li><strong>終端機恐懼症：</strong> <code>npx</code> 就像是終端機裡的「快遞安裝精靈」，無腦複製貼上即可。</li>
-                            <li><strong>指令找不到：</strong> 若顯示找不到 npx，請確認第 0 章已安裝 Node.js！</li>
+                            <li><strong>什麼是 npx？</strong> <code>npx</code> 並非每台電腦都有，它是 Node.js 附帶的「快遞安裝精靈」。安裝 Node.js 後就會自動擁有，無腦複製貼上即可。</li>
+                            <li><strong>指令找不到：</strong> 若打 npx 後顯示找不到指令，代表你忘記先安裝 Node.js，請立刻回到第 0 章完成安裝！</li>
                         </ul>
                     </div>
                 </div>
@@ -669,7 +681,14 @@
                         <h3 style="color: #a855f7; margin-bottom: 0.5rem;"><i class="fa-regular fa-clock"></i> 實作時間：10 分鐘</h3>
                         <ul class="concept-list" style="margin-bottom:0; list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>打開 <strong>【GitHub Desktop】</strong> ➔ 點擊左上角的 <strong>【File (檔案)】</strong> 選單 ➔ 選擇 <strong>【Add Local Repository... (加入本機時光機基地)】</strong> ➔ 選擇你現在的專案資料夾。</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊左上角的 <strong>【History (歷史紀錄)】</strong> 標籤。</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play" style="color: #a855f7; margin-right: 8px;"></i>點擊左上角的 <strong>【History (歷史紀錄)】</strong> 標籤。
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 GitHub Desktop 左下角的「Commit」區塊，以及上方的「Push origin」按鈕<br>
+                                    圖檔命名：<code>ch2_github_desktop.png</code>
+                                </div>
+                                <img src="../images/ch2_github_desktop.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="GitHub Desktop Commit and Push">
+                            </li>
                         </ul>
                         <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1;">
                             🚀 <strong>確認成果</strong>：未來如果你想手動回到某個版本，只要對著那條紀錄按右鍵選擇「<strong>Revert (倒帶)</strong>」就可以了，完全不用打任何一行程式碼！
@@ -1051,7 +1070,7 @@
 
 ## 🎨 社群發文標準 SOP
 當我要求「跑發文流程」時，請嚴格遵守以下步驟，並調用對應的 SKILL：
-                                <li><strong>第一關 (審查)</strong>：主動調用 <code>fashion_director</code> (時尚總監) 身分，對草圖的材質與視覺進行嚴格批判。</li>
+1. **第一關 (審查)**：主動調用 `fashion_director` (時尚總監) 身分，對草圖的材質與視覺進行嚴格批判。
 2. **第二關 (文案)**：批判過關後，自動調用 `social_marketer` (IG 行銷小編) 身分，寫出社群貼文。
 3. ⚠️ 嚴格限制：未經第一關審查，絕對不能直接跳到第二關。</code></pre>
                     </div>
@@ -1712,7 +1731,14 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                         </li>
                         <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                 style="color: #a855f7; margin-right: 8px;"></i>上傳有骨架或邊緣線的參考圖，用滑鼠左鍵點住黃色小圓點連上 ControlNet ➔
-                            點擊右上角的 <strong>【Queue Prompt】</strong>。</li>
+                            點擊右上角的 <strong>【Queue Prompt】</strong>。
+                            <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                📸 <strong>【截圖佔位】</strong><br>
+                                說明：請截取 ComfyCloud 工作流中「上傳圖片 (Load Image)」節點與「執行 (Queue Prompt)」按鈕位置<br>
+                                圖檔命名：<code>ch7_comfycloud_ui.png</code>
+                            </div>
+                            <img src="../images/ch7_comfycloud_ui.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="ComfyCloud Queue Prompt">
+                        </li>
                         </ul>
                         <div
                             style="background: rgba(0,0,0,0.3); border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #cbd5e1; ">
@@ -2219,7 +2245,14 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
                                     style="color: #a855f7; margin-right: 8px;"></i>首幀上傳「春季高定」，尾幀上傳「秋季大衣」(需確保角度一致)。</li>
                             <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-play"
-                                    style="color: #a855f7; margin-right: 8px;"></i>提示詞輸入：<code>"The model is transforming clothes smoothly"</code> ➔ 點擊 <strong>【Generate】</strong>。</li>
+                                    style="color: #a855f7; margin-right: 8px;"></i>提示詞輸入：<code>"The model is transforming clothes smoothly"</code> ➔ 點擊 <strong>【Generate】</strong>。
+                                <div style="margin-top: 0.5rem; color: #cbd5e1; font-size: 0.9em; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                                    📸 <strong>【截圖佔位】</strong><br>
+                                    說明：請截取 Kling AI 介面中上傳「首幀 (Start Frame)」與「尾幀 (End Frame)」的區域<br>
+                                    圖檔命名：<code>ch8_video_ui.png</code>
+                                </div>
+                                <img src="../images/ch8_video_ui.png" style="max-width: 100%; margin-top: 0.5rem; display: none;" alt="Kling AI Start/End Frames">
+                            </li>
                         </ul>
                         <div
                             style="background: rgba(220,38,38,0.2); border-left: 4px solid #ef4444; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 0.5rem; color: #fca5a5; ">
@@ -2265,9 +2298,9 @@ hat, ugly, deformed, missing limbs, bad anatomy, text, watermark</code></pre>
         <!-- 底部控制列與時間軸 -->
         <div class="bottom-bar">
             <div class="controls">
-                <button id="prev-btn" class="nav-btn"><i class="fa-solid fa-chevron-left"></i> 上一頁</button>
+                <button id="prev-btn" class="nav-btn"><div class="icon-wrapper"><i class="fa-solid fa-chevron-left"></i></div> 上一頁</button>
                 <span id="slide-counter" class="counter">1 / 27</span>
-                <button id="next-btn" class="nav-btn">下一頁 <i class="fa-solid fa-chevron-right"></i></button>
+                <button id="next-btn" class="nav-btn">下一頁 <div class="icon-wrapper"><i class="fa-solid fa-chevron-right"></i></div></button>
             </div>
 
             <div class="timeline-container">

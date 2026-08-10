@@ -7,6 +7,12 @@
       "skillPath": "skills/comfyui-prompt-engineer/SKILL.md",
       "computedHash": "d5e4b8fe1e0d416d9d08811df708f4adb3f17522a3465bfc6ea62d7bde3438bb"
     },
+    "high-end-visual-design": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/soft-skill/SKILL.md",
+      "computedHash": "f730e4132775f13eea19e3dc39afc6bb453cfc0498872b127ad8f0d47cfd802d"
+    },
     "skill-creator": {
       "source": "anthropics/skills",
       "sourceType": "github",
