@@ -309,7 +309,7 @@ h3 {
     pointer-events: none;
 }
 
-.glossary-box strong {
+.glossary-box > strong {
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -399,7 +399,7 @@ h3 {
     z-index: -1;
     pointer-events: none;
 }
-.pitfall-box strong { color: #fde047; font-size: 1.4rem; display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;}
+.pitfall-box > strong { color: #fde047; font-size: 1.4rem; display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;}
 .pitfall-box ul {
     margin-top: 1rem;
     padding-left: 2rem;
