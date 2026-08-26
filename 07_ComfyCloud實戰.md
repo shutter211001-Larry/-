@@ -140,17 +140,17 @@
   * 延續輸血理論，精度只是「血袋的包裝大小與材質」。只要血型 (例如都是 FLUX) 正確，ComfyUI 這家神醫醫院就能自動適應不同的包裝。
   * **完美混搭示範**：你可以毫無顧忌地將 **FP8 的 Checkpoint** (為了省記憶體與加速) 搭配 **FP16 的 VAE** (為了確保最終沖洗的照片色彩鮮豔無損)，系統會自動在底層轉換，絕對不會報錯！
 
-### 5.2 實作四：載入官方建議工作流
-*(預計時間：5 分鐘)*
-因為手動搭配 Checkpoint 與 VAE 很容易出錯，我們已經為您準備好了完美相容的「官方建議工作流」。
-* 請從 `course_assets.zip` 中找出 **`official_hair_workflow.json`** 檔案。
-* 直接將這個 `.json` 檔案 **拖曳 (Drag & Drop)** 進入 ComfyUI 的畫布中。
-* 觀察畫布，你會發現系統已經自動幫你載入最頂規的 FLUX 模型以及對應的 VAE，而且水管都已經完美接好了！
+### 5.2 實作四：修復血型衝突地獄
+*(預計時間：10 分鐘)*
+*   在目前的 FLUX 工作流中，刻意將 VAE Loader 中的模型切換為 `sdxl_vae.safetensors` 或 `sd15_vae.safetensors` (製造血型不合的輸血慘案)。
+*   點擊右上角的 **【Queue Prompt】** ➔ 親眼目睹畫面上跳出滿江紅的紅字錯誤 (`mat1 and mat2 shapes cannot be multiplied`)！
+*   將 VAE 重新選回正確的 FLUX 專屬 VAE (`ae.safetensors`) ➔ 再次點擊 **【Queue Prompt】**。
 
-> 體會「一鍵載入完美設定」的安心感！初學者不需要在龐雜的模型海中迷失，我們直接用最強的裝備開始設計。
+> 體會搞懂「血型匹配」的重要性！不需要慌張，只要把錯配的洗劑（VAE）換回專屬配件，系統就能秒速恢復正常生成！
 
 ### ⚠️ 實作避坑 TIP
-* **避免自行混搭**：在尚未完全熟悉各世代架構 (SD1.5, SDXL, FLUX) 之前，強烈建議直接使用我們提供的建議工作流，以免遇到難以排解的紅字報錯。
+* **下載前看血型**：在 Civitai 下載任何模型時，務必確認它標示的 Base Model 是 SD1.5、SDXL 還是 FLUX。
+* **VAE 也是共犯**：很多時候 Checkpoint 沒錯，是 VAE 拿錯洗劑。FLUX 必配 FLUX VAE (`ae.safetensors`)！
 
 ---
 
