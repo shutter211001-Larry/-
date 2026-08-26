@@ -1,4 +1,4 @@
-# Chapter 05: 終極心法 - 讓 Agent 幫你設計 Agent 與 SKILL
+# Chapter 04: 終極心法 - 讓 Agent 幫你設計 Agent 與 SKILL
 
 ## 1. 痛點場景
 

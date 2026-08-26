@@ -1,4 +1,4 @@
-# Chapter 06: 進階提示詞與 Comfy Cloud 準備
+# Chapter 05: 進階提示詞與 Comfy Cloud 準備
 
 ## 1. 痛點場景
 

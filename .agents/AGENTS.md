@@ -48,3 +48,6 @@
 
 - **[2026-08-26] 零素材包原則 (Zero Asset Pack)**：收到回饋指出「不需準備任何素材包」。全面廢除對外部 `course_assets.zip`、PSD 檔案、以及 Photopea/Photoshop 的前置依賴。所有的教材範例、設計提案、測試檔案一律採用「**由 Agent 在 IDE 現場即時生成**」或「**瀏覽器/平台內建範本 (Templates/Default)**」的方式進行。此舉大幅消除學員與講師的前置下載與環境摩擦力，強化 Antigravity 隨叫隨到的工具優勢。
 
+- **[2026-08-26] 移除 GitHub 與課程精簡 (GitHub Removal & Curriculum Streamline)**：收到回饋要求「移除 GitHub 相關內容」。全面廢除對 Git / GitHub / GitHub Desktop 的前置工具與課程依賴，刪除原 Chapter 02 (Git/GitHub)，全課程重組為純粹專注於 AI 設計的 7 大章節 (01~07)。同時 Chapter 00 全面載入正式截圖資產，移除佔位框。
+
+

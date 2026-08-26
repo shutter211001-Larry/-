@@ -1,4 +1,4 @@
-# Chapter 07: Comfy Cloud 實戰
+# Chapter 06: Comfy Cloud 實戰
 
 ## 1. 痛點場景
 
