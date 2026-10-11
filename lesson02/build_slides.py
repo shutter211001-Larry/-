@@ -37,8 +37,26 @@ slides = [
         <tr><td>可重用規則</td><td>AGENTS.md、Skill</td><td>保存工作方法、確認點與驗收標準</td></tr>
       </tbody></table><figure class="tool-visual"><img src="assets/workflow-studio.png" alt="多種模型、專案資料與工具在同一工作介面中協作"><figcaption><b>工作介面像控制台</b><span>模型負責思考；專案提供脈絡；MCP 讓 Agent 操作外部服務；Skill 保存方法。</span></figcaption></figure></div>
     """),
+    slide("為什麼使用 Agent", """
+      <div class="kicker">第二章｜選擇合適的工作模式 1／2</div><h2>工作若要跨越多個步驟，只有一段回答還不夠</h2>
+      <div class="grid two">
+        <article class="card"><div class="num">一般網頁對話</div><h3>交付一段回覆</h3><p>適合解釋概念、改寫文字、發想選項或回答一次性的問題。使用者自己搬資料、執行工具與檢查結果。</p></article>
+        <article class="card"><div class="num">Agent 工作模式</div><h3>交付可檢查成果</h3><p>持續讀取同一個專案，查找可信資料、修改檔案、操作工具、等待核准、追蹤任務並驗收結果。</p></article>
+      </div>
+      <div class="comparison-rail topgap"><span>讀專案</span><i>→</i><span>查證與提案</span><i>→</i><span>等待核准</span><i>→</i><span>使用工具</span><i>→</i><span>驗收與保存</span></div>
+      <div class="callout"><b>本課需要 Agent 的原因：</b>完成影片不是只有寫提示詞，還包含素材分工、官方資料查證、參考圖、MCP 提交、任務追蹤、成片驗收與 Skill 保存。</div>
+    """),
+    slide("網頁對話還是 Agent", """
+      <div class="kicker">第二章｜選擇合適的工作模式 2／2</div><h2>看任務需要什麼，不看產品名稱</h2>
+      <div class="grid two">
+        <article class="card"><h3>用一般網頁對話</h3><ul><li>問題可以一次回答</li><li>不需要讀取整個專案</li><li>不需要操作外部工具</li><li>結果由人自行執行與保存</li></ul></article>
+        <article class="card"><h3>用 Agent</h3><ul><li>任務需要多步驟持續推進</li><li>必須讀檔、查來源與保持脈絡</li><li>要修改檔案或操作 MCP</li><li>需要核准點、驗收與可重跑紀錄</li></ul></article>
+      </div>
+      <div class="quote topgap">ChatGPT 接上專案資料、規則與工具時，也可以用 Agent 模式工作。差別在於<em>能不能持續完成任務並留下證據</em>。</div>
+      <div class="callout"><b>判斷題：</b>如果關掉對話後，還有人必須手動把回答搬到其他地方、逐項執行並自己記錄進度，這個任務通常還沒有被 Agent 化。</div>
+    """),
     slide("影片模型的官方輸入建議", """
-      <div class="kicker">第一章｜分清楚影片模型</div><h2>官方建議的輸入結構不同，Agent 要依目標模型重組</h2>
+      <div class="kicker">第二章｜分清楚影片模型</div><h2>官方建議的輸入結構不同，Agent 要依目標模型重組</h2>
       <div class="video-model-matrix">
         <article><b>Kling VIDEO 3.0／Omni</b><span>官方公式是主體、動作、場景，再選擇攝影語言、光線與氣氛；圖片生成影片時，圖片負責已看得見的外觀，文字描述要發生的動作。</span><code>主體＋動作＋場景</code><small class="evidence">官方提示指南</small></article>
         <article><b>Veo 3.1</b><span>官方指南列出主體、動作、風格，以及攝影機、構圖、焦點、鏡頭效果和氣氛；對白、音效與環境聲可分別明寫。</span><code>畫面描述＋攝影＋聲音</code><small class="evidence">官方提示指南</small></article>
@@ -50,7 +68,7 @@ slides = [
       <p class="source">官方資料查閱：2026 年 10 月 12 日｜<a href="https://kling.ai/quickstart/text-to-video-prompt-guide">Kling</a> · <a href="https://ai.google.dev/gemini-api/docs/veo">Veo</a> · <a href="https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide">Runway</a> · <a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5">Seedance</a> · <a href="https://github.com/Wan-Video/Wan2.2">Wan</a></p>
     """),
     slide("Agent 模型公平比較", """
-      <div class="kicker">第一章｜再比較 Agent 模型</div><h2>固定 brief、輸入與評分表，再測兩到三個 Agent 選項</h2>
+      <div class="kicker">第二章｜再比較 Agent 模型</div><h2>固定 brief、輸入與評分表，再測兩到三個 Agent 選項</h2>
       <div class="visual-brief-layout">
         <figure class="brief-image"><img src="assets/o3-character-source.jpg" alt="所有 Agent 都使用的同一張角色素材"><figcaption><b>固定同一個專案與角色素材</b><span>所有選項讀相同規則、紀錄、圖片與高階指令。</span></figcaption></figure>
         <div class="brief-copy"><div class="quote compact-quote">請讀取專案規則與角色素材，提出一支 <em>Kling O3 影片方案</em>；先交付完整摘要，不要送出付費生成。</div>
@@ -61,19 +79,20 @@ slides = [
       </div>
     """),
     slide("今日學習路線", """
-      <div class="kicker">課程地圖｜六個前後相接的章節</div><h2>每一章都要產出下一章能使用的東西</h2>
-      <div class="grid three learning-path">
+      <div class="kicker">課程地圖｜七個前後相接的章節</div><h2>每一章都要產出下一章能使用的東西</h2>
+      <div class="grid three learning-path seven">
         <article class="card"><div class="num">01</div><h3>建立共同語言</h3><p>分清楚 Agent、工作介面、影片模型、提示詞與工具。</p></article>
-        <article class="card"><div class="num">02</div><h3>拆學員問題</h3><p>從真實案例找出缺的是需求、素材、方法、工具或驗收。</p></article>
-        <article class="card"><div class="num">03</div><h3>先看完整工作流</h3><p>看 Agent 如何從高階創意走到核准、執行、驗收與保存。</p></article>
-        <article class="card"><div class="num">04</div><h3>追查方法來源</h3><p>回到原始對話與 Comfy，辨認提示詞基準如何形成。</p></article>
-        <article class="card"><div class="num">05</div><h3>轉譯並完成任務</h3><p>製作參考圖、改寫 Kling 輸入、操作 MCP 並驗收成片。</p></article>
-        <article class="card"><div class="num">06</div><h3>轉移並保存</h3><p>把方法轉移到商品影片，再把已驗證規則保存成 Skill。</p></article>
+        <article class="card"><div class="num">02</div><h3>選擇工作模式</h3><p>判斷一般網頁對話何時足夠，何時需要 Agent。</p></article>
+        <article class="card"><div class="num">03</div><h3>拆學員問題</h3><p>從真實案例找出缺的是需求、素材、方法、工具或驗收。</p></article>
+        <article class="card"><div class="num">04</div><h3>先看完整工作流</h3><p>看 Agent 如何從高階創意走到核准、執行、驗收與保存。</p></article>
+        <article class="card"><div class="num">05</div><h3>追查方法來源</h3><p>回到原始對話與 Comfy，辨認提示詞基準如何形成。</p></article>
+        <article class="card"><div class="num">06</div><h3>轉譯並完成任務</h3><p>製作參考圖、改寫 Kling 輸入、操作 MCP 並驗收成片。</p></article>
+        <article class="card"><div class="num">07</div><h3>轉移並保存</h3><p>把方法轉移到商品影片，再把已驗證規則保存成 Skill。</p></article>
       </div>
       <div class="callout"><b>學習線：</b>問題 → 完成版 → 形成證據 → 模型輸入 → 執行驗收 → 可重跑方法。</div>
     """),
     slide("學員案例", """
-      <div class="kicker">第二章｜先拆學員遇到的問題</div><h2>不要先怪模型，先把工作還原</h2>
+      <div class="kicker">第三章｜先拆學員遇到的問題</div><h2>不要先怪模型，先把工作還原</h2>
       <div class="flow six">
         <div class="step"><b>1</b><span>原本想完成什麼？</span></div>
         <div class="step"><b>2</b><span>Agent 拿到哪些資料？</span></div>
@@ -89,7 +108,7 @@ slides = [
       </div>
     """),
     slide("完成版工作流 1", """
-      <div class="kicker">第三章｜先看完整工作流 1／2</div><h2>先從高階創意走到可核准的參考圖</h2>
+      <div class="kicker">第四章｜先看完整工作流 1／2</div><h2>先從高階創意走到可核准的參考圖</h2>
       <div class="workflow-proof-layout"><div class="workflow-stack">
         <article><b>① 導演給基準</b><span>Kling O3、Comfy 提示詞範本、角色素材與鏡頭創意。</span></article>
         <article><b>② Agent 研究</b><span>讀專案規則、素材、既有紀錄與目前工具能力。</span></article>
@@ -98,7 +117,7 @@ slides = [
       <div class="callout"><b>第一個人類決定點：</b>看圖核准，不是看到一長段提示詞就猜結果。</div>
     """),
     slide("完成版工作流 2", """
-      <div class="kicker">第三章｜先看完整工作流 2／2</div><h2>核准送片後，Agent 才執行、追蹤與保存</h2>
+      <div class="kicker">第四章｜先看完整工作流 2／2</div><h2>核准送片後，Agent 才執行、追蹤與保存</h2>
       <div class="execution-proof-layout"><div><div class="flow four-stage">
         <div class="step accent-step"><b>⑥ 核准送片</b><span>確認素材、提示詞、模型、規格、音訊與提交次數。</span></div>
         <div class="step"><b>⑦ Kling MCP</b><span>上傳素材並只提交一次付費生成。</span></div>
@@ -109,7 +128,7 @@ slides = [
       <div class="callout"><b>第二個人類決定點：</b>付費送片核准。Agent 必須先交付完整摘要，再執行會扣點的工具。</div>
     """),
     slide("O3 工作流故事", """
-      <div class="kicker">第三章｜再追查工作流如何形成</div><h2>這條工作流是在對話中長出來的</h2>
+      <div class="kicker">第四章｜再追查工作流如何形成</div><h2>這條工作流是在對話中長出來的</h2>
       <div class="timeline-list story-list">
         <div><b>① 設定分工與模型</b><span>「由你產生提示詞並調用 Kling MCP；我擔任導演。使用模型是 Kling O3。」</span></div>
         <div><b>② 導演提供提示詞範本</b><span>你貼上從 Comfy 帶來的完整提示詞，要求往後沿用它的描述風格。</span></div>
@@ -122,7 +141,7 @@ slides = [
       <p class="small"><b>關鍵：</b>這不是 Agent 憑空發明提示詞風格；導演先提供成功範本，Agent 再分析其結構並轉用到新鏡頭。</p>
     """),
     slide("原始對話 1：先定義合作", """
-      <div class="kicker">第三章｜原始對話 1／4</div><h2>第一回合先定義誰決定、誰執行</h2>
+      <div class="kicker">第四章｜原始對話 1／4</div><h2>第一回合先定義誰決定、誰執行</h2>
       <div class="chat-transcript two-column"><div class="chat-column">
         <article class="bubble director"><b>導演</b><p>「我要建立一個新的工作流，由你產生提示詞並且調用 Kling MCP 幫我生成影片、還有提供給 O3 的參考圖像，我擔任導演。使用模型是 Kling O3。」</p></article>
         <article class="bubble director"><b>導演</b><p>「這是提示詞範本，我們往後的提示詞風格都要照這個樣子。」</p><div class="prompt excerpt">Wide shot of a free-spirited young woman running toward the camera… crisp focus on her face… light motion blur… Vivid colors… optimistic, uplifting cinematic tone.</div></article>
@@ -133,7 +152,7 @@ slides = [
       <div class="callout"><b>教學判讀：</b>高階指令先建立角色、工具、核准權與失敗處理；提示詞範本只是其中一項基準。</div>
     """),
     slide("原始對話 2：高階創意變成提案", """
-      <div class="kicker">第三章｜原始對話 2／4</div><h2>一句創意，轉成兩份可核准輸入</h2>
+      <div class="kicker">第四章｜原始對話 2／4</div><h2>一句創意，轉成兩份可核准輸入</h2>
       <div class="dialogue-visual"><figure class="dialogue-source"><img src="assets/o3-character-source.jpg" alt="導演在對話中提供的角色附件"><figcaption>導演提供的角色附件</figcaption></figure><div class="chat-transcript">
         <article class="bubble director"><b>導演</b><p>「我想要這個角色風格，讓他蹲下抬頭，鏡頭使用廣角鏡頭看他。」</p></article>
         <article class="bubble agent"><b>Agent 提案</b><p>採用貼近地面的低機位與 20mm 廣角，補上夜間石造街景、直閃、焦點、風、銀飾擺動與一次緩慢前推。</p></article>
@@ -142,7 +161,7 @@ slides = [
       </div></div>
     """),
     slide("原始對話 3：核准後仍然做錯", """
-      <div class="kicker">第三章｜原始對話 3／4</div><h2>錯誤不是刪掉，而是留下證據並改寫規則</h2>
+      <div class="kicker">第四章｜原始對話 3／4</div><h2>錯誤不是刪掉，而是留下證據並改寫規則</h2>
       <div class="chat-transcript correction-sequence">
         <article class="bubble director"><b>導演</b><p>「核准。」</p></article>
         <article class="bubble agent bad-event"><b>Agent 的歷史執行</b><p>當時先用 Kling Image O3 生成參考圖。模型 <code>kling-image-v3_0_omni</code>，消耗 2 點，狀態 COMPLETED。</p><small>generationId：AepElqmn6cpHqS2oPE1v3nGt084lgRsgqO0BvKnaT4PasvoIp0yDGLlj_YhNGmPGwvf9hPgN</small></article>
@@ -152,7 +171,7 @@ slides = [
       <div class="callout"><b>教學判讀：</b>「核准」只對當時看得見的提案有效。工具責任若沒寫清楚，Agent 仍可能執行錯誤；糾正後要同時更新成品狀態與工作流規則。</div>
     """),
     slide("原始對話 4：正式送片與證據", """
-      <div class="kicker">第三章｜原始對話 4／4</div><h2>一句「生成第一段影片」能執行，因為前面已有完整摘要</h2>
+      <div class="kicker">第四章｜原始對話 4／4</div><h2>一句「生成第一段影片」能執行，因為前面已有完整摘要</h2>
       <div class="submission-proof"><div class="chat-transcript">
         <article class="bubble agent"><b>更正後的送片前檢查</b><p>正式參考圖已由 ChatGPT 生成。輸入為原始角色圖＋ChatGPT 定稿圖；5 秒、16:9、1080p、1 版；智慧多鏡頭關閉、同步音訊開啟；尚未核准前不消耗 Kling 點數。</p></article>
         <article class="bubble director"><b>導演</b><p>「生成第一段影片。」</p></article>
@@ -164,7 +183,7 @@ slides = [
       <p class="small">完整整理：<a href="ORIGINAL_DIALOGUE_TEACHING.md">ORIGINAL_DIALOGUE_TEACHING.md</a>　原始 TXT：<a href="sources/Kling_O3_對話紀錄_2026-10-11.txt">Kling_O3_對話紀錄_2026-10-11.txt</a></p>
     """),
     slide("Comfy 提示詞來源", """
-      <div class="kicker">第四章｜回到 Comfy 提示詞來源</div><h2>示範提示詞是從 Comfy 工作流直接帶過來的</h2>
+      <div class="kicker">第五章｜回到 Comfy 提示詞來源</div><h2>示範提示詞是從 Comfy 工作流直接帶過來的</h2>
       <div class="prompt compact">Wide shot of a free-spirited young woman running toward the camera through a sun-drenched field, white birds exploding upward all around her like symbols of freedom. Her hair and dress are caught by the wind, captured with crisp focus on her face and light motion blur in the foreground flowers and wings. Vivid colors, bright clear sky, optimistic, uplifting cinematic tone.</div>
       <div class="grid four topgap">
         <article class="card"><div class="num">1</div><h3>景別與主體</h3><p>Wide shot、人物、主要動作。</p></article>
@@ -175,7 +194,7 @@ slides = [
       <div class="callout"><b>可以沿用：</b>創意意圖與描述順序。　<b>不能直接推論：</b>原文交給 Kling 就一定得到相同結果。</div>
     """),
     slide("認識 Comfy", """
-      <div class="kicker">第四章｜沿節點讀懂資料流</div><h2>提示詞只是 Comfy 裡的一項輸入</h2>
+      <div class="kicker">第五章｜沿節點讀懂資料流</div><h2>提示詞只是 Comfy 裡的一項輸入</h2>
       <div class="nodeflow">
         <div class="node"><b>模型</b><span>負責生成的核心</span></div>
         <div class="node"><b>文字編碼</b><span>提示詞 → 條件資料</span></div>
@@ -193,7 +212,7 @@ slides = [
       <div class="callout"><b>初學者先回答三題：</b>這次由哪個模型生成？哪些條件不是寫在提示詞裡？結果在哪一步才變成可觀看的圖片？</div>
     """),
     slide("搬移前先盤點", """
-      <div class="kicker">第四章｜從 Comfy 轉移到新工具</div><h2>先找出原本不是由文字控制的東西</h2>
+      <div class="kicker">第五章｜從 Comfy 轉移到新工具</div><h2>先找出原本不是由文字控制的東西</h2>
       <div class="grid two">
         <article class="card"><h3>原工作流要讀什麼</h3><ul><li>模型與文字編碼器</li><li>正向、負向提示詞</li><li>參考圖、ControlNet、LoRA</li><li>種子、取樣、降噪與輸出規格</li></ul></article>
         <article class="card"><h3>搬到 Kling 前要回答</h3><ul><li>哪些資訊由輸入圖負責？</li><li>哪些控制 Kling 沒有對應欄位？</li><li>要改寫成文字、參考圖還是後製？</li><li>如何固定條件並公平比較？</li></ul></article>
@@ -202,7 +221,7 @@ slides = [
       <p class="small">固定的是創意意圖、素材、規格與驗收標準；提示詞結構及素材分工要重新決定。</p>
     """),
     slide("高階導演指令", """
-      <div class="kicker">第四章｜高階創意先於模型語法</div><h2>導演只先說他真正決定的事</h2>
+      <div class="kicker">第五章｜高階創意先於模型語法</div><h2>導演只先說他真正決定的事</h2>
       <div class="split"><img class="heroimg portrait" src="assets/o3-character-source.jpg" alt="原始角色與服裝參考圖"><div>
         <div class="quote">「我想要這個角色風格，讓他<em>蹲下抬頭</em>，鏡頭使用<em>廣角鏡頭</em>看他。」</div>
         <div class="grid two topgap"><article class="card"><h3>已決定</h3><p>角色來源、蹲姿、抬頭、廣角視覺。</p></article><article class="card"><h3>Agent 提案</h3><p>低機位、20mm 感、場景、光線、焦點、次要動態、鏡頭速度與結尾。</p></article></div>
@@ -210,7 +229,7 @@ slides = [
       </div></div>
     """),
     slide("三層指令", """
-      <div class="kicker">第四章｜三層語言各自負責什麼</div><h2>提示詞不是工作流的全部</h2>
+      <div class="kicker">第五章｜三層語言各自負責什麼</div><h2>提示詞不是工作流的全部</h2>
       <div class="grid three">
         <article class="card"><div class="num">導演 → Agent</div><h3>高階工作指令</h3><p>交代創意、素材、限制、核准點與完成標準。</p></article>
         <article class="card"><div class="num">專案 → Agent</div><h3>AGENTS.md／Skill</h3><p>保存工具分工、工作步驟、失敗處理與驗收規則。</p></article>
@@ -219,20 +238,20 @@ slides = [
       <table class="compare"><thead><tr><th>放哪裡</th><th>保存內容</th></tr></thead><tbody><tr><td>Project</td><td>本次角色、圖片、提示詞、參數、generationId、結果與導演回饋</td></tr><tr><td>Skill</td><td>可跨鏡頭重用的查證、提案、核准、MCP、紀錄與驗收方式</td></tr><tr><td>AGENTS.md</td><td>整個專案都必須遵守的品質、命名、權限與交付規則</td></tr></tbody></table>
     """),
     slide("ChatGPT 參考圖", """
-      <div class="kicker">第五章｜第一個核准點</div><h2>參考圖先鎖定第一幀能看見的事</h2>
+      <div class="kicker">第六章｜第一個核准點</div><h2>參考圖先鎖定第一幀能看見的事</h2>
       <div class="split visual"><div class="imagepair"><figure><img src="assets/o3-character-source.jpg" alt="角色來源圖"><figcaption>原始角色圖：身分、臉、服裝</figcaption></figure><figure><img src="assets/o3-shot-001-reference.png" alt="ChatGPT 低機位廣角參考圖"><figcaption>ChatGPT 定稿圖：姿態、鏡位、構圖、場景、光線</figcaption></figure></div><div>
         <div class="prompt tiny">Use the attached photograph as the character, face, wardrobe, and styling reference. Create a cinematic 16:9 landscape image: a low-angle wide shot of the same androgynous young fashion figure crouching low on a nighttime stone pavement, chin lifted and dark eyes looking upward toward the lens. Preserve their recognizable face, shaggy black hair beneath the charcoal knit beanie, oversized charcoal V-neck sweater, dramatically wide pleated trousers, worn brown belt with dangling silver charms, pointed black shoes, and oversized black padded bag resting beside them. The camera sits just above the ground with a close 20mm wide-angle perspective... Hard direct flash mixes with faint warm window light...</div>
         <p class="small"><b>中文脈絡：</b>先指定附件負責角色，再描述一個靜止瞬間；接著鎖姿態、鏡位、透視、焦點、光線與情緒。長時間動作留給影片階段。</p>
       </div></div>
     """),
     slide("Kling O3 提示詞", """
-      <div class="kicker">第五章｜實作後的精鍊結果</div><h2>三句提示詞，每一句只負責一件事</h2>
+      <div class="kicker">第六章｜實作後的精鍊結果</div><h2>三句提示詞，每一句只負責一件事</h2>
       <div class="prompt tiny">Low-angle wide shot of the androgynous fashion figure from 圖片1 crouching on a nighttime stone pavement in the pose established by 圖片2, slowly lifting their chin toward the lens as the old facade stretches above them. Their shaggy hair, loose knit layers, and silver belt charms shift lightly in the breeze, captured with crisp focus on the face and gentle motion blur at the edges of the wide trousers during one slow push forward. Hard direct flash, deep graphite tones, tense, intimate, rebellious cinematic tone.</div>
       <div class="grid three topgap"><article class="card"><div class="num">第一句</div><h3>鏡頭與事件</h3><p>鏡位＋兩張圖的責任＋一個主要動作＋環境。</p></article><article class="card"><div class="num">第二句</div><h3>物理與攝影</h3><p>自然反應＋清晰焦點＋受控模糊＋一個運鏡。</p></article><article class="card"><div class="num">第三句</div><h3>視覺與情緒</h3><p>色彩＋光線＋二至三個同方向的情緒詞。</p></article></div>
       <p class="source">專案精鍊準則：<a href="sources/KLING_O3_PROMPT_GUIDELINES.md">KLING_O3_PROMPT_GUIDELINES.md</a>｜這是實作歸納，不是 Kling 官方固定語法。</p>
     """),
     slide("同一創意的分工", """
-      <div class="kicker">第五章｜同一創意的模型專用輸入</div><h2>創意固定，輸入責任隨工具改變</h2>
+      <div class="kicker">第六章｜同一創意的模型專用輸入</div><h2>創意固定，輸入責任隨工具改變</h2>
       <table class="compare"><thead><tr><th>階段</th><th>它負責什麼</th><th>提示詞的寫法</th></tr></thead><tbody>
         <tr><td>Comfy</td><td>模型、條件節點、取樣參數共同控制結果</td><td>提示詞必須連同節點、模型與參數一起解讀</td></tr>
         <tr><td>ChatGPT 參考圖</td><td>角色、姿態、鏡位、構圖、色彩、光線與第一幀</td><td>描述一個可看見的靜止瞬間</td></tr>
@@ -241,7 +260,7 @@ slides = [
       <div class="callout"><b>現在的結論：</b>創意、素材與驗收標準固定；每個工具只接收它負責的資訊。三句式是本專案實作後的精鍊策略，是否適用新題材仍要用同素材、同參數測試。</div>
     """),
     slide("修正工作流", """
-      <div class="kicker">第五章｜把糾正變成後續規則</div><h2>Agent 用錯工具時，不只重做眼前圖片</h2>
+      <div class="kicker">第六章｜把糾正變成後續規則</div><h2>Agent 用錯工具時，不只重做眼前圖片</h2>
       <div class="beforeafter"><div class="bad"><span>歷史版本</span><b>Kling Image O3 產生參考圖</b><p>生成完成，但不符合導演指定的製作分工。</p></div><div class="arrow">→</div><div class="good"><span>導演修正</span><b>「圖片是由 ChatGPT 生成。」</b><p>正式參考圖改由 ChatGPT 產生；Kling 只負責影片。</p></div></div>
       <div class="grid three topgap"><article class="card"><h3>更新規則</h3><p>後續鏡頭沿用新的工具分工。</p></article><article class="card"><h3>保留歷史</h3><p>舊圖與 generationId 不刪除，也不再當正式輸入。</p></article><article class="card"><h3>避免重複花費</h3><p>未核准的素材不自動送入付費影片任務。</p></article></div>
     """),
@@ -249,7 +268,7 @@ slides = [
       <div class="eyebrow">中場｜休息十分鐘</div><h1>回來後，<br>讓 Agent 真的送片。</h1><p class="dek">先核對素材、模型、提示詞、參數與費用，再由 MCP 建立一筆可追蹤的 Kling 任務。</p>
     """, "break"),
     slide("Kling MCP", """
-      <div class="kicker">第五章｜Kling MCP 工具鏈</div><h2>Agent 負責串工具，人負責核准高成本動作</h2>
+      <div class="kicker">第六章｜Kling MCP 工具鏈</div><h2>Agent 負責串工具，人負責核准高成本動作</h2>
       <div class="flow">
         <div class="step"><b>who_am_i</b><span>確認登入、模型與即時參數</span></div>
         <div class="step"><b>file_upload</b><span>把本機素材交給 Kling</span></div>
@@ -261,17 +280,17 @@ slides = [
       <p class="small"><b>學員不必先寫 MCP 程式：</b>先學會確認登入與模型、看懂提交參數、保存 generationId，並只查詢同一筆任務。</p>
     """),
     slide("送片前確認", """
-      <div class="kicker">第五章｜第二個核准點</div><h2>核准的是一份具體送片摘要</h2>
+      <div class="kicker">第六章｜第二個核准點</div><h2>核准的是一份具體送片摘要</h2>
       <div class="grid two"><article class="card"><h3>本次執行內容</h3><ul><li>模型：當次回傳的 Kling O3 影片模型</li><li>圖片1：原始角色與服裝</li><li>圖片2：ChatGPT 蹲姿廣角定稿</li><li>5 秒、16:9、1080p、1 版</li><li>智慧多鏡頭關閉、同步音訊開啟</li></ul></article><article class="card"><h3>本次執行邊界</h3><ul><li>只允許提交一次</li><li>等待期間不重複提交</li><li>失敗不自行改詞或重新扣點</li><li>保存 generationId、taskTraceId、成本與結果</li></ul></article></div>
       <div class="record topgap"><b>實際紀錄</b><span>QUEUING → RUNNING → COMPLETED</span><span>5 秒｜16:9｜1080p｜1 版｜60 點（2026-10-11 單次紀錄）</span></div>
       <p class="small">模型名稱、點數與能力屬於易變資訊。課堂前重新查詢，不把這筆歷史紀錄當成永久規格。</p>
     """),
     slide("MODEL 成片驗收", """
-      <div class="kicker">第五章｜MODEL 成片驗收</div><h2>直接播放人物成片，再逐項判斷是否通過</h2>
+      <div class="kicker">第六章｜MODEL 成片驗收</div><h2>直接播放人物成片，再逐項判斷是否通過</h2>
       <div class="model-result-layout"><figure class="model-video"><video controls playsinline preload="metadata" poster="assets/shot-001-kling-o3-poster.jpg"><source src="assets/shot-001-crouching-wide-angle-kling-o3-v1.mp4" type="video/mp4"></video><figcaption><b>SHOT-001｜Kling O3 人物成片</b><span>5 秒、16:9、1080p；請播放完整影片觀察動作與時間連續性。</span></figcaption></figure><div class="model-checks"><article><b>人物一致性</b><span>臉、髮型、灰色服裝、身形與配件保持。</span></article><article><b>表演與鏡頭</b><span>低頭到抬頭清楚；低機位、廣角透視與一次平順前推成立。</span></article><article><b>物理與結尾</b><span>頭髮、衣料、銀飾自然；最後一秒臉部與構圖仍可使用。</span></article><div class="callout"><b>下一版只改一項：</b>保留人物、服裝、場景、光線與抬頭動作，只把攝影機前推速度降低一半。</div></div></div>
     """),
     slide("商品案例輸入", """
-      <div class="kicker">第六章｜把方法轉移到商品影片</div><h2>兩張圖各自負責什麼，要先說清楚</h2>
+      <div class="kicker">第七章｜把方法轉移到商品影片</div><h2>兩張圖各自負責什麼，要先說清楚</h2>
       <div class="productcase productcase-two">
         <figure><img src="assets/shot-002-product-tail.png" alt="Schwarzkopf 修護髮露的英雄結尾參考圖"><figcaption><b>圖片 1｜結尾英雄畫面</b><span>Schwarzkopf Professional BC Bonacure Repair Rescue Shampoo；鎖定白色瓶身、桃紅壓頭、標籤、材質、藍色背景、桃紅底座與最後的完整水幕。</span></figcaption></figure>
         <figure><img src="assets/shot-002-product-opening.png" alt="ChatGPT 產生的商品開場參考圖"><figcaption><b>圖片 2｜ChatGPT 開場構圖</b><span>鎖定 9:16 開場、低水位、較平靜的畫面與商品起始位置。</span></figcaption></figure>
@@ -279,7 +298,7 @@ slides = [
       <div class="callout"><b>提示詞負責時間：</b>水從兩側聚集並升成透明水幕；攝影機只做一次緩慢前推與輕微上移；商品、壓頭、比例、品牌標誌和標籤全程保持清楚且不變。</div>
     """),
     slide("商品生成影片", """
-      <div class="kicker">第六章｜用相同方法驗收商品成片</div><h2>成片要回到輸入責任逐項驗收</h2>
+      <div class="kicker">第七章｜用相同方法驗收商品成片</div><h2>成片要回到輸入責任逐項驗收</h2>
       <div class="product-result">
         <figure><video controls muted playsinline preload="metadata" poster="assets/shot-002-product-video-poster.jpg"><source src="assets/shot-002-product-kling-o3-v1.mp4" type="video/mp4"></video><figcaption><b>SHOT-002｜商品英雄水幕</b><span>5 秒｜9:16｜1080p｜24 fps｜單鏡頭｜同步音訊開啟</span></figcaption></figure>
         <div class="result-notes"><img src="assets/shot-002-product-video-contact.jpg" alt="SHOT-002 開始、中段與結尾的影片接觸表"><div class="card"><h3>驗收焦點</h3><ul><li>白瓶、桃紅壓頭與標籤是否穩定</li><li>水幕是否從低水位自然升高</li><li>前推加上移是否平順且沒有搶走商品</li><li>最後是否回到圖片 1 的英雄構圖</li></ul></div></div>
@@ -287,7 +306,7 @@ slides = [
       <p class="small">實際紀錄：模型 <code>kling-video-v3_0_omni</code>；狀態為 COMPLETED。這是 2026 年 10 月 11 日的單次生成紀錄，模型名稱與能力仍需在授課前由 MCP 即時確認。</p>
     """),
     slide("Jagua 生成影片 1", """
-      <div class="kicker">第六章｜實際商品專案 1／3</div><h2>同一商品可拆成不同任務，不必塞進一支影片</h2>
+      <div class="kicker">第七章｜實際商品專案 1／3</div><h2>同一商品可拆成不同任務，不必塞進一支影片</h2>
       <div class="model-origin"><b>以下三支成片由 Gemini Veo 產生</b><span>這是本專案的實際生成結果；海灘情境是獨立段落，商品與水、商品微距使用後續頁面的 Workflow A。</span></div>
       <div class="video-grid three-videos">
         <figure><video controls muted playsinline preload="metadata"><source src="assets/jagua-generated-01-beach.mp4" type="video/mp4"></video><figcaption><b>海灘情境</b><span>環境、色調與品牌氣氛</span></figcaption></figure>
@@ -297,7 +316,7 @@ slides = [
       <div class="callout"><b>教學看法：</b>先說每段影片要解決的單一任務，再回到素材責任與驗收表。不要用一條提示詞同時要求所有效果。</div>
     """),
     slide("Jagua Veo 故事版", """
-      <div class="kicker">第六章｜實際商品專案 2／3</div><h2>Veo 同時收到首幀與六格故事版，兩張圖的責任不同</h2>
+      <div class="kicker">第七章｜實際商品專案 2／3</div><h2>Veo 同時收到首幀與六格故事版，兩張圖的責任不同</h2>
       <div class="veo-input-layout">
         <figure><img src="assets/jagua-veo-first-frame.jpg" alt="Gemini Veo 商品影片的彩色首幀母幀"><figcaption><b>圖片 1｜首幀母幀</b><span>固定瓶型、標籤、材質、深海藍色調與水波折射光。</span></figcaption></figure>
         <figure class="storyboard"><img src="assets/jagua-veo-workflow-a-storyboard.webp" alt="Gemini Veo 商品主段落的六格故事版"><figcaption><b>圖片 2｜Workflow A 六格故事版</b><span>由左至右、由上而下：瓶身微距 → 精華滴落 → 側向水花 → 泡沫 → 斜向沖洗 → 瓶肩與瓶蓋收尾。</span></figcaption></figure>
@@ -305,7 +324,7 @@ slides = [
       <div class="callout"><b>關鍵：</b>提示詞明確告訴 Veo：圖片 1 是外觀與光影依據；圖片 2 只負責動作順序，不能把黑白線稿或格線畫進成片。</div>
     """),
     slide("Jagua Veo 提示詞", f"""
-      <div class="kicker">第六章｜實際商品專案 3／3</div><h2>實際提示詞把素材責任、運鏡與六格動作寫成同一份執行規格</h2>
+      <div class="kicker">第七章｜實際商品專案 3／3</div><h2>實際提示詞把素材責任、運鏡與六格動作寫成同一份執行規格</h2>
       <div class="veo-prompt-layout">
         <div class="veo-prompt-notes">
           <article><b>1｜先定義兩張圖</b><span>Image 1 是 Master First Frame；Image 2 是 Visual Storyboard Grid。</span></article>
@@ -318,64 +337,10 @@ slides = [
       <p class="source">專案紀錄：Workflow A v5.0，更新日期 2026-09-02。提示詞原文同時寫有 Veo／Omni；本頁成片依本專案紀錄標示為 Gemini Veo。</p>
     """),
     slide("保存成 Skill", """
-      <div class="kicker">第六章｜把已驗證的方法保存成 Skill</div><h2>把方法保存，不把單次提示詞當成咒語</h2>
+      <div class="kicker">第七章｜把已驗證的方法保存成 Skill</div><h2>把方法保存，不把單次提示詞當成咒語</h2>
       <div class="grid three"><article class="card"><div class="num">Project</div><h3>保存本次內容</h3><p>角色、圖片、提示詞、參數、任務編號、結果與導演回饋。</p></article><article class="card"><div class="num">Skill</div><h3>保存可重用方法</h3><p>讀脈絡、找資料、轉譯、核准、MCP、追蹤、驗收與失敗處理。</p></article><article class="card"><div class="num">下一次</div><h3>用高階語言重跑</h3><p>換角色、商品或模型後，Agent 重新研究並產生適用的新方案。</p></article></div>
       <div class="quote topgap">變因不同 → 提示詞分段 → 可以只改出錯的部分 → 能驗收是哪一段造成結果。學員最後要能引導 Agent <em>重新找方法、提出方案、執行、驗收並留下可重跑紀錄</em>。</div>
       <p class="source">查閱日期：2026 年 10 月 11 日。<a href="https://docs.comfy.org/essentials/core-concepts/links">ComfyUI</a> · <a href="https://kling.ai/quickstart/image-to-video-guide">Kling</a> · <a href="COURSE_OUTLINE.md">完整課綱</a></p>
-    """),
-    slide("變因：景別與角度", """
-      <div class="kicker">附錄｜為什麼拆提示詞 1／4：鏡位</div><h2>鏡位是一個獨立控制項，所以要從其他描述中拆開</h2>
-      <img class="variable-plate" src="assets/prompt-variable-shot-angle.png" alt="同一產品的平視廣角、低機位廣角與微距特寫比較">
-      <div class="triptych-labels"><div><b>A｜平視廣角</b><span>商品較小，環境關係最清楚</span></div><div><b>B｜低機位廣角</b><span>瓶身顯得高大，視覺力量提高</span></div><div><b>C｜微距特寫</b><span>材質與細節最強，整體辨識減少</span></div></div>
-      <div class="callout"><b>拆開的理由：</b>當景別不對，只改「景別與角度」這一段，不必重寫產品、事件、光線與運鏡。這樣才知道畫面差異由哪個變因造成。</div>
-    """),
-    slide("變因：環境動態", """
-      <div class="kicker">附錄｜為什麼拆提示詞 2／4：事件</div><h2>事件和商品身分分開，才能控制畫面動態的多寡</h2>
-      <img class="variable-plate" src="assets/prompt-variable-environment-motion.png" alt="同一產品的無環境動態、單一水波與過量水花比較">
-      <div class="triptych-labels"><div><b>A｜沒有次要事件</b><span>商品清楚，但畫面較靜止</span></div><div><b>B｜一個清楚水波</b><span>動態支援商品，視線仍有主次</span></div><div><b>C｜事件過量</b><span>水花與粒子搶走注意力，也容易遮標</span></div></div>
-      <div class="callout"><b>拆開的理由：</b>商品外觀正確但事件太多時，只刪減「主要事件／環境反應」段。每鏡先保留一個主要動作，再加一個支援主體的環境動態。</div>
-    """),
-    slide("變因：焦點與模糊", """
-      <div class="kicker">附錄｜為什麼拆提示詞 3／4：焦點與物理反應</div><h2>保真條件與模糊範圍要獨立寫，才能保住商品資訊</h2>
-      <img class="variable-plate" src="assets/prompt-variable-focus-blur.png" alt="同一產品的全凍結、受控動態模糊與全畫面模糊比較">
-      <div class="triptych-labels"><div><b>A｜全部凍結</b><span>資訊清楚，速度感較弱</span></div><div><b>B｜受控動態模糊</b><span>商品與標籤清楚，外圍水花帶速度</span></div><div><b>C｜全域模糊</b><span>產品、文字與動態一起失去辨識</span></div></div>
-      <div class="callout"><b>拆開的理由：</b>商品與標籤是「必須保持」，模糊是「允許發生的位置」。兩者分段後，Agent 才能保留前者，只調整後者。</div>
-    """),
-    slide("變因：主要運鏡", """
-      <div class="kicker">附錄｜為什麼拆提示詞 4／4：運鏡</div><h2>運鏡獨立成段，才能只改攝影機路徑而不改事件</h2>
-      <img class="variable-plate" src="assets/prompt-variable-camera-movement.png" alt="同一產品的慢速前推、橫向移動與環繞運鏡九格關鍵影格比較">
-      <div class="triptych-labels"><div><b>A｜慢速前推</b><span>產品逐漸放大，觀看方向維持穩定</span></div><div><b>B｜橫向移動</b><span>產品比例接近不變，背景產生水平視差</span></div><div><b>C｜環繞運鏡</b><span>距離接近不變，瓶身正面轉為三分之四角度</span></div></div>
-      <div class="callout"><b>拆開的理由：</b>事件可以正確、運鏡卻失敗。把攝影機路徑獨立後，能只修改前推、橫移或環繞；速度、平順度與連續性仍要用影片驗收。</div>
-    """),
-    slide("人物預測：景別與角度", """
-      <div class="kicker">附錄｜把拆解法轉到人物 1／5</div><h2>同一個「鏡位段」，換成人物仍控制力量感與資訊量</h2>
-      <img class="variable-plate" src="assets/character-variable-shot-angle.png" alt="同一位人物的平視中廣、低機位廣角與臉部特寫比較">
-      <div class="triptych-labels"><div><b>A｜平視中廣</b><span>服裝、姿態與環境關係容易判讀</span></div><div><b>B｜低機位廣角</b><span>前景腿鞋放大，人物力量感提高</span></div><div><b>C｜臉部特寫</b><span>表情清楚，完整動作與場景資訊減少</span></div></div>
-      <div class="callout"><b>教學示意：</b>圖片用同一張主角參考圖生成，用來預測鏡位影響；真正的一致性仍要在 Kling 用同素材與參數實測。</div>
-    """),
-    slide("人物預測：環境動態", """
-      <div class="kicker">附錄｜把拆解法轉到人物 2／5</div><h2>「環境事件段」要支援表演，不能蓋過人物</h2>
-      <img class="variable-plate" src="assets/character-variable-environment-motion.png" alt="同一位人物在靜止、輕微夜風與事件過量環境中的比較">
-      <div class="triptych-labels"><div><b>A｜完全靜止</b><span>人物資訊清楚，畫面動態較弱</span></div><div><b>B｜一個輕微夜風</b><span>髮絲、衣角與銀飾提供自然反應</span></div><div><b>C｜事件過量</b><span>強風、落葉與霧開始遮擋臉和姿態</span></div></div>
-      <div class="callout"><b>待驗證：</b>事件增加後，眼睛、抬頭動作與人物輪廓是否仍清楚？先限制事件種類，再調整強度。</div>
-    """),
-    slide("人物預測：焦點與模糊", """
-      <div class="kicker">附錄｜把拆解法轉到人物 3／5</div><h2>「保真與焦點段」先鎖眼睛和臉，再安排模糊</h2>
-      <img class="variable-plate" src="assets/character-variable-focus-blur.png" alt="同一位人物的全部清楚、受控模糊與全域模糊比較">
-      <div class="triptych-labels"><div><b>A｜全部清楚</b><span>身分與服裝資訊完整，速度感較弱</span></div><div><b>B｜受控模糊</b><span>臉保持清楚，背景與邊緣提供速度</span></div><div><b>C｜全域模糊</b><span>臉、表演與服裝一起失去辨識</span></div></div>
-      <div class="callout"><b>提示詞方向：</b>明確指定 eyes and face remain crisp，並把模糊限制在可接受區域。</div>
-    """),
-    slide("人物預測：主要運鏡", """
-      <div class="kicker">附錄｜把拆解法轉到人物 4／5</div><h2>「運鏡段」獨立後，才能比較不同路徑的一致性壓力</h2>
-      <img class="variable-plate" src="assets/character-variable-camera-movement.png" alt="同一位人物的慢速前推、橫向移動與環繞運鏡代表畫面比較">
-      <div class="triptych-labels"><div><b>A｜慢速前推</b><span>人物放大，觀看方向與可見角度較穩定</span></div><div><b>B｜橫向移動</b><span>人物比例接近不變，背景產生水平視差</span></div><div><b>C｜環繞運鏡</b><span>模型補出未見角度，一致性壓力最高</span></div></div>
-      <div class="callout"><b>待驗證：</b>這張圖只能示意路徑的代表畫面；速度、平順度與跨影格漂移仍要看完整影片。</div>
-    """),
-    slide("人物預測：色光與情緒", """
-      <div class="kicker">附錄｜把拆解法轉到人物 5／5</div><h2>「色光段」獨立後，才能改情緒而保留人物與動作</h2>
-      <img class="variable-plate" src="assets/character-variable-color-lighting.png" alt="同一位人物在冷色晨光、夜間直閃與藍粉燈光下的比較">
-      <div class="triptych-labels"><div><b>A｜冷色晨光</b><span>平靜、親近，街頭張力降低</span></div><div><b>B｜夜間直閃</b><span>緊張、親密、反叛，接近原始方向</span></div><div><b>C｜藍粉燈光</b><span>商業能量提高，街頭真實感變弱</span></div></div>
-      <div class="callout"><b>待驗證：</b>膚色、灰色服裝材質與情緒是否仍符合創意？情緒必須能從畫面中的色彩與光線讀出。</div>
     """),
 ]
 
@@ -384,6 +349,20 @@ break_index = next(i for i, item in enumerate(slides) if 'data-title="休息"' i
 break_slide = slides.pop(break_index)
 insert_index = next(i for i, item in enumerate(slides) if 'data-title="ChatGPT 參考圖"' in item)
 slides.insert(insert_index, break_slide)
+
+# Keep the projected deck synchronized with the printed handout. The page order is
+# validated here so a future slide insertion cannot silently shift every reminder.
+handout_pages = [
+    1, 2, 2, 3, 3, 4, 4, 3, 3, 5, 5, 6, 6, 6, 6, 6, 7, 8, 8, 8, 8,
+    None, 9, 9, 9, 10, 10, 10, 10, 11, 11, 12, 12, 13, 14,
+]
+if len(handout_pages) != len(slides):
+    raise ValueError(f"Handout page map has {len(handout_pages)} entries for {len(slides)} slides")
+for index, page in enumerate(handout_pages):
+    if page is None:
+        continue
+    reminder = f'<div class="handout-ref" aria-label="對照講義第 {page} 頁">對照講義　第 {page:02d} 頁</div>'
+    slides[index] = slides[index].replace("\n</section>", f"\n{reminder}\n</section>", 1)
 
 css = r"""
 :root{--ink:#f5f2eb;--muted:#b8b7bd;--bg:#10131b;--panel:#191d27;--line:#343946;--gold:#e6b875;--cyan:#8fd7de;--coral:#e58c76;--serif:"Noto Serif TC","Songti TC",serif;--sans:"Aptos","Noto Sans TC","Microsoft JhengHei",sans-serif}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:18px}body{overflow:hidden}.deck{height:100%;display:grid;place-items:center}.slide{position:absolute;inset:0;display:none;overflow:auto;padding:clamp(28px,4.5vw,72px) clamp(24px,7vw,116px) 104px;background:radial-gradient(ellipse at 100% 0%,#272b37 0,transparent 43%),var(--bg)}.slide.active{display:flex;flex-direction:column;justify-content:center;animation:appear .28s ease-out}.slide.cover{background:#10131b url("assets/workflow-studio.png") center/cover no-repeat}.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,19,27,.98) 0%,rgba(16,19,27,.84) 43%,rgba(16,19,27,.18) 100%)}.cover>*{position:relative;max-width:790px}.slide.break{background:linear-gradient(130deg,#10131b,#22293a)}.eyebrow{font-size:13px;letter-spacing:.19em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:16px}.slide h1{font:600 clamp(40px,6vw,82px)/1.14 var(--serif);margin:0 0 22px;max-width:1100px}.slide h2{font:600 clamp(28px,3.7vw,52px)/1.2 var(--serif);margin:0 0 20px;max-width:1100px}.slide h3{font-size:22px;line-height:1.35;margin:0 0 9px}.dek{font-size:clamp(18px,2vw,25px);line-height:1.55;color:#dfddd7;max-width:900px}.small{font-size:16.5px;line-height:1.55;color:var(--muted)}.source{font-size:14.5px;color:#9fa2aa;margin-top:14px}.source a,a{color:var(--cyan)}.kicker{font-size:15px;text-transform:uppercase;letter-spacing:.15em;color:var(--cyan);margin-bottom:12px}.grid{display:grid;gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}.grid.five{grid-template-columns:repeat(5,minmax(0,1fr))}.topgap{margin-top:20px}.card{padding:19px 20px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(140deg,rgba(255,255,255,.055),rgba(255,255,255,.018))}.card p,.card li{font-size:18px;color:#d4d2d0;line-height:1.52}.card ul{margin:7px 0;padding-left:20px}.num{font:600 16px var(--sans);color:var(--coral);letter-spacing:.1em;margin-bottom:11px}.tag{display:inline-flex;padding:6px 10px;border-radius:999px;border:1px solid #505563;color:var(--muted);font-size:14px}.pillrow{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.flow{display:grid;grid-template-columns:repeat(5,1fr);align-items:stretch;gap:10px;margin:24px 0}.flow.six{grid-template-columns:repeat(6,1fr)}.flow.three-stage{grid-template-columns:repeat(3,1fr);margin:12px 0}.three-stage .step{min-height:96px;padding:14px}.flow.four-stage{grid-template-columns:repeat(4,1fr);margin:18px 0}.four-stage .step{min-height:132px}.accent-step{border-color:var(--gold);background:#282216}.nodeflow.five-stage{grid-template-columns:repeat(5,1fr)}.step{position:relative;padding:18px 14px;background:#191d27;border:1px solid #393e4a;border-radius:15px;min-height:120px}.step:not(:last-child):after{content:"→";position:absolute;right:-14px;top:45%;z-index:2;color:var(--gold);font-size:20px}.step b{display:block;color:var(--gold);font-size:18px;margin-bottom:9px}.step span{font-size:18px;line-height:1.5;color:#d1d0d0}.compare{width:100%;border-collapse:collapse;margin-top:15px;font-size:18px}.compare th,.compare td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line);vertical-align:top}.compare th{color:var(--gold);font-size:16px;letter-spacing:.07em}.compare td{color:#ddd9d3;line-height:1.45}.quote{font:500 clamp(19px,2.4vw,29px)/1.5 var(--serif);padding:22px 25px;border-left:3px solid var(--gold);background:#181c25;border-radius:0 15px 15px 0;max-width:1000px}.quote em{color:var(--cyan);font-style:normal}.callout{border:1px solid #65523b;background:rgba(230,184,117,.09);padding:15px 18px;border-radius:13px;line-height:1.55;color:#eee0cb;margin-top:16px}.split{display:grid;grid-template-columns:.92fr 1.08fr;gap:28px;align-items:center}.split.visual{grid-template-columns:1.2fr .8fr}.heroimg{width:100%;max-height:58vh;object-fit:cover;border-radius:18px;border:1px solid #464b56;box-shadow:0 22px 70px #0008}.heroimg.portrait{object-position:center 35%;max-height:56vh}.prompt{white-space:pre-wrap;background:#0b0e14;border:1px solid #3b404c;border-radius:14px;padding:17px 19px;font:16px/1.55 ui-monospace,"Cascadia Code",monospace;color:#e8e2d7}.prompt.compact{font-size:16px;line-height:1.58}.prompt.tiny{font-size:16px;line-height:1.53}.timeline-list{display:grid;gap:10px}.timeline-list>div{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:#171b24}.timeline-list b{color:var(--gold)}.timeline-list span{color:#d5d2cd;line-height:1.45}.story-list,.dialogue-list{gap:7px}.story-list>div,.dialogue-list>div{padding:10px 15px}.story-list span,.dialogue-list span{font-size:17px}.nodeflow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:18px 0}.node{position:relative;min-height:105px;padding:16px 12px;border:1px solid #465060;border-radius:14px;background:#171c26}.node:not(:last-child):after{content:"→";position:absolute;right:-14px;top:39%;color:var(--gold);z-index:2}.node b,.node span{display:block}.node b{color:var(--cyan);margin-bottom:9px}.node span{font-size:17px;color:#ccc;line-height:1.45}.node.accent{border-color:var(--gold);background:#282216}.imagepair{display:grid;grid-template-columns:.72fr 1.28fr;gap:10px}.imagepair figure{margin:0}.imagepair img{width:100%;height:42vh;object-fit:cover;border-radius:15px;border:1px solid #444a55}.imagepair figcaption{font-size:11px;color:var(--muted);margin-top:5px}.beforeafter{display:grid;grid-template-columns:1fr 70px 1fr;align-items:stretch;gap:12px}.beforeafter>div:not(.arrow){padding:27px;border-radius:18px;border:1px solid var(--line)}.beforeafter span,.beforeafter b{display:block}.beforeafter span{font-size:12px;color:var(--muted);margin-bottom:12px}.beforeafter b{font-size:23px;margin-bottom:8px}.beforeafter p{color:#d0cdca}.bad{background:#2a1c1b}.good{background:#142825}.arrow{display:grid;place-items:center;color:var(--gold);font-size:35px}.record{display:flex;justify-content:space-between;gap:18px;padding:17px 20px;border:1px solid var(--line);border-radius:14px;background:#171b24;color:#d8d6d1}.record b{color:var(--gold)}.nav{position:fixed;bottom:0;left:0;right:0;z-index:20;height:70px;padding:11px clamp(16px,4vw,58px);display:flex;align-items:center;justify-content:space-between;background:rgba(13,16,23,.94);border-top:1px solid #343946;backdrop-filter:blur(14px)}.nav button{background:#252a35;border:1px solid #414754;color:var(--ink);border-radius:999px;padding:9px 16px;font:500 14px var(--sans);cursor:pointer}.nav button:disabled{opacity:.38}.progress{height:3px;background:#343946;position:absolute;top:0;left:0;right:0}.progress i{display:block;height:100%;width:0;background:var(--gold);transition:width .2s}.navcenter{display:flex;gap:7px;align-items:center;font-size:12px;color:var(--muted)}.navcenter select{background:#171b23;color:var(--muted);border:1px solid #414754;border-radius:8px;padding:7px;max-width:185px}.hint{font-size:11px;color:#838792;margin-left:8px}@keyframes appear{from{opacity:.4;transform:translateY(7px)}to{opacity:1;transform:none}}@media(max-width:800px){.slide{padding:28px 20px 92px}.grid.two,.grid.three,.grid.four,.grid.five,.split,.split.visual,.flow,.flow.six,.nodeflow,.beforeafter{grid-template-columns:1fr}.step:not(:last-child):after,.node:not(:last-child):after{content:"↓";right:50%;top:auto;bottom:-17px}.timeline-list>div{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.imagepair{grid-template-columns:1fr}.imagepair img{height:34vh}.hint{display:none}}@media print{body{overflow:visible}.slide{position:relative;display:flex!important;min-height:100vh;page-break-after:always}.nav{display:none}}
@@ -399,7 +378,7 @@ css += r"""
 .slide h2{font-size:clamp(42px,4.1vw,64px);line-height:1.12;max-width:1280px;margin-bottom:26px}
 .slide h3{font-size:24px}
 .dek{font-size:clamp(22px,2.15vw,30px);max-width:980px}
-.grid{gap:18px}.grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.five{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid{gap:18px}.grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.five{grid-template-columns:repeat(3,minmax(0,1fr))}.learning-path.seven{grid-template-columns:repeat(4,minmax(0,1fr))}
 .card{padding:22px 24px;border-color:rgba(255,255,255,.08);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.022));box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 18px 60px rgba(0,0,0,.12)}
 .card p,.card li{font-size:19px;line-height:1.48}.callout{font-size:19px;padding:18px 22px;border-radius:18px}
 .compare{font-size:19px}.compare th{font-size:17px}.compare th,.compare td{padding:13px 16px}
@@ -413,7 +392,7 @@ css += r"""
 .beforeafter>div:not(.arrow){padding:32px;border-color:rgba(255,255,255,.09);border-radius:24px}.beforeafter span{font-size:16px}.beforeafter b{font-size:27px}.beforeafter p{font-size:19px;line-height:1.5}
 .record{font-size:18px;border-color:rgba(255,255,255,.09);border-radius:18px}
 .triptych-labels>div{padding:12px 15px;border-color:rgba(255,255,255,.08);border-radius:16px}.triptych-labels b{font-size:18px}.triptych-labels span{font-size:17px}
-@media(max-width:800px){.slide{padding:30px 20px 92px}.nodeflow.five-stage{grid-template-columns:1fr}.nodeflow.five-stage .node{grid-column:auto}.flow.four-stage{grid-template-columns:1fr}}
+@media(max-width:800px){.slide{padding:30px 20px 92px}.learning-path.seven,.nodeflow.five-stage{grid-template-columns:1fr}.nodeflow.five-stage .node{grid-column:auto}.flow.four-stage{grid-template-columns:1fr}}
 """
 
 css += r"""
@@ -443,6 +422,7 @@ css += r"""
 
 css += r"""
 .chapter-chip{padding:6px 9px;border:1px solid #4a5261;border-radius:999px;color:var(--cyan);font-weight:700}@media(max-width:800px){.chapter-chip{display:none}}
+.handout-ref{position:absolute;z-index:6;top:20px;right:clamp(24px,4vw,58px);display:inline-flex;align-items:center;max-width:max-content;padding:7px 12px;border:1px solid rgba(143,215,222,.34);border-radius:999px;background:rgba(15,20,29,.88);box-shadow:0 8px 24px rgba(0,0,0,.18);color:var(--cyan);font-size:15px;font-weight:700;letter-spacing:.04em;backdrop-filter:blur(12px)}@media(max-width:800px){.handout-ref{top:10px;right:12px;padding:5px 9px;font-size:12px}}
 """
 
 script = r"""(()=>{const slides=[...document.querySelectorAll('.slide')],count=document.getElementById('count'),chapter=document.getElementById('chapter'),bar=document.getElementById('bar'),jump=document.getElementById('jump'),prev=document.getElementById('prev'),next=document.getElementById('next');let i=0;slides.forEach((s,n)=>{const o=document.createElement('option');o.value=n;o.textContent=String(n+1).padStart(2,'0')+' · '+s.dataset.title;jump.append(o)});function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>{const active=k===i;s.classList.toggle('active',active);if(!active)s.querySelectorAll('video').forEach(v=>v.pause())});const kicker=slides[i].querySelector('.kicker')?.textContent||'';chapter.textContent=kicker?kicker.split('｜')[0]:(slides[i].classList.contains('break')?'中場':'封面');count.textContent=`${i+1} / ${slides.length}`;bar.style.width=`${(i+1)/slides.length*100}%`;jump.value=i;prev.disabled=i===0;next.disabled=i===slides.length-1;history.replaceState(null,'','#slide-'+(i+1))}prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);jump.onchange=()=>show(+jump.value);document.addEventListener('keydown',e=>{if(e.target.closest('video,button,select,input,textarea'))return;if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1)}if(e.key.toLowerCase()==='f'){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}});let start=location.hash.match(/slide-(\d+)/);if(start)show(+start[1]-1);else show(0)})();"""
