@@ -1,0 +1,20 @@
+You have been provided with two reference images:
+1. Image 1 (The colored photorealistic product shot) is the Master First Frame.
+2. Image 2 (The black and white 6-panel sketch) is the Visual Storyboard Grid.
+
+CRITICAL INSTRUCTION FOR OMNI:
+You MUST strictly use Image 1 (Master First Frame) as your exact visual foundation and starting point. Do not hallucinate a different background, lighting, bottle design, or material texture.
+Image 2 (Storyboard) is merely a structural blueprint to guide the sequence of actions. DO NOT render any comic panels, black borders, or sketches in the final video. The final video MUST be a single, full-screen, seamless photorealistic commercial that 100% perfectly inherits the EXACT visual style, premium lighting, color grading, and precise product appearance of Image 1. DO NOT blend the white sketch style or outline colors from Image 2 into the product. Image 1 is your ONLY source of truth for all textures, colors, and the bottle label.
+
+Follow the sequence of actions exactly as outlined below and in the storyboard:
+
+[Camera Movement & Cinematography]:
+Sequential dynamic macro commercial cuts. Starts with a macro tracking shot, gliding extremely close over the smooth surface of the bottle, showing only a partial section of its dark edge in a deep underwater space. Transitions to an Extreme Close-Up of an asymmetrical serum drop falling into the frame. Cuts to an Extreme Close-Up of a violent, chaotic lateral water splash crashing asymmetrically into the side of the bottle. Cuts to an Extreme Close-Up of micro-foam rapidly expanding. Cuts to a macro close-up of a powerful clear water flush sweeping diagonally. Ends with a macro edge pan, focusing strictly on the top shoulder and cap of the clean bottle, with bright caustic light rays refracting around it.
+
+[VFX & Action Timeline]:
+- Panel 1: Macro Surface Tracking Shot. An extreme close-up showing ONLY a partial section of the dark bottle's smooth surface and edge. The whole bottle is NOT visible, emphasizing the premium texture and caustic reflections.
+- Panel 2: Extreme Close-Up. An asymmetrical shot of a single concentrated indigo-blue serum (jagua extract) drop falling in from the top-right corner, hitting the ocean-blue liquid.
+- Panel 3: Asymmetrical Lateral Splash. An extreme close-up showing a violent, chaotic splash of clear water crashing diagonally into the side of the bottle from the left. NO radial symmetry. STRICTLY NO LEAVES.
+- Panel 4: Macro Close-Up. Dense, rich silkening micro-foam rapidly expands with tiny metallic specks, neutralizing them instantly.
+- Panel 5: Macro Close-Up. A powerful sweeping cascade of crystal-clear ocean water rushes diagonally over the bottle surface.
+- Panel 6: Macro Edge Pan. Extreme close-up focusing only on the top shoulder and the ridged cap of the bottle. Bright cinematic caustic rays refract powerfully around the edge in the deep blue background.

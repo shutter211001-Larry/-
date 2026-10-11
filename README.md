@@ -7,14 +7,14 @@
 
 ## 📚 課程目錄與學習路徑
 
-本教材強烈建議按照以下順序進行學習，這是一條由淺入深、從本地助理到雲端生圖與動態影片的完美路徑：
+本教材建議按照以下順序學習，從 Agent 基礎逐步走到雲端生圖與動態影片：
 
 1. **[01_Agent與SKILL基礎](./01_Agent與SKILL基礎.md)**
    > 認識你的數位專案經理 (PM)，打下與 AI 協作的核心觀念。
 2. **[02_學習指南與閉環機制](./02_學習指南與閉環機制.md)**
    > 掌握 Plan-Draft-Critique-Correct 四步循環，為專案打疫苗。
 3. **[03_高階快捷指令與自動化](./03_高階快捷指令與自動化.md)**
-   > 掌握 `/goal`、`/grill-me`、`/learn` 等神級指令，讓 Agent 幫你自動加班！
+   > 使用專案附帶的 `/goal`、`/grill-me`、`/learn` Skills，練習目標追蹤、需求釐清與經驗沉澱。
 4. **[04_終極心法_用Agent設計Agent](./04_終極心法_用Agent設計Agent.md)**
    > 壓軸神技：不用手寫程式，讓 Agent 幫你建構完整的 SKILL 與工作流！
 5. **[05_進階提示詞與ComfyCloud準備](./05_進階提示詞與ComfyCloud準備.md)**
@@ -22,7 +22,7 @@
 6. **[06_ComfyCloud實戰](./06_ComfyCloud實戰.md)**
    > 登入雲端美術外包中心，實作節點式工作流、ControlNet、模型血型匹配與範本套用。
 7. **[07_語言與影片模型比較](./07_語言與影片模型比較.md)**
-   > 評測主流語言模型四大天王，並用 Kling / Luma 將靜態設計圖轉為逼真動態影片。
+   > 用任務、官方能力與同條件測試比較影片模型，並把靜態設計圖轉成可驗收的動態影片。
 
 ---
 
@@ -44,7 +44,7 @@
 | 時間 | 章節 | 時長 | 內容摘要 (包含實作) |
 | :--- | :--- | :--- | :--- |
 | **13:30 - 14:15** | `03. 快捷自動化` | 45m | **講:** `/goal`、`/grill-me` 指令 (15m)<br>**作:** 讓 AI 自動拆解任務並放著跑 (30m) |
-| **14:15 - 14:45** | `04. 終極心法` | 30m | **講:** Meta-Agent 概念 (10m)<br>**作:** 體驗一鍵建立 Agent 宇宙的神級 Prompt (20m) |
+| **14:15 - 14:45** | `04. 工作流設計` | 30m | **講:** Meta-Agent 與規則分層 (10m)<br>**作:** 引導 Agent 建立並試跑 Skill (20m) |
 | **14:45 - 15:30** | `05. 進階提示詞` | 45m | **講:** CREATE 框架與負面提示 (20m)<br>**作:** 構思專案主題，完成正負面提示詞 (25m) |
 
 *(15:30 - 15:45 下午茶休息)*
@@ -57,3 +57,36 @@
 
 ---
 *本教材由 Antigravity Agent 與使用者共創，並具備自我修正機制。*
+
+---
+
+## 第二堂：引導 Agent 建立 AI 工作流（3 小時）
+
+這堂延續第一堂的 Agent、Skill 與提示詞基礎。開場先分清產品介面與語言模型，再讓 Agent 用同一份 brief、相同輸入與共同評分表建立模型選擇證據。主案例使用真實的 Kling O3 導演對話：先讀懂從 Comfy 工作流帶來的示範提示詞與節點資料流，再讓 Agent 把一句中文鏡頭意圖轉成 ChatGPT 正式參考圖和 Kling O3 影片提示詞，透過 MCP 完成能力確認、素材提交、生成、查詢與驗收，最後把有效方法存成 Skill。課程最後使用 SHOT-002 的 Schwarzkopf 修護髮露工作流，示範 Agent 如何分配結尾英雄圖、ChatGPT 開場圖與 Kling 影片提示詞的責任，並以實際 5 秒 O3 成片驗收商品保真、水幕與運鏡。簡報附錄分別以商品和人物各五組圖片示範景別、環境動態、焦點模糊、主要運鏡與色光情緒等單一變因；人物組明確標示為預測用教學示意。
+
+- [HTML 圖文簡報](./lesson02/index.html)
+- [紙本講義（PDF）](./lesson02/handout.pdf)
+- [可列印講義（HTML）](./lesson02/handout.html)
+- [簡報／講義內容對照表](./lesson02/CONTENT_MAP.md)
+- [提示詞單一變因圖生成規格](./lesson02/PROMPT_VARIABLE_IMAGE_SPECS.md)
+- [人物差異預測圖生成規格](./lesson02/CHARACTER_VARIABLE_IMAGE_SPECS.md)
+- [原始對話教學整理](./lesson02/ORIGINAL_DIALOGUE_TEACHING.md)
+- [原始對話 TXT](./lesson02/sources/Kling_O3_對話紀錄_2026-10-11.txt)
+- [語言模型公平比較教學](./lesson02/LANGUAGE_MODEL_COMPARISON.md)
+- [第二堂課堂練習專案](./lesson02/starter/README.md)
+
+學員案例由講師依課堂分享帶領，不在紙本講義設置填空。Kling 示範使用 MCP；授課前先重新連接工具並呼叫能力查詢工具，以即時回傳確認模型、參數與帳號能力。
+
+最新影片模型定位、純商品保真測試與官方來源整理在 [`lesson02/VIDEO_MODEL_GUIDE.md`](./lesson02/VIDEO_MODEL_GUIDE.md)。講義採閱讀型版面，不含學員填空。
+
+## 專案內可直接使用的 Skills
+
+- `agent-workflow-designer`：把高階需求整理成有來源、檢查點與驗收標準的 Agent 工作流。
+- `goal`：追蹤多步驟目標直到完成條件全部滿足。
+- `grill-me`：用關鍵追問把模糊想法整理成任務說明。
+- `learn`：把已驗證的修正保存到 AGENTS.md 或相關 Skill。
+- `course-material-auditor`、`pedagogue-reviewer`、`student-reviewer`：分別檢查整套教材、課程節奏與初學者可跟做性。
+
+## 教材維護檢查
+
+修改教材後可執行 `python check_course_content.py`，檢查已知過時字樣與本機圖片／連結是否失效。完整盤點紀錄見 [PROJECT_AUDIT.md](./PROJECT_AUDIT.md)。
